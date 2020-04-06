@@ -3,6 +3,8 @@ import React from 'react';
 // Components
 import Heading from '../layout/Heading';
 import SubSection from '../layout/SubSection';
+import BulbOMan from './BulbOMan';
+import PreviousFigures from './PreviousFigures';
 
 const AboutSection = () => {
   const subSections = [
@@ -23,19 +25,22 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className='bg-gray-400 text-hack-black flex justify-between items-center mx-auto'>
-      <section className='pl-35 w-7/12 bg-red-200'>
-        <Heading>About</Heading>
-        {subSections.map((subSection) => (
-          <SubSection
-            key={subSection.id}
-            text={subSection.text}
-            heading={subSection.heading}
-            showLess={subSection.showLess}
-          />
-        ))}
-      </section>
-      <section className='w-5/12'>Illustration</section>
+    <section className='text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden'>
+      <div className='flex justify-start items-center'>
+        <section className='pl-35'>
+          <Heading>About</Heading>
+          {subSections.map((subSection) => (
+            <SubSection
+              key={subSection.id}
+              text={subSection.text}
+              heading={subSection.heading}
+              showLess={subSection.showLess}
+            />
+          ))}
+        </section>
+      </div>
+      <BulbOMan />
+      <PreviousFigures />
     </section>
   );
 };

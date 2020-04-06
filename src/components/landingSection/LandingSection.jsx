@@ -7,7 +7,7 @@ import LandingGroup2 from './LandingGroup2';
 import LandingFooter from './LandingFooter';
 
 const LandingSection = () => (
-  <section className='bg-white h-screen w-screen flex flex-col'>
+  <section className='bg-white h-screen flex flex-col overflow-hidden'>
     <div className='h-full flex justify-center items-center'>
       <LandingGroup1 />
       <HeroCaption />
