@@ -475,6 +475,10 @@ svg {
   margin-right: auto;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .mr-6 {
   margin-right: 1.5rem;
 }
@@ -489,6 +493,10 @@ svg {
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
 }
 
 .-mr-4 {

@@ -28,7 +28,10 @@ const SubSection = ({ text, heading, showLess }) => {
 export default SubSection;
 
 SubSection.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.objectOf(PropTypes.any),
+  ]).isRequired,
   heading: PropTypes.string.isRequired,
   showLess: PropTypes.bool.isRequired,
 };

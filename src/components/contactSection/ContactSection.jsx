@@ -4,6 +4,7 @@ import React from 'react';
 import Heading from '../layout/Heading';
 import SubSection from '../layout/SubSection';
 import ContactGuys from './ContactGuys';
+import SocialTray from './SocialTray';
 
 const ContactSection = () => {
   const subSections = [
@@ -46,7 +47,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className='text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden'>
+    <section className='text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden mb-40'>
       <div className='flex justify-start items-center'>
         <section className='pl-35'>
           <Heading>Contact Us</Heading>
@@ -61,6 +62,7 @@ const ContactSection = () => {
         </section>
       </div>
       <ContactGuys />
+      <SocialTray />
     </section>
   );
 };
