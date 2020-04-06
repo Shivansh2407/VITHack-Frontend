@@ -13,11 +13,11 @@ const PreviousFigures = () => {
   return (
     <div className='px-35 w-full'>
       <h4 className='text-2xl font-bold mt-8'>Previous Version Figures</h4>
-      <div className='flex justify-evenly items-stretch my-8'>
+      <div className='flex justify-between items-stretch my-8'>
         {figures.map((info, index) => (
           <div
             key={info.id}
-            className='flex flex-col justify-end items-center w-32'
+            className='flex flex-col justify-end items-center w-40'
           >
             <div
               className={`text-center ${
