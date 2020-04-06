@@ -1,0 +1,16 @@
+/* Fonts */
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('fonts/Lato-Regular.ttf');
+}
+
+/* Global Styles */
+body,
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Lato-Regular', sans-serif;
+}
