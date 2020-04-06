@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className='w-screen text-center bg-white text-black h-24 flex justify-center items-center fixed top-0 justify-evenly'>
+    <nav className='w-screen text-center bg-white text-black h-24 flex justify-center items-center fixed top-0 justify-evenly z-10'>
       {navLinks.slice(0, 2).map((navLink) => (
         <div key={navLink.id}>
           <NavLink key={NavLink.id} text={navLink.text} url={navLink.url} />
