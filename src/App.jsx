@@ -1,12 +1,17 @@
 import React from 'react';
+
+// Components
+import LandingSection from './components/landingSection/LandingSection';
+import Navbar from './components/layout/navbar/Navbar';
+
+// Stylesheets
 import './App.css';
 
 const App = () => (
-  <div className='h-screen flex justify-center items-center'>
-    <div className='w-1/2 h-12 flex justify-center items-center bg-gray-200 text-white rounded-lg shadow-lg text-center'>
-      I am using tailwind.css
-    </div>
-  </div>
+  <>
+    <Navbar />
+    <LandingSection />
+  </>
 );
 
 export default App;
