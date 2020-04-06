@@ -6,6 +6,7 @@ import Navbar from './components/layout/navbar/Navbar';
 
 // Stylesheets
 import './App.css';
+import './styles.css';
 
 const App = () => (
   <>
