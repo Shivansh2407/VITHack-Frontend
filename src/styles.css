@@ -100,27 +100,58 @@ a {
  * 2. Remove the margin in Firefox and Safari.
  */
 
+button {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
+
+button { /* 1 */
+  overflow: visible;
+}
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
 
+button { /* 1 */
+  text-transform: none;
+}
+
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
+
+button,
+[type="button"] {
+  -webkit-appearance: button;
+}
 
 /**
  * Remove the inner border and padding in Firefox.
  */
 
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
 /**
  * Restore the focus styles unset by the previous rule.
  */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
 
 /**
  * Correct the padding in Firefox.
@@ -208,10 +239,21 @@ p {
   margin: 0;
 }
 
+button {
+  background-color: transparent;
+  background-image: none;
+  padding: 0;
+}
+
 /**
  * Work around a Firefox/IE bug where the transparent `button` background
  * results in a loss of the default `button` focus styles.
  */
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
 
 /**
  * Tailwind custom reset styles
@@ -278,6 +320,10 @@ html {
  * https://github.com/tailwindcss/tailwindcss/issues/362
  */
 
+button {
+  cursor: pointer;
+}
+
 h1,
 h3,
 h4 {
@@ -302,6 +348,12 @@ a {
  * supplement a partial reset that is already applied by
  * normalize.css.
  */
+
+button {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
 
 /**
  * Use the configured 'mono' font family for elements that
@@ -414,12 +466,20 @@ svg {
   margin-right: 1.5rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .-mr-28 {
   margin-right: -7rem;
 }
 
 .-ml-28 {
   margin-left: -7rem;
+}
+
+.focus\:outline-none:focus {
+  outline: 0;
 }
 
 .overflow-hidden {
