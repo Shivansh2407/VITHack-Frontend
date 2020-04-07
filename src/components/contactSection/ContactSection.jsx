@@ -47,7 +47,10 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className='text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden mb-40'>
+    <section
+      className='text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden pt-10 mb-40'
+      id='contact-us'
+    >
       <div className='flex justify-start items-center'>
         <section className='pl-35'>
           <Heading>Contact Us</Heading>

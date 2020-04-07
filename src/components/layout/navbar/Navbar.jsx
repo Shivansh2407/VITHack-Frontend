@@ -11,9 +11,9 @@ const Navbar = () => {
 
   const navLinks = [
     { id: 1, text: 'Blog', url: '#' },
-    { id: 2, text: 'Help us Out', url: '#' },
-    { id: 3, text: 'Tracks', url: '#' },
-    { id: 4, text: 'Contact Us', url: '#' },
+    // { id: 2, text: 'Help us Out', url: '#' },
+    // { id: 3, text: 'Tracks', url: '#' },
+    { id: 4, text: 'Contact Us', url: '#contact-us' },
   ];
 
   useEffect(() =>
@@ -28,7 +28,7 @@ const Navbar = () => {
         scrollPosition > 10 && 'shadow-lg'
       }`}
     >
-      {navLinks.slice(0, 2).map((navLink) => (
+      {navLinks.slice(0, 1).map((navLink) => (
         <div key={navLink.id}>
           <NavLink key={NavLink.id} text={navLink.text} url={navLink.url} />
         </div>
@@ -39,7 +39,7 @@ const Navbar = () => {
         </a>
       </div>
 
-      {navLinks.slice(2).map((navLink) => (
+      {navLinks.slice(1).map((navLink) => (
         <div key={navLink.id}>
           <NavLink key={NavLink.id} text={navLink.text} url={navLink.url} />
         </div>
