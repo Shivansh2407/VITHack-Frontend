@@ -221,6 +221,10 @@ template {
  * Add the correct display in IE 10.
  */
 
+[hidden] {
+  display: none;
+}
+
 /**
  * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
  * A thin layer on top of normalize.css that provides a starting point more
@@ -399,6 +403,10 @@ svg {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -544,6 +552,13 @@ svg {
   position: relative;
 }
 
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .top-0 {
   top: 0;
 }
@@ -636,10 +651,18 @@ svg {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .z-0 {
   z-index: 0;
 }
 
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
