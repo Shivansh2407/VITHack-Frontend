@@ -24,26 +24,29 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full text-center bg-white text-black h-24 flex justify-center items-center fixed top-0 justify-evenly z-10 ${
+      className={`w-full text-center bg-white text-black h-24 flex justify-center items-center fixed top-0 z-10 ${
         scrollPosition > 10 && 'shadow-lg'
       }`}
     >
-      {navLinks.slice(0, 1).map((navLink) => (
-        <div key={navLink.id}>
-          <NavLink key={NavLink.id} text={navLink.text} url={navLink.url} />
-        </div>
-      ))}
-      <div className='cursor-pointer'>
-        <a href='/#'>
+      <div className='w-1/3 flex justify-evenly items-center'>
+        {navLinks.slice(0, 1).map((navLink) => (
+          <div key={navLink.id}>
+            <NavLink key={NavLink.id} text={navLink.text} url={navLink.url} />
+          </div>
+        ))}
+      </div>
+      <div className='w-1/3 flex justify-center items-center'>
+        <a href='/#' className='cursor-pointer'>
           <VitHackLogo />
         </a>
       </div>
-
-      {navLinks.slice(1).map((navLink) => (
-        <div key={navLink.id}>
-          <NavLink key={NavLink.id} text={navLink.text} url={navLink.url} />
-        </div>
-      ))}
+      <div className='w-1/3 flex justify-evenly items-center'>
+        {navLinks.slice(1).map((navLink) => (
+          <div key={navLink.id}>
+            <NavLink key={NavLink.id} text={navLink.text} url={navLink.url} />
+          </div>
+        ))}
+      </div>
     </nav>
   );
 };
