@@ -10,10 +10,10 @@ const Navbar = () => {
   );
 
   const navLinks = [
-    { id: 1, text: 'Blog', url: '#' },
+    { id: 1, text: 'Blog', url: '/#' },
     // { id: 2, text: 'Help us Out', url: '#' },
     // { id: 3, text: 'Tracks', url: '#' },
-    { id: 4, text: 'Contact Us', url: '#contact-us' },
+    { id: 4, text: 'Contact Us', url: '/#contact-us' },
   ];
 
   useEffect(() =>
@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
       ))}
       <div className='cursor-pointer'>
-        <a href={process.env.PUBLIC_URL}>
+        <a href='/#'>
           <VitHackLogo />
         </a>
       </div>
