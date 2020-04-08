@@ -92,6 +92,10 @@ a {
  * Remove the border on images inside links in IE 10.
  */
 
+img {
+  border-style: none;
+}
+
 /* Forms
    ========================================================================== */
 
@@ -221,10 +225,6 @@ template {
  * Add the correct display in IE 10.
  */
 
-[hidden] {
-  display: none;
-}
-
 /**
  * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
  * A thin layer on top of normalize.css that provides a starting point more
@@ -324,6 +324,10 @@ html {
  * https://github.com/tailwindcss/tailwindcss/issues/362
  */
 
+img {
+  border-style: solid;
+}
+
 button {
   cursor: pointer;
 }
@@ -374,7 +378,7 @@ button {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-
+img,
 svg {
   display: block;
   vertical-align: middle;
@@ -386,6 +390,11 @@ svg {
  *
  * https://github.com/mozdevs/cssremedy/issues/14
  */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .bg-white {
   background-color: #fff;
@@ -401,10 +410,6 @@ svg {
 
 .flex {
   display: flex;
-}
-
-.hidden {
-  display: none;
 }
 
 .flex-col {
@@ -661,4 +666,12 @@ svg {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.z-40 {
+  z-index: 40;
 }
