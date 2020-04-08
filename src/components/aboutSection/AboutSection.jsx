@@ -25,7 +25,8 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className='section text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden pt-20 mb-20'>
+    <section className='section text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden'>
+      <div className='w-screen h-20' />
       <div className='flex justify-start items-center'>
         <section className='pl-35'>
           <Heading>About</Heading>
@@ -41,6 +42,7 @@ const AboutSection = () => {
       </div>
       <BulbOMan />
       <PreviousFigures />
+      <div className='w-screen h-32' />
     </section>
   );
 };

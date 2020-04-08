@@ -448,6 +448,10 @@ img {
   font-weight: 700;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-24 {
   height: 6rem;
 }
@@ -504,8 +508,8 @@ img {
   margin-top: 5rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .-mr-4 {
@@ -531,10 +535,6 @@ img {
 .px-35 {
   padding-left: 8.75rem;
   padding-right: 8.75rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .pl-35 {

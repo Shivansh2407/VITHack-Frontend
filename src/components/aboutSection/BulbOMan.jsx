@@ -7,7 +7,7 @@ const BulbOMan = () => (
     viewBox='0 0 498 746'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
-    className='-mr-28 absolute right-0 top-0'
+    className='-mr-28 mt-28 absolute right-0 top-0'
   >
     <g clipPath='url(#bom)'>
       <path
