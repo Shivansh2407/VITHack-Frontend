@@ -1,21 +1,30 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
+import ReactFullpage from '@fullpage/react-fullpage';
 
-// Components
+import './styles.css';
 import LandingSection from './components/landingSection/LandingSection';
-import Navbar from './components/layout/navbar/Navbar';
 import AboutSection from './components/aboutSection/AboutSection';
 import ContactSection from './components/contactSection/ContactSection';
-
-// Stylesheets
-import './App.css';
-import './styles.css';
+import Navbar from './components/layout/navbar/Navbar';
 
 const App = () => (
   <>
     <Navbar />
-    <LandingSection />
-    <AboutSection />
-    <ContactSection />
+    <ReactFullpage
+      scrollOverflow
+      licenseKey='OPEN-SOURCE-GPLV3-LICENSE'
+      render={() => {
+        return (
+          <div>
+            <LandingSection />
+            <AboutSection />
+            <ContactSection />
+          </div>
+        );
+      }}
+    />
   </>
 );
 

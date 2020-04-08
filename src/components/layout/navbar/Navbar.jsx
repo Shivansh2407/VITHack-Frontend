@@ -5,20 +5,16 @@ import { ReactComponent as VitHackLogo } from '../../vectors/VitHackLogo.svg';
 import NavLink from './NavLink';
 
 const Navbar = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [loading, setLoading] = useState(true);
 
   const navLinks = [
     { id: 1, text: 'Blog', url: '/#' },
     // { id: 2, text: 'Help us Out', url: '#' },
     // { id: 3, text: 'Tracks', url: '#' },
-    { id: 4, text: 'Contact Us', url: '/#contact-us' },
+    { id: 4, text: 'Contact Us', url: '#page1' },
   ];
 
   useEffect(() => {
-    window.addEventListener('scroll', () =>
-      setScrollPosition(document.documentElement.scrollTop)
-    );
     const timer = setTimeout(() => setLoading(false), 4000);
     return () => clearTimeout(timer);
   }, []);
@@ -36,11 +32,7 @@ const Navbar = () => {
         <span className='text-hack-pink'>1</span>&nbsp;Networking Session
       </div>
       {/* Preloader ends  */}
-      <nav
-        className={`w-full text-center bg-white text-black h-24 flex justify-center items-center fixed top-0 z-10 ${
-          scrollPosition > 10 && 'shadow-lg'
-        }`}
-      >
+      <nav className='w-full text-center bg-white text-black h-24 flex justify-center items-center fixed top-0 z-10 shadow-md'>
         <div className='w-1/3 flex justify-evenly items-center'>
           {navLinks.slice(0, 1).map((navLink) => (
             <div key={navLink.id}>

@@ -8,7 +8,7 @@ const ContactGuys = () => {
       viewBox='0 0 441 391'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className='mt-16 -mr-4 absolute right-0'
+      className='-mr-4 absolute right-0 bottom-0'
     >
       <g clipPath='url(#cg)'>
         <path

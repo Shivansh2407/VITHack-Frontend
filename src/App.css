@@ -15,3 +15,7 @@ html {
   font-family: 'Lato-Regular', sans-serif;
   scroll-behavior: smooth;
 }
+
+.section {
+  scroll-behavior: smooth;
+}

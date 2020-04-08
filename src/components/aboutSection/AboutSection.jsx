@@ -25,7 +25,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className='text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden'>
+    <section className='section text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden pt-20 mb-20'>
       <div className='flex justify-start items-center'>
         <section className='pl-35'>
           <Heading>About</Heading>
