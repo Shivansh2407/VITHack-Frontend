@@ -6,10 +6,10 @@ import NavLink from './NavLink';
 
 const Navbar = () => {
   const navLinks = [
-    { id: 1, text: 'Blog', url: '/#' },
+    { id: 1, text: 'Blog', url: '/#home', anchor: 'home' },
     // { id: 2, text: 'Help us Out', url: '#' },
     // { id: 3, text: 'Tracks', url: '#' },
-    { id: 4, text: 'Contact Us', url: '#page1' },
+    { id: 4, text: 'Contact Us', url: '/#contact', anchor: 'contact' },
   ];
 
   const preLoaderScreen1 = useRef(null);
@@ -64,7 +64,12 @@ const Navbar = () => {
         <div className='w-1/3 flex justify-evenly items-center'>
           {navLinks.slice(0, 1).map((navLink) => (
             <div key={navLink.id}>
-              <NavLink key={NavLink.id} text={navLink.text} url={navLink.url} />
+              <NavLink
+                key={NavLink.id}
+                text={navLink.text}
+                url={navLink.url}
+                anchor={navLink.anchor}
+              />
             </div>
           ))}
         </div>
@@ -72,7 +77,12 @@ const Navbar = () => {
         <div className='w-1/3 flex justify-evenly items-center'>
           {navLinks.slice(1).map((navLink) => (
             <div key={navLink.id}>
-              <NavLink key={NavLink.id} text={navLink.text} url={navLink.url} />
+              <NavLink
+                key={NavLink.id}
+                text={navLink.text}
+                url={navLink.url}
+                anchor={navLink.anchor}
+              />
             </div>
           ))}
         </div>

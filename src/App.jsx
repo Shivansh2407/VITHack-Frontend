@@ -14,6 +14,7 @@ const App = () => (
     <Navbar />
     <ReactFullpage
       scrollOverflow
+      anchors={['home', 'about', 'contact']}
       licenseKey='OPEN-SOURCE-GPLV3-LICENSE'
       render={() => {
         return (
