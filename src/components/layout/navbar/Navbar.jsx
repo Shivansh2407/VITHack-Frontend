@@ -48,7 +48,7 @@ const Navbar = () => {
         className='w-screen h-screen fixed inset-0 bg-white z-20 flex justify-center items-center'
       />
       <a
-        href='/#'
+        href='/#home'
         ref={logo}
         className='cursor-pointer absolute z-30'
         style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }}
