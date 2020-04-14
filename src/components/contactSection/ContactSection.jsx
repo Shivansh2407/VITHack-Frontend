@@ -20,7 +20,10 @@ const ContactSection = () => {
           >
             email
           </a>
-          . Feel free to reach out to us and we will get back to you as soon as
+          .
+          <br />
+          <br />
+          Feel free to reach out to us and we will get back to you as soon as
           possible.
         </>
       ),
@@ -39,7 +42,10 @@ const ContactSection = () => {
           >
             email
           </a>
-          . We’d love to have you on board and do something amazing together.
+          .
+          <br />
+          <br />
+          We’d love to have you on board and do something amazing together.
         </>
       ),
       showLess: false,
@@ -51,20 +57,25 @@ const ContactSection = () => {
       className='section text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden relative'
       id='contact-us'
     >
-      <div className='flex justify-start items-center'>
-        <section className='pl-35'>
-          <Heading>Contact Us</Heading>
-          {subSections.map((subSection) => (
-            <SubSection
-              key={subSection.id}
-              text={subSection.text}
-              heading={subSection.heading}
-              showLess={subSection.showLess}
-            />
+      <section className='px-35'>
+        <Heading>Contact Us</Heading>
+        <div className='flex justify-start'>
+          {subSections.map((subSection, index) => (
+            <React.Fragment key={subSection.id}>
+              {index === 1 && (
+                <div className='w-1/2 mx-20'>
+                  <ContactGuys />
+                </div>
+              )}
+              <SubSection
+                text={subSection.text}
+                heading={subSection.heading}
+                showLess={subSection.showLess}
+              />
+            </React.Fragment>
           ))}
-        </section>
-      </div>
-      <ContactGuys />
+        </div>
+      </section>
       <SocialTray />
     </section>
   );

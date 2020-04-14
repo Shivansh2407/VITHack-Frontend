@@ -478,9 +478,14 @@ img {
   margin-bottom: 2rem;
 }
 
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .mx-auto {
@@ -504,20 +509,16 @@ img {
   margin-top: 5rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
+.mr-20 {
+  margin-right: 5rem;
 }
 
-.-mr-4 {
-  margin-right: -1rem;
+.ml-20 {
+  margin-left: 5rem;
 }
 
-.-mr-28 {
-  margin-right: -7rem;
-}
-
-.-ml-28 {
-  margin-left: -7rem;
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .focus\:outline-none:focus {
@@ -634,6 +635,10 @@ img {
 
 .w-auto {
   width: auto;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-1\/3 {
