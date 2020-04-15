@@ -2,6 +2,7 @@ import React from 'react';
 
 // Components
 import { ReactComponent as VitLogoBlue } from '../vectors/VitLogoBlue.svg';
+import { ReactComponent as GravitasLogo } from '../vectors/graVITas20Logo.svg';
 
 const LandingFooter = () => {
   return (
@@ -10,6 +11,7 @@ const LandingFooter = () => {
       <a href='http://vit.ac.in' target='_blank' rel='noopener noreferrer'>
         <VitLogoBlue />
       </a>
+      <div className='text-lg mr-6'>&nbsp;&nbsp;&nbsp;&nbsp; and </div><GravitasLogo />
     </footer>
   );
 };
