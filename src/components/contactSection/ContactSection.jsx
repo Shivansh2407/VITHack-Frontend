@@ -15,7 +15,7 @@ const ContactSection = () => {
         <>
           If you have any queries regarding VITHack, contact us through{' '}
           <a
-            href={process.env.PUBLIC_URL}
+            href='mailto:participants@vithack.in'
             className='text-hack-blue hover:underline'
           >
             email
@@ -37,7 +37,7 @@ const ContactSection = () => {
           If you’re interested in collaborating with us and being a part of one
           of the largest hackathons in India, contact us through{' '}
           <a
-            href={process.env.PUBLIC_URL}
+            href='mailto:collaborations@vithack.in'
             className='text-hack-blue hover:underline'
           >
             email
