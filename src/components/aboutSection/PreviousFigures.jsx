@@ -12,7 +12,7 @@ const PreviousFigures = () => {
 
   return (
     <div className='px-35 w-full'>
-      <h4 className='text-2xl font-bold mt-8'>Previous Version Figures</h4>
+      <h4 className='text-2xl font-bold mt-8'>Previous Edition Statistics</h4>
       <div className='flex justify-between items-stretch my-8'>
         {figures.map((info, index) => (
           <div
