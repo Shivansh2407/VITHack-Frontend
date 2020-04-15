@@ -1,7 +1,7 @@
 import React from 'react';
 
 const LandingGroup2 = () => (
-  <div className='w-1/3 overflow-hidden'>
+  <div className='w-1/3'>
     <svg
       width='406'
       height='436'
