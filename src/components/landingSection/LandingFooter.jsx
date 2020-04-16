@@ -11,7 +11,7 @@ const LandingFooter = () => {
       <a href='http://vit.ac.in' target='_blank' rel='noopener noreferrer'>
         <VitLogoBlue />
       </a>
-      <div className='text-lg mr-6'>&nbsp;&nbsp;&nbsp;&nbsp; and </div><GravitasLogo />
+      <div className='text-lg mr-6'>&nbsp;&nbsp;</div><GravitasLogo />
     </footer>
   );
 };
