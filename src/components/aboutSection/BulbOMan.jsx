@@ -9,7 +9,7 @@ const BulbOMan = () => (
     xmlns='http://www.w3.org/2000/svg'
     className='absolute right-0 top-0 mt-40 mr-20'
   >
-    <g clipPath='url(#clip0)'>
+    <g clipPath='url(#bom0)'>
       <path
         d='M112.323 272.422C112.323 272.422 -13.112 385.09 17.235 457.938C47.582 530.786 124.081 541.719 124.081 541.719L136.254 571.838L162.954 505.279L112.323 434.871C112.323 434.871 162.133 416.661 167.389 375.379C172.645 334.097 171.822 243.279 171.822 243.279'
         fill='#E4AB4E'
@@ -234,7 +234,7 @@ const BulbOMan = () => (
       />
     </g>
     <defs>
-      <clipPath id='clip0'>
+      <clipPath id='bom0'>
         <rect width='303.334' height='652.25' fill='white' />
       </clipPath>
     </defs>

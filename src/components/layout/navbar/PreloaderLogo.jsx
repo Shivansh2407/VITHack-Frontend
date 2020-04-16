@@ -28,13 +28,13 @@ const PreloaderLogo = () => {
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >
-      <g clipPath='url(#clip0)' ref={batch1}>
+      <g clipPath='url(#pre0)' ref={batch1}>
         <path
           d='M23.5035 55.0539V37.5189L35.1172 30.7236V27.6482H15.8374L0 43.4402V55.0539H23.5035Z'
           fill='#0085F4'
         />
       </g>
-      <g clipPath='url(#clip1)' ref={batch2} className='opacity-0'>
+      <g clipPath='url(#pre1)' ref={batch2} className='opacity-0'>
         <path
           d='M50.8449 0.415222V35.7172L39.0918 29.0166V7.16516L50.8449 0.415222Z'
           fill='#006CC4'
@@ -44,7 +44,7 @@ const PreloaderLogo = () => {
           fill='#006CC4'
         />
       </g>
-      <g clipPath='url(#clip2)' ref={batch3} className='opacity-0'>
+      <g clipPath='url(#pre2)' ref={batch3} className='opacity-0'>
         <path
           d='M54.466 14.6802L67.383 22.146V39.2237L54.466 46.5106V14.6802Z'
           fill='#0085F4'
@@ -54,7 +54,7 @@ const PreloaderLogo = () => {
           fill='#0085F4'
         />
       </g>
-      <g clipPath='url(#clip3)' ref={batch4} className='opacity-0'>
+      <g clipPath='url(#pre3)' ref={batch4} className='opacity-0'>
         <path
           d='M86.8992 36.6747L86.8564 55.0539H105.232L86.8992 36.6747Z'
           fill='#006CC4'
@@ -69,10 +69,10 @@ const PreloaderLogo = () => {
         />
       </g>
       <defs>
-        <clipPath id='clip0'>
+        <clipPath id='pre0'>
           <rect y='27.6482' width='35.1172' height='27.4057' fill='white' />
         </clipPath>
-        <clipPath id='clip1'>
+        <clipPath id='pre1'>
           <rect
             x='27.233'
             y='0.415222'
@@ -81,7 +81,7 @@ const PreloaderLogo = () => {
             fill='white'
           />
         </clipPath>
-        <clipPath id='clip2'>
+        <clipPath id='pre2'>
           <rect
             x='54.466'
             y='14.6801'
@@ -90,7 +90,7 @@ const PreloaderLogo = () => {
             fill='white'
           />
         </clipPath>
-        <clipPath id='clip3'>
+        <clipPath id='pre3'>
           <rect
             x='70.6766'
             y='27.6482'
