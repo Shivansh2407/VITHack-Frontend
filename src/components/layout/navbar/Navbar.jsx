@@ -3,6 +3,7 @@ import gsap from 'gsap';
 
 // Components
 import NavLink from './NavLink';
+import PreloaderLogo from './PreloaderLogo';
 
 const Navbar = () => {
   const navLinks = [
@@ -12,19 +13,20 @@ const Navbar = () => {
     { id: 4, text: 'Contact Us', url: '/#contact', anchor: 'contact' },
   ];
 
-  const preLoaderScreen1 = useRef(null);
+  // const preLoaderScreen1 = useRef(null);
   const logo = useRef(null);
   const preLoaderScreen2 = useRef(null);
 
   useEffect(() => {
     const tl = gsap.timeline();
-    tl.to(preLoaderScreen1.current, {
-      opacity: 0,
-      display: 'none',
-      duration: 1,
-      delay: 3,
-    })
-      .to(logo.current, { scale: 0.5, top: '47px', duration: 2, delay: 0.5 })
+    tl
+      // .to(preLoaderScreen1.current, {
+      //   opacity: 0,
+      //   display: 'none',
+      //   duration: 1,
+      //   delay: 3,
+      // })
+      .to(logo.current, { scale: 0.5, top: '47px', duration: 1, delay: 4 })
       .to(preLoaderScreen2.current, {
         opacity: 0,
         display: 'none',
@@ -35,14 +37,14 @@ const Navbar = () => {
   return (
     <>
       {/* Preloader starts  */}
-      <div
+      {/* <div
         ref={preLoaderScreen1}
         className='w-screen h-screen fixed inset-0 bg-white z-40 flex justify-center items-center text-4xl'
       >
         <span className='text-hack-blue'>36</span>&nbsp;Hours,&nbsp;
         <span className='text-hack-yellow'>1</span>&nbsp;Hack,&nbsp;
         <span className='text-hack-pink'>1</span>&nbsp;Networking Session
-      </div>
+      </div> */}
       <div
         ref={preLoaderScreen2}
         className='w-screen h-screen fixed inset-0 bg-white z-20 flex justify-center items-center'
@@ -53,11 +55,7 @@ const Navbar = () => {
         className='cursor-pointer absolute z-30'
         style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }}
       >
-        <img
-          ref={logo}
-          src={`${process.env.PUBLIC_URL}/assets/images/VitHackLogo.png`}
-          alt='Hack Logo'
-        />
+        <PreloaderLogo />
       </a>
       {/* preLoaderScreen1 ends  */}
       <nav className='w-full text-center bg-white text-black h-24 flex justify-center items-center fixed top-0 z-10 shadow-md'>

@@ -92,10 +92,6 @@ a {
  * Remove the border on images inside links in IE 10.
  */
 
-img {
-  border-style: none;
-}
-
 /* Forms
    ========================================================================== */
 
@@ -320,10 +316,6 @@ html {
  * https://github.com/tailwindcss/tailwindcss/issues/362
  */
 
-img {
-  border-style: solid;
-}
-
 button {
   cursor: pointer;
 }
@@ -374,7 +366,7 @@ button {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img,
+
 svg {
   display: block;
   vertical-align: middle;
@@ -386,11 +378,6 @@ svg {
  *
  * https://github.com/mozdevs/cssremedy/issues/14
  */
-
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 .bg-white {
   background-color: #fff;
@@ -519,6 +506,10 @@ img {
 
 .mt-40 {
   margin-top: 10rem;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .focus\:outline-none:focus {
