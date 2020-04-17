@@ -507,6 +507,11 @@ svg {
   margin-bottom: 3rem;
 }
 
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .mx-16 {
   margin-left: 4rem;
   margin-right: 4rem;

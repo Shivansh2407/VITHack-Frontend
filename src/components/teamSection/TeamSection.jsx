@@ -22,7 +22,7 @@ const TrackSection = () => {
     <section className='section text-hack-black flex flex-col justify-center items-center h-screen relative overflow-hidden'>
       <div className='px-35'>
         <Heading>The Team</Heading>
-        <div className='text-center my-12 flex justify-evenly items-center flex-wrap px-4'>
+        <div className='text-center my-12 flex justify-evenly items-center flex-wrap'>
           {team.map((member) => (
             <TeamCard
               name={member.name}
