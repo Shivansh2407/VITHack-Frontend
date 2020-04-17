@@ -383,6 +383,10 @@ svg {
   background-color: #fff;
 }
 
+.bg-hack-blue {
+  background-color: #008DFF;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -570,6 +574,10 @@ svg {
 
 .text-black {
   color: #000;
+}
+
+.text-white {
+  color: #fff;
 }
 
 .text-hack-blue {
