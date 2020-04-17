@@ -18,4 +18,5 @@ html {
 
 .section {
   scroll-behavior: smooth;
+  cursor: default;
 }
