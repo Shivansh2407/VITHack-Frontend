@@ -21,6 +21,7 @@ module.exports = {
         'hack-black': '#131313',
       },
       spacing: {
+        14: '3.5rem',
         28: '7rem',
         35: '8.75rem',
         48: '12rem',

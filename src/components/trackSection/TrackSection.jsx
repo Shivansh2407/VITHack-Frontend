@@ -22,7 +22,7 @@ const TrackSection = () => {
         <Heading>Tracks</Heading>
         <div className='text-center my-12 flex justify-center items-center flex-wrap px-4'>
           {tracks.map((track) => (
-            <TrackCard name={track.name} />
+            <TrackCard name={track.name} key={track.id} />
           ))}
         </div>
         <div className='text-center'>

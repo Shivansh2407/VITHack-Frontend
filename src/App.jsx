@@ -10,13 +10,14 @@ import AboutSection from './components/aboutSection/AboutSection';
 import ContactSection from './components/contactSection/ContactSection';
 import Navbar from './components/layout/navbar/Navbar';
 import TrackSection from './components/trackSection/TrackSection';
+import TeamSection from './components/teamSection/TeamSection';
 
 const App = () => (
   <>
     <Navbar />
     <ReactFullpage
       scrollOverflow
-      anchors={['home', 'about', 'tracks', 'contact']}
+      anchors={['home', 'about', 'tracks', 'team', 'contact']}
       licenseKey='OPEN-SOURCE-GPLV3-LICENSE'
       render={() => {
         return (
@@ -24,6 +25,7 @@ const App = () => (
             <LandingSection />
             <AboutSection />
             <TrackSection />
+            <TeamSection />
             <ContactSection />
           </div>
         );
