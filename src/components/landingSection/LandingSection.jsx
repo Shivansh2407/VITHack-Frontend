@@ -1,17 +1,21 @@
 import React from 'react';
 
 // Components
-import HeroCaption from './HeroCaption';
-import LandingGroup1 from './LandingGroup1';
-import LandingGroup2 from './LandingGroup2';
+import { ReactComponent as LandingGroup1 } from '../vectors/LandingGroup1.svg';
+import { ReactComponent as LandingGroup2 } from '../vectors/LandingGroup2.svg';
 import LandingFooter from './LandingFooter';
+import HeroCaption from './HeroCaption';
 
 const LandingSection = () => (
-  <section className='section bg-white h-screen flex flex-col overflow-hidden'>
+  <section className='section bg-white h-screen flex flex-col overflow-hidden cursor-default'>
     <div className='h-full flex justify-center items-center'>
-      <LandingGroup1 />
+      <div className='w-1/3'>
+        <LandingGroup1 />
+      </div>
       <HeroCaption />
-      <LandingGroup2 />
+      <div className='w-1/3'>
+        <LandingGroup2 />
+      </div>
     </div>
     <LandingFooter />
   </section>

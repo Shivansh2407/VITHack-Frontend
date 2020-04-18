@@ -237,6 +237,7 @@ button:-moz-focusring,
 h1,
 h3,
 h4,
+h5,
 p {
   margin: 0;
 }
@@ -348,7 +349,8 @@ button {
 
 h1,
 h3,
-h4 {
+h4,
+h5 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -437,6 +439,10 @@ img {
 
 .border {
   border-width: 1px;
+}
+
+.cursor-default {
+  cursor: default;
 }
 
 .cursor-pointer {
@@ -587,6 +593,10 @@ img {
   margin-top: 10rem;
 }
 
+.-mt-8 {
+  margin-top: -2rem;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -716,6 +726,18 @@ img {
 
 .text-5xl {
   font-size: 3rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .hover\:underline:hover {

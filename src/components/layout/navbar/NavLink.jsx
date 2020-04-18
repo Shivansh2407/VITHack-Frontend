@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const NavLink = ({ anchor, text, url }) => {
   return (
     <a
-      className='hover:text-hack-blue cursor-pointer'
+      className='hover:text-hack-blue cursor-pointer capitalise'
       data-menuanchor={anchor}
       href={url}
     >
