@@ -1,13 +1,10 @@
-import React from 'react';
-
-const BulbOMan = () => (
-  <svg
+ <svg
     width='304'
     height='653'
     viewBox='0 0 304 653'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
-    className='absolute right-0 top-0 mt-40 mr-20'
+    class='absolute right-0 top-0 mt-40 mr-20'
   >
     <g clipPath='url(#bom0)'>
       <path
@@ -37,15 +34,15 @@ const BulbOMan = () => (
       <path
         d='M171.822 56.425V38.738H162.957'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        strokelinecap='round'
         strokeLinejoin='round'
       />
       <path
         d='M186.444 38.738H177.579'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        strokelinecap='round'
         strokeLinejoin='round'
       />
       <path
@@ -55,43 +52,43 @@ const BulbOMan = () => (
       <path
         d='M200.136 53.919C201.727 53.919 203.253 53.2869 204.379 52.1616C205.504 51.0364 206.136 49.5103 206.136 47.919'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M175.696 63.227C177.306 63.227 178.851 62.5872 179.99 61.4485C181.128 60.3098 181.768 58.7654 181.768 57.155'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        strokelinecap='round'
         strokeLinejoin='round'
       />
       <path
         d='M160.028 73.396L202.964 83.951'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        strokelinecap='round'
         strokeLinejoin='round'
       />
       <path
         d='M171.822 56.439L175.696 57.391'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        strokelinecap='round'
         strokeLinejoin='round'
       />
       <path
         d='M198.847 44.202C198.847 44.202 192.102 37.994 190.619 30.847C190.619 30.847 179.419 33.711 173.219 32.465V28.692C173.219 28.692 165.664 31.657 158.11 30.31V26.264'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        strokelinecap='round'
         strokeLinejoin='round'
       />
       <path
         d='M158.102 22.891H153.383C153.383 22.891 162.553 1.84599 197.901 11.155L195.338 6.29999C195.338 6.29999 205.864 8.05399 206.265 17.363C206.265 17.363 208.291 16.146 211.793 19.511L208.828 21.265C208.828 21.265 215.717 45.547 202.963 58.773'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        strokelinecap='round'
         strokeLinejoin='round'
       />
       <path
@@ -101,8 +98,8 @@ const BulbOMan = () => (
       <path
         d='M132.846 267.381C132.846 267.381 117.586 511.792 163.738 638.065'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        strokelinecap='round'
         strokeLinejoin='round'
       />
       <path
@@ -112,15 +109,15 @@ const BulbOMan = () => (
       <path
         d='M220.379 98.179C220.379 98.179 310.153 153.818 302.047 226.056C296.77 273.08 226.916 310.369 147.418 203.929C147.418 203.929 129.366 197.663 138.539 183.421C138.539 183.421 127.998 175.866 131.113 173.167C134.228 170.468 238.913 219.039 238.913 219.039L200.138 176.948'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        strokelinecap='round'
         strokeLinejoin='round'
       />
       <path
         d='M127.654 120.772C127.654 120.772 91.736 154.313 82.541 193.711C82.541 193.711 75.932 128.942 67.833 120.772C59.734 112.602 55.96 120.772 55.96 120.772C55.96 120.772 27.898 108.19 27.898 117.141C27.898 126.092 46.237 135.809 46.237 135.809C46.237 135.809 9.47401 311.709 112.324 265.877'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        strokelinecap='round'
         strokeLinejoin='round'
       />
       <path
@@ -130,107 +127,107 @@ const BulbOMan = () => (
       <path
         d='M50.999 18.108V0.75'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M71.729 24.846L81.933 10.804'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M84.54 42.483L101.053 37.112'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M84.54 64.28L101.053 69.643'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M17.458 64.28L0.945007 69.643'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M17.458 42.483L0.945007 37.112'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M30.268 24.846L20.064 10.804'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M62.785 95.515L38.933 93.245'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M60.48 101.201L41.239 99.368'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M57.013 105.49L44.704 104.323'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M55.703 84.366L59.503 58.294C59.5934 57.6756 59.8613 57.0967 60.2742 56.6275C60.6871 56.1583 61.2273 55.819 61.8292 55.6507C62.4311 55.4824 63.0689 55.4923 63.6652 55.6793C64.2616 55.8662 64.7909 56.2222 65.189 56.704L65.225 56.747C65.5727 57.1987 65.7701 57.7479 65.7896 58.3176C65.8091 58.8873 65.6497 59.4488 65.3337 59.9232C65.0177 60.3976 64.5611 60.7611 64.0279 60.9627C63.4947 61.1642 62.9118 61.1937 62.361 61.047'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M39.634 61.029C39.0832 61.1757 38.5003 61.1462 37.9671 60.9447C37.4339 60.7431 36.9773 60.3796 36.6613 59.9052C36.3453 59.4307 36.1859 58.8693 36.2054 58.2996C36.2249 57.7299 36.4223 57.1807 36.77 56.729L36.806 56.686C37.2041 56.2042 37.7334 55.8482 38.3298 55.6613C38.9262 55.4743 39.564 55.4644 40.1658 55.6327C40.7677 55.801 41.3079 56.1403 41.7208 56.6095C42.1337 57.0787 42.4016 57.6576 42.492 58.276L46.28 84.341'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M58.918 60.12L58.66 60.027C53.537 58.1179 47.8923 58.151 42.792 60.12V60.12'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
       <path
         d='M69.287 40.457C66.8815 37.2392 63.6499 34.7326 59.935 33.203'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        stroke-linecap='round'
       />
       <path
         d='M72.982 48.018C72.5434 46.4021 71.9238 44.8409 71.135 43.364'
         stroke='#131313'
-        strokeWidth='1.5'
-        strokeMiterlimit='10'
-        strokeLinecap='round'
+        stroke-width='1.5'
+        stroke-miterlimit='10'
+        strokelinecap='round'
       />
     </g>
     <defs>
@@ -239,6 +236,3 @@ const BulbOMan = () => (
       </clipPath>
     </defs>
   </svg>
-);
-
-export default BulbOMan;
