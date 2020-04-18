@@ -76,7 +76,7 @@ const TrackSection = () => {
     <section className='section text-hack-black flex flex-col justify-center items-center h-screen relative overflow-hidden'>
       <div className='w-screen h-20' />
       <div className='px-35'>
-        <Heading>Benefactors</Heading>
+        <Heading>Previous Benefactors</Heading>
         <div>
           <header className='font-bold text-2xl text-center my-12'>
             Our Sponsors
