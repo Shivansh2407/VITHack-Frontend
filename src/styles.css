@@ -421,6 +421,10 @@ img {
   background-color: #008DFF;
 }
 
+.hover\:bg-blue-600:hover {
+  background-color: #3182ce;
+}
+
 .border-black {
   border-color: #000;
 }
@@ -591,6 +595,14 @@ img {
 
 .ml-20 {
   margin-left: 5rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
+.mr-35 {
+  margin-right: 8.75rem;
 }
 
 .mt-40 {

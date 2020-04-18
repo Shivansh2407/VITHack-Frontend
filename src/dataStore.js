@@ -62,11 +62,19 @@ const TRACKS = [
   { id: 8, icon: '', name: 'Open Innovation' },
 ];
 
+// Help Us Out
+const HELP_TEXT = {
+  heading: 'Campus Ambassadors',
+  text:
+    'There’s more to college than a degree and grades, be a part of something big. VITHack isn’t just a college hackathon, it’s a phenomenon. Help us get the word out to your college and become a trendsetter!',
+};
+
 export {
   ABOUT_SUB_SECTIONS,
   PREVIOUS_FIGURES,
   SECTION_ANCHORS,
   LICENSE_KEY,
   NAV_LINKS,
+  HELP_TEXT,
   TRACKS,
 };
