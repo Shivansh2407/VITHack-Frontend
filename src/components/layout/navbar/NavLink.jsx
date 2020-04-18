@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const NavLink = ({ text, url, anchor }) => {
+const NavLink = ({ anchor, text, url }) => {
   return (
     <a
-      href={url}
       className='hover:text-hack-blue cursor-pointer'
       data-menuanchor={anchor}
+      href={url}
     >
       {text}
     </a>
   );
 };
 
-export default NavLink;
-
 NavLink.propTypes = {
+  anchor: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  anchor: PropTypes.string.isRequired,
 };
+
+export default NavLink;

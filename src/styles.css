@@ -499,10 +499,6 @@ img {
   height: 5rem;
 }
 
-.h-24 {
-  height: 6rem;
-}
-
 .h-32 {
   height: 8rem;
 }
@@ -620,6 +616,10 @@ img {
 
 .px-35 {
   padding-left: 8.75rem;
+  padding-right: 8.75rem;
+}
+
+.pr-35 {
   padding-right: 8.75rem;
 }
 
@@ -772,8 +772,4 @@ img {
 
 .z-30 {
   z-index: 30;
-}
-
-.z-40 {
-  z-index: 40;
 }
