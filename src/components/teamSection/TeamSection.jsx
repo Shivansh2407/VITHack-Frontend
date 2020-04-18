@@ -12,7 +12,7 @@ const TrackSection = () => (
   <section className='section text-hack-black flex flex-col justify-center items-center h-screen relative overflow-hidden cursor-default'>
     <div className='px-35'>
       <Heading>The Team</Heading>
-      <div className='text-center my-16 px-32 flex justify-evenly items-center flex-wrap'>
+      <div className='text-center flex justify-evenly items-center flex-wrap my-16 px-32'>
         {TEAM.map((member) => (
           <TeamCard
             position={member.position}

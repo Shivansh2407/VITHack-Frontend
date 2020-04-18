@@ -11,7 +11,7 @@ import { CONTACT_TEXTS } from '../../DataStore';
 
 const ContactSection = () => (
   <section
-    className='section text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden relative cursor-default'
+    className='section text-hack-black flex flex-col justify-center items-centerrelative overflow-hidden relative cursor-default mx-auto'
     id='contact-us'
   >
     <section className='px-35'>

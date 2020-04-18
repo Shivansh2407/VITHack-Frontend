@@ -18,7 +18,7 @@ const HelpUsOutSection = () => {
           <SubSection heading={HELP_TEXT.heading} text={HELP_TEXT.text} />
           <div>
             <button
-              className='bg-hack-blue hover:bg-blue-600 text-white py-2 px-8 rounded font-bold capitalize'
+              className='bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize py-2 px-8'
               type='button'
             >
               Learn More
