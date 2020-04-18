@@ -36,10 +36,10 @@ const App = () => (
           <>
             <LandingSection />
             <AboutSection />
-            {/* <TrackSection /> */}
+            <TrackSection />
             <HelpUsOutSection />
             <BenefactorSection />
-            {/* <TeamSection /> */}
+            <TeamSection />
             <ContactSection />
             <SubscribeSection />
           </>

@@ -7,10 +7,10 @@ const LICENSE_KEY = 'OPEN-SOURCE-GPLV3-LICENSE';
 const SECTION_ANCHORS = [
   'home',
   'about',
-  // 'tracks',
+  'tracks',
   'help',
   'benefactors',
-  // 'team',
+  'team',
   'contact',
   'subscribe',
 ];
@@ -41,4 +41,19 @@ const ABOUT_SUB_SECTIONS = [
   },
 ];
 
-export { ABOUT_SUB_SECTIONS, SECTION_ANCHORS, LICENSE_KEY, NAV_LINKS };
+const PREVIOUS_FIGURES = [
+  { id: 1, stat: '₹6.15L', text: 'Worth Prices', color: 'text-hack-yellow' },
+  { id: 2, stat: '2942', text: 'Registrations', color: 'text-hack-pink' },
+  { id: 3, stat: '20+', text: 'Involved States', color: 'text-hack-green' },
+  { id: 4, stat: 'INCUB ATION', text: 'Support', color: 'text-hack-yellow' },
+  { id: 5, stat: '36+', text: 'Paid Internships', color: 'text-hack-pink' },
+  { id: 6, stat: '36', text: 'Hours', color: 'text-hack-green' },
+];
+
+export {
+  ABOUT_SUB_SECTIONS,
+  PREVIOUS_FIGURES,
+  SECTION_ANCHORS,
+  LICENSE_KEY,
+  NAV_LINKS,
+};
