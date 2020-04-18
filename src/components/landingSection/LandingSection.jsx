@@ -9,11 +9,11 @@ import HeroCaption from './HeroCaption';
 const LandingSection = () => (
   <section className='section bg-white h-screen flex flex-col overflow-hidden cursor-default'>
     <div className='h-full flex justify-center items-center'>
-      <div className='w-1/3'>
+      <div className='w-1/3 hidden md:block'>
         <LandingGroup1 />
       </div>
       <HeroCaption />
-      <div className='w-1/3'>
+      <div className='w-1/3 hidden md:block'>
         <LandingGroup2 />
       </div>
     </div>

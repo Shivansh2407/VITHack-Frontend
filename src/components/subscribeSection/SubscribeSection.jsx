@@ -33,7 +33,11 @@ const SubscribeSection = () => (
     <br />
     <footer className='flex justify-center absolute bottom-0 w-screen mb-4'>
       {FOOTER_LINKS.map((link) => (
-        <a className='text-hack-blue hover:underline mx-4' href={link.link}>
+        <a
+          className='text-hack-blue hover:underline mx-4'
+          href={link.link}
+          key={link.id}
+        >
           {link.text}
         </a>
       ))}
