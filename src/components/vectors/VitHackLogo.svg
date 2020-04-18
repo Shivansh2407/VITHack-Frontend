@@ -1,33 +1,17 @@
-import React, { useEffect, useRef } from 'react';
-
-// Utility functions
-import animateVITHackLogo from '../../../utils/animateVITHackLogo';
-
-const VitHackLogo = () => {
-  const batch1 = useRef(null);
-  const batch2 = useRef(null);
-  const batch3 = useRef(null);
-  const batch4 = useRef(null);
-
-  useEffect(() => {
-    animateVITHackLogo(batch2, batch3, batch4);
-  }, []);
-
-  return (
-    <svg
-      width='110'
-      height='56'
+<svg
+      width='55'
+      height='28'
       viewBox='0 0 110 56'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >
-      <g fill='white' ref={batch1}>
+      <g fill='white'>
         <path
           d='M23.5035 55.4056V37.8707L35.1172 31.0754V28H15.8374L0 43.792V55.4056H23.5035Z'
           fill='#0085F4'
         />
       </g>
-      <g fill='white' ref={batch2} className='opacity-0'>
+      <g fill='white'>
         <path
           d='M27 39.6568L38.8588 32.8031L50.6151 39.6568V55.3742H27V39.6568Z'
           fill='#006CC4'
@@ -37,14 +21,14 @@ const VitHackLogo = () => {
           fill='#006CC4'
         />
       </g>
-      <g fill='white' ref={batch3} className='opacity-0'>
+      <g fill='white'>
         <path d='M54 15L66.917 22.4658V39.5436L54 46.8304V15Z' fill='#0085F4' />
         <path
           d='M54 50.6664L77.8777 37.101V55.4873H54V50.6664Z'
           fill='#0085F4'
         />
       </g>
-      <g fill='white' ref={batch4} className='opacity-0'>
+      <g fill='white'>
         <path
           d='M86.1782 55.4033H80.8781V37.0264H86.2219L104.551 55.4033H86.1782Z'
           fill='#006CC4'
@@ -55,7 +39,3 @@ const VitHackLogo = () => {
         />
       </g>
     </svg>
-  );
-};
-
-export default VitHackLogo;

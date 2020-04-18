@@ -1,7 +1,6 @@
 import React from 'react';
 
 // Components
-import Preloader from './Preloader';
 import NavLink from './NavLink';
 
 // Data
@@ -9,8 +8,7 @@ import { NAV_LINKS } from '../../../DataStore';
 
 const Navbar = () => (
   <>
-    <Preloader />
-    <nav className='w-full text-center bg-white text-black h-20 flex justify-center items-center fixed top-0 z-10 shadow-md'>
+    <nav className='w-full text-center bg-white text-black h-20 hidden sm:flex justify-center items-center fixed top-0 z-10 sm:shadow-md'>
       <div className='w-1/3 flex justify-between items-center hidden sm:flex -mr-4 md:mr-0 pl-8 md:pl-35'>
         {NAV_LINKS.slice(0, 2).map((navLink) => (
           <div key={navLink.id}>

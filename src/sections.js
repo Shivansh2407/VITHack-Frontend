@@ -8,6 +8,7 @@ import LandingSection from './components/landingSection/LandingSection';
 import TrackSection from './components/trackSection/TrackSection';
 import AboutSection from './components/aboutSection/AboutSection';
 import TeamSection from './components/teamSection/TeamSection';
+import Preloader from './components/layout/Preloader';
 
 export {
   BenefactorSection,
@@ -18,4 +19,5 @@ export {
   TrackSection,
   AboutSection,
   TeamSection,
+  Preloader,
 };

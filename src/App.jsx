@@ -16,6 +16,7 @@ import {
   TrackSection,
   AboutSection,
   TeamSection,
+  Preloader,
 } from './sections';
 
 // Data
@@ -27,6 +28,7 @@ import './styles.css';
 const App = () => (
   <>
     <Navbar />
+    <Preloader />
     <ReactFullpage
       scrollOverflow
       anchors={SECTION_ANCHORS}

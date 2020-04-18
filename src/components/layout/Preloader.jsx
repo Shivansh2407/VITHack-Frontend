@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 
 // Components
-import VitHackLogo from './VitHackLogo';
+import VitHackLogo from './navbar/VitHackLogo';
 
 // Utility functions
-import animatePreloader from '../../../utils/animatePreloader';
+import animatePreloader from '../../utils/animatePreloader';
 
 const Preloader = () => {
   const preLoaderScreen = useRef(null);
