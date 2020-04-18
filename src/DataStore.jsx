@@ -226,6 +226,22 @@ const CONTACT_TEXTS = [
   },
 ];
 
+// Footer
+const FOOTER_LINKS = [
+  { id: uuid(), text: 'FAQs', link: `${process.env.PUBLIC_URL}/#home` },
+  { id: uuid(), text: 'Brochure', link: `${process.env.PUBLIC_URL}/#home` },
+  {
+    id: uuid(),
+    text: 'Terms and Conditions',
+    link: `${process.env.PUBLIC_URL}/#home`,
+  },
+  {
+    id: uuid(),
+    text: 'Privacy Policy',
+    link: `${process.env.PUBLIC_URL}/#home`,
+  },
+];
+
 export {
   ABOUT_SUB_SECTIONS,
   PREVIOUS_FIGURES,
@@ -233,6 +249,7 @@ export {
   CONTACT_TEXTS,
   COLLABORATORS,
   CASE_PARTNERS,
+  FOOTER_LINKS,
   LICENSE_KEY,
   NAV_LINKS,
   HELP_TEXT,

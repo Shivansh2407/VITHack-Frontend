@@ -13,6 +13,9 @@ module.exports = {
         'hack-green': '#BDE321',
         'hack-black': '#131313',
       },
+      borderColor: {
+        'hack-blue': '#008DFF',
+      },
       textColor: {
         'hack-blue': '#008DFF',
         'hack-yellow': '#FFBD3B',
