@@ -143,6 +143,20 @@ const COLLABORATORS = [
   },
 ];
 
+// Team
+const TEAM = [
+  { id: 1, image: '', name: 'John Doe', position: 'Position' },
+  { id: 2, image: '', name: 'John Doe', position: 'Position' },
+  { id: 3, image: '', name: 'John Doe', position: 'Position' },
+  { id: 4, image: '', name: 'John Doe', position: 'Position' },
+  { id: 5, image: '', name: 'John Doe', position: 'Position' },
+  { id: 6, image: '', name: 'John Doe', position: 'Position' },
+  { id: 7, image: '', name: 'John Doe', position: 'Position' },
+  { id: 8, image: '', name: 'John Doe', position: 'Position' },
+  { id: 9, image: '', name: 'John Doe', position: 'Position' },
+  { id: 10, image: '', name: 'John Doe', position: 'Position' },
+];
+
 export {
   ABOUT_SUB_SECTIONS,
   PREVIOUS_FIGURES,
@@ -154,4 +168,5 @@ export {
   HELP_TEXT,
   SPONSORS,
   TRACKS,
+  TEAM,
 };
