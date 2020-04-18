@@ -4,7 +4,7 @@
     viewBox='0 0 304 653'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
-    class='absolute right-0 top-0 mt-40 mr-20'
+    class='hidden md:block absolute right-0 top-0 mt-40 mr-20'
   >
     <g clipPath='url(#bom0)'>
       <path

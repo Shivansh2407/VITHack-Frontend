@@ -920,8 +920,26 @@ img {
     margin-right: 1.5rem;
   }
 
+  .sm\:p-0 {
+    padding: 0;
+  }
+
+  .sm\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .sm\:px-35 {
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
+  }
+
   .sm\:shadow-md {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
   }
 
   .sm\:w-1\/3 {
@@ -935,6 +953,14 @@ img {
     display: block;
   }
 
+  .md\:flex-no-wrap {
+    flex-wrap: nowrap;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
   .md\:mr-0 {
     margin-right: 0;
   }
@@ -943,11 +969,19 @@ img {
     margin-left: 0;
   }
 
+  .md\:p-0 {
+    padding: 0;
+  }
+
   .md\:pr-35 {
     padding-right: 8.75rem;
   }
 
   .md\:pl-35 {
     padding-left: 8.75rem;
+  }
+
+  .md\:w-7\/12 {
+    width: 58.333333%;
   }
 }

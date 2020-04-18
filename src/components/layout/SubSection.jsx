@@ -7,7 +7,7 @@ const SubSection = ({ text, heading, showLess }) => {
   const handleClick = () => setShowText(!showText);
 
   return (
-    <div className='w-7/12 my-12'>
+    <div className='w-full md:w-7/12 my-12'>
       <h4 className='text-2xl font-bold mt-8'>{heading}</h4>
       <p className='my-4'>
         {showText ? text : text.replace(/^(.{330}[^\s]*).*/, '$1')}

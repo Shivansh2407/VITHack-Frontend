@@ -4,11 +4,11 @@ import React from 'react';
 import { PREVIOUS_FIGURES } from '../../DataStore';
 
 const PreviousFigures = () => (
-  <div className='w-full px-35'>
-    <h4 className='text-2xl font-bold capitalize mt-8'>
+  <div className='w-full px-4 sm:px-35'>
+    <h4 className='text-2xl font-bold capitalize mt-8 px-4 sm:p-0'>
       Previous Edition Statistics
     </h4>
-    <div className='flex justify-between items-stretch my-8'>
+    <div className='flex flex-wrap md:flex-no-wrap justify-center md:justify-between items-stretch my-8 sm:px-20 md:p-0'>
       {PREVIOUS_FIGURES.map((info, index) => (
         <div
           key={info.id}
@@ -16,7 +16,7 @@ const PreviousFigures = () => (
         >
           <div
             className={`text-center ${
-              index === 3 ? 'text-3xl leading-8' : 'text-5xl'
+              index === 3 ? 'text-3xl leading-8' : 'text-4xl sm:text-5xl'
             } ${info.color}`}
           >
             {info.stat}
