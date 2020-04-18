@@ -50,10 +50,23 @@ const PREVIOUS_FIGURES = [
   { id: 6, stat: '36', text: 'Hours', color: 'text-hack-green' },
 ];
 
+// Track Section
+const TRACKS = [
+  { id: 1, icon: '', name: 'Healthcare' },
+  { id: 2, icon: '', name: 'Fintech' },
+  { id: 3, icon: '', name: 'Agriculture' },
+  { id: 4, icon: '', name: 'Education' },
+  { id: 5, icon: '', name: 'Crisis Response' },
+  { id: 6, icon: '', name: 'Cyber Security' },
+  { id: 7, icon: '', name: 'Mobility' },
+  { id: 8, icon: '', name: 'Open Innovation' },
+];
+
 export {
   ABOUT_SUB_SECTIONS,
   PREVIOUS_FIGURES,
   SECTION_ANCHORS,
   LICENSE_KEY,
   NAV_LINKS,
+  TRACKS,
 };

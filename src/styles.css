@@ -429,6 +429,10 @@ img {
   border-radius: 0.125rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -686,6 +690,18 @@ img {
 
 .text-hack-blue {
   color: #008DFF;
+}
+
+.text-hack-yellow {
+  color: #FFBD3B;
+}
+
+.text-hack-pink {
+  color: #EA3883;
+}
+
+.text-hack-green {
+  color: #BDE321;
 }
 
 .text-hack-black {
