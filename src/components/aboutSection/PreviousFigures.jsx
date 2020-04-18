@@ -15,7 +15,7 @@ const PreviousFigures = () => (
           className='flex flex-col justify-end items-center w-40'
         >
           <div
-            className={`text-center ${
+            className={`text-center mt-4 sm:m-0 ${
               index === 3 ? 'text-3xl leading-8' : 'text-4xl sm:text-5xl'
             } ${info.color}`}
           >
