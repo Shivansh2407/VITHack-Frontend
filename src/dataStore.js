@@ -69,12 +69,89 @@ const HELP_TEXT = {
     'There’s more to college than a degree and grades, be a part of something big. VITHack isn’t just a college hackathon, it’s a phenomenon. Help us get the word out to your college and become a trendsetter!',
 };
 
+// Benefactors
+const SPONSORS = [
+  {
+    id: 1,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/ChallengeRocketLogo.png`,
+  },
+  {
+    id: 2,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/ZeitLogo.png`,
+  },
+  {
+    id: 3,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/GithubLogo.png`,
+  },
+];
+
+const CASE_PARTNERS = [
+  {
+    id: 1,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/VicaraLogo.png`,
+  },
+  {
+    id: 2,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/InversionLogo.png`,
+  },
+  {
+    id: 3,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/ServifyLogo.png`,
+  },
+  {
+    id: 4,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/DeeviaLogo.png`,
+  },
+  {
+    id: 5,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/IncubationLogo.png`,
+  },
+  {
+    id: 6,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/AsylumsLogo.png`,
+  },
+  {
+    id: 7,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/CrowderaLogo.png`,
+  },
+  {
+    id: 8,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/HoneywellLogo.png`,
+  },
+  {
+    id: 9,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/HPLogo.png`,
+  },
+];
+
+const COLLABORATORS = [
+  {
+    id: 1,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/EDLogo.png`,
+  },
+  {
+    id: 2,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/TeknoLogo.png`,
+  },
+  {
+    id: 3,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/YourStoryLogo.png`,
+  },
+  {
+    id: 3,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/ItsaiLogo.png`,
+  },
+];
+
 export {
   ABOUT_SUB_SECTIONS,
   PREVIOUS_FIGURES,
   SECTION_ANCHORS,
+  COLLABORATORS,
+  CASE_PARTNERS,
   LICENSE_KEY,
   NAV_LINKS,
   HELP_TEXT,
+  SPONSORS,
   TRACKS,
 };
