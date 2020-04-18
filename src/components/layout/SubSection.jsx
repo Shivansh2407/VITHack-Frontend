@@ -33,5 +33,9 @@ SubSection.propTypes = {
     PropTypes.objectOf(PropTypes.any),
   ]).isRequired,
   heading: PropTypes.string.isRequired,
-  showLess: PropTypes.bool.isRequired,
+  showLess: PropTypes.bool,
+};
+
+SubSection.defaultProps = {
+  showLess: false,
 };
