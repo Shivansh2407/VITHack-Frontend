@@ -1,5 +1,8 @@
 // All constant data/text is imported from this file for a scalable workflow
 
+import React from 'react';
+import { v4 as uuid } from 'uuid';
+
 // Fullpage.js License:
 const LICENSE_KEY = 'OPEN-SOURCE-GPLV3-LICENSE';
 
@@ -17,23 +20,23 @@ const SECTION_ANCHORS = [
 
 // Nav Links:
 const NAV_LINKS = [
-  { id: 1, text: 'Blog', url: '/#home', anchor: 'home' },
-  { id: 2, text: 'Help us Out', url: '/#help', anchor: 'help' },
-  { id: 3, text: 'Tracks', url: '/#tracks', anchor: 'tracks' },
-  { id: 4, text: 'Contact Us', url: '/#contact', anchor: 'contact' },
+  { id: uuid(), text: 'Blog', url: '/#home', anchor: 'home' },
+  { id: uuid(), text: 'Help us Out', url: '/#help', anchor: 'help' },
+  { id: uuid(), text: 'Tracks', url: '/#tracks', anchor: 'tracks' },
+  { id: uuid(), text: 'Contact Us', url: '/#contact', anchor: 'contact' },
 ];
 
 // About Section
 const ABOUT_SUB_SECTIONS = [
   {
-    id: 1,
+    id: uuid(),
     heading: 'About VIT',
     text:
       'Vellore Institute of Technology, Vellore, is a profound engineering university in India. VIT is well known for its rich diversity in nationality and culture in its students. It encourages aspiring innovators and researchers to work towards technical development. A technical fest, namely, graVITas is conducted here to portray these technical aficionados on an official forum with experts for advice and inspiration. Being a celebrated college it demands a humungous footfall in graVITas.',
     showLess: true,
   },
   {
-    id: 2,
+    id: uuid(),
     heading: 'Why VIT Hack?',
     text:
       'VIT Hack aims to provide an arena for participants to contribute their ideas as solutions to real-world problems. Being a global event, it aims to gain from the unification of various cultures leading to various solutions. Problem statements will be driven towards social causes to help channelize the participants’ thoughts into a revolutionary solution. VIT Hack focuses on bringing leading industry experts to help ignite innovation. All that we wish is you bring your best ideas, your confidence and your willingness to have a great time.',
@@ -42,24 +45,44 @@ const ABOUT_SUB_SECTIONS = [
 ];
 
 const PREVIOUS_FIGURES = [
-  { id: 1, stat: '₹6.15L', text: 'Worth Prices', color: 'text-hack-yellow' },
-  { id: 2, stat: '2942', text: 'Registrations', color: 'text-hack-pink' },
-  { id: 3, stat: '20+', text: 'Involved States', color: 'text-hack-green' },
-  { id: 4, stat: 'INCUB ATION', text: 'Support', color: 'text-hack-yellow' },
-  { id: 5, stat: '36+', text: 'Paid Internships', color: 'text-hack-pink' },
-  { id: 6, stat: '36', text: 'Hours', color: 'text-hack-green' },
+  {
+    id: uuid(),
+    stat: '₹6.15L',
+    text: 'Worth Prices',
+    color: 'text-hack-yellow',
+  },
+  { id: uuid(), stat: '2942', text: 'Registrations', color: 'text-hack-pink' },
+  {
+    id: uuid(),
+    stat: '20+',
+    text: 'Involved States',
+    color: 'text-hack-green',
+  },
+  {
+    id: uuid(),
+    stat: 'INCUB ATION',
+    text: 'Support',
+    color: 'text-hack-yellow',
+  },
+  {
+    id: uuid(),
+    stat: '36+',
+    text: 'Paid Internships',
+    color: 'text-hack-pink',
+  },
+  { id: uuid(), stat: '36', text: 'Hours', color: 'text-hack-green' },
 ];
 
 // Track Section
 const TRACKS = [
-  { id: 1, icon: '', name: 'Healthcare' },
-  { id: 2, icon: '', name: 'Fintech' },
-  { id: 3, icon: '', name: 'Agriculture' },
-  { id: 4, icon: '', name: 'Education' },
-  { id: 5, icon: '', name: 'Crisis Response' },
-  { id: 6, icon: '', name: 'Cyber Security' },
-  { id: 7, icon: '', name: 'Mobility' },
-  { id: 8, icon: '', name: 'Open Innovation' },
+  { id: uuid(), icon: '', name: 'Healthcare' },
+  { id: uuid(), icon: '', name: 'Fintech' },
+  { id: uuid(), icon: '', name: 'Agriculture' },
+  { id: uuid(), icon: '', name: 'Education' },
+  { id: uuid(), icon: '', name: 'Crisis Response' },
+  { id: uuid(), icon: '', name: 'Cyber Security' },
+  { id: uuid(), icon: '', name: 'Mobility' },
+  { id: uuid(), icon: '', name: 'Open Innovation' },
 ];
 
 // Help Us Out
@@ -72,95 +95,142 @@ const HELP_TEXT = {
 // Benefactors
 const SPONSORS = [
   {
-    id: 1,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/ChallengeRocketLogo.png`,
   },
   {
-    id: 2,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/ZeitLogo.png`,
   },
   {
-    id: 3,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/GithubLogo.png`,
   },
 ];
 
 const CASE_PARTNERS = [
   {
-    id: 1,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/VicaraLogo.png`,
   },
   {
-    id: 2,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/InversionLogo.png`,
   },
   {
-    id: 3,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/ServifyLogo.png`,
   },
   {
-    id: 4,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/DeeviaLogo.png`,
   },
   {
-    id: 5,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/IncubationLogo.png`,
   },
   {
-    id: 6,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/AsylumsLogo.png`,
   },
   {
-    id: 7,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/CrowderaLogo.png`,
   },
   {
-    id: 8,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/HoneywellLogo.png`,
   },
   {
-    id: 9,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/HPLogo.png`,
   },
 ];
 
 const COLLABORATORS = [
   {
-    id: 1,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/EDLogo.png`,
   },
   {
-    id: 2,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/TeknoLogo.png`,
   },
   {
-    id: 3,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/YourStoryLogo.png`,
   },
   {
-    id: 3,
+    id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/ItsaiLogo.png`,
   },
 ];
 
 // Team
 const TEAM = [
-  { id: 1, image: '', name: 'John Doe', position: 'Position' },
-  { id: 2, image: '', name: 'John Doe', position: 'Position' },
-  { id: 3, image: '', name: 'John Doe', position: 'Position' },
-  { id: 4, image: '', name: 'John Doe', position: 'Position' },
-  { id: 5, image: '', name: 'John Doe', position: 'Position' },
-  { id: 6, image: '', name: 'John Doe', position: 'Position' },
-  { id: 7, image: '', name: 'John Doe', position: 'Position' },
-  { id: 8, image: '', name: 'John Doe', position: 'Position' },
-  { id: 9, image: '', name: 'John Doe', position: 'Position' },
-  { id: 10, image: '', name: 'John Doe', position: 'Position' },
+  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
+  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
+  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
+  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
+  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
+  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
+  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
+  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
+  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
+  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
+];
+
+// Contact Section
+const CONTACT_TEXTS = [
+  {
+    id: uuid(),
+    heading: 'Participants',
+    text: (
+      <>
+        If you have any queries regarding VITHack, contact us through{' '}
+        <a
+          href='mailto:participants@vithack.in'
+          className='text-hack-blue hover:underline'
+        >
+          email
+        </a>
+        .
+        <br />
+        <br />
+        Feel free to reach out to us and we will get back to you as soon as
+        possible.
+      </>
+    ),
+    showLess: false,
+  },
+  {
+    id: uuid(),
+    heading: 'Companies',
+    text: (
+      <>
+        If you’re interested in collaborating with us and being a part of one of
+        the largest hackathons in India, contact us through{' '}
+        <a
+          href='mailto:collaborations@vithack.in'
+          className='text-hack-blue hover:underline'
+        >
+          email
+        </a>
+        .
+        <br />
+        <br />
+        We’d love to have you on board and do something amazing together.
+      </>
+    ),
+    showLess: false,
+  },
 ];
 
 export {
   ABOUT_SUB_SECTIONS,
   PREVIOUS_FIGURES,
   SECTION_ANCHORS,
+  CONTACT_TEXTS,
   COLLABORATORS,
   CASE_PARTNERS,
   LICENSE_KEY,

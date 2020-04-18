@@ -1,9 +1,9 @@
 import React from 'react';
 
 // Components
-import FacebookIcon from './FacebookIcon';
-import InstagramIcon from './InstagramIcon';
-import LinkedinIcon from './LinkedinIcon';
+import { ReactComponent as InstagramIcon } from '../vectors/InstagramLogo.svg';
+import { ReactComponent as FacebookIcon } from '../vectors/FacebookLogo.svg';
+import { ReactComponent as LinkedinIcon } from '../vectors/LinkedinLogo.svg';
 
 const SocialTray = () => {
   return (

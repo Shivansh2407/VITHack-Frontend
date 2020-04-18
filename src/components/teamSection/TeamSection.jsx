@@ -6,7 +6,7 @@ import Heading from '../layout/Heading';
 import TeamCard from './TeamCard';
 
 // Data
-import { TEAM } from '../../dataStore';
+import { TEAM } from '../../DataStore';
 
 const TrackSection = () => (
   <section className='section text-hack-black flex flex-col justify-center items-center h-screen relative overflow-hidden cursor-default'>

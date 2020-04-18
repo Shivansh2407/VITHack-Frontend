@@ -1,14 +1,10 @@
-import React from 'react';
-
-const FacebookIcon = () => {
-  return (
-    <svg
+<svg
       width='30'
       height='30'
       viewBox='0 0 30 30'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className='cursor-pointer mr-4'
+      class='cursor-pointer mr-4'
     >
       <g clipPath='url(#fb)'>
         <path
@@ -22,7 +18,3 @@ const FacebookIcon = () => {
         </clipPath>
       </defs>
     </svg>
-  );
-};
-
-export default FacebookIcon;

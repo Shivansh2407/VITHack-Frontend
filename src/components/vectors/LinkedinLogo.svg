@@ -1,14 +1,10 @@
-import React from 'react';
-
-const LinkedinIcon = () => {
-  return (
-    <svg
+<svg
       width='30'
       height='30'
       viewBox='0 0 30 30'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className='cursor-pointer'
+      class='cursor-pointer'
     >
       <g clipPath='url(#lin)'>
         <path
@@ -22,7 +18,3 @@ const LinkedinIcon = () => {
         </clipPath>
       </defs>
     </svg>
-  );
-};
-
-export default LinkedinIcon;

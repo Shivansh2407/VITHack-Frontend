@@ -19,7 +19,7 @@ import {
 } from './sections';
 
 // Data
-import { SECTION_ANCHORS, LICENSE_KEY } from './dataStore';
+import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
 
 // Stylesheets
 import './styles.css';

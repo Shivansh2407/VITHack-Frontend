@@ -7,7 +7,7 @@ import SubSection from '../layout/SubSection';
 import Heading from '../layout/Heading';
 
 // Data
-import { ABOUT_SUB_SECTIONS } from '../../dataStore';
+import { ABOUT_SUB_SECTIONS } from '../../DataStore';
 
 const AboutSection = () => {
   return (

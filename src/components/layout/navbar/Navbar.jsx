@@ -5,7 +5,7 @@ import Preloader from './Preloader';
 import NavLink from './NavLink';
 
 // Data
-import { NAV_LINKS } from '../../../dataStore';
+import { NAV_LINKS } from '../../../DataStore';
 
 const Navbar = () => (
   <>

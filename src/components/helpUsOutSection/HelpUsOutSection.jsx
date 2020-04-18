@@ -6,7 +6,7 @@ import SubSection from '../layout/SubSection';
 import Heading from '../layout/Heading';
 
 // Data
-import { HELP_TEXT } from '../../dataStore';
+import { HELP_TEXT } from '../../DataStore';
 
 const HelpUsOutSection = () => {
   return (

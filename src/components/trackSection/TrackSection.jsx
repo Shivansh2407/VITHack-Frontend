@@ -5,7 +5,7 @@ import Heading from '../layout/Heading';
 import TrackCard from './TrackCard';
 
 // Data
-import { TRACKS } from '../../dataStore';
+import { TRACKS } from '../../DataStore';
 
 const TrackSection = () => (
   <section className='section text-hack-black flex flex-col justify-center items-center h-screen relative overflow-hidden cursor-default'>

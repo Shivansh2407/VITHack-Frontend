@@ -8,7 +8,7 @@ import BenefactorCard from './BenefactorCard';
 import Heading from '../layout/Heading';
 
 // Data
-import { CASE_PARTNERS, COLLABORATORS, SPONSORS } from '../../dataStore';
+import { CASE_PARTNERS, COLLABORATORS, SPONSORS } from '../../DataStore';
 
 const TrackSection = () => (
   <section className='section text-hack-black flex flex-col justify-center items-center h-screen relative overflow-hidden cursor-default'>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Data
-import { PREVIOUS_FIGURES } from '../../dataStore';
+import { PREVIOUS_FIGURES } from '../../DataStore';
 
 const PreviousFigures = () => {
   return (
