@@ -9,9 +9,11 @@ import { TRACKS } from '../../DataStore';
 
 const TrackSection = () => (
   <section className='section text-hack-black flex flex-col justify-center items-center h-screen relative overflow-hidden cursor-default'>
-    <div className='px-35'>
-      <Heading>Tracks</Heading>
-      <div className='text-center flex justify-center items-center flex-wrap my-12 px-4'>
+    <div className='sm:px-35'>
+      <div className='px-8 sm:p-0'>
+        <Heading>Tracks</Heading>
+      </div>
+      <div className='text-center flex justify-center items-center flex-wrap my-12 sm:px-4'>
         {TRACKS.map((track) => (
           <TrackCard name={track.name} key={track.id} />
         ))}
@@ -25,6 +27,7 @@ const TrackSection = () => (
         </button>
       </div>
     </div>
+    <div className='block sm:hidden w-screen h-20' />
   </section>
 );
 

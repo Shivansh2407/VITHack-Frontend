@@ -461,6 +461,10 @@ img {
   cursor: pointer;
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -568,11 +572,6 @@ img {
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
-}
-
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
 }
 
 .my-16 {
@@ -924,6 +923,11 @@ img {
     margin: 0;
   }
 
+  .sm\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
   .sm\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -934,6 +938,11 @@ img {
 
   .sm\:p-0 {
     padding: 0;
+  }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .sm\:px-20 {
