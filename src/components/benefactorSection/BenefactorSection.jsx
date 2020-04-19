@@ -12,14 +12,16 @@ import { CASE_PARTNERS, COLLABORATORS, SPONSORS } from '../../DataStore';
 
 const TrackSection = () => (
   <section className='section text-hack-black flex flex-col justify-center items-center h-screen relative overflow-hidden cursor-default'>
-    <div className='w-screen h-20' />
-    <div className='px-35'>
-      <Heading>Previous Benefactors</Heading>
+    <div className='hidden sm:block w-screen h-20' />
+    <div className='sm:px-35'>
+      <div className='px-8 sm:p-0'>
+        <Heading>Previous Benefactors</Heading>
+      </div>
       <div>
         <header className='font-bold text-2xl text-center my-12'>
           Our Sponsors
         </header>
-        <div className='flex flex-wrap justify-center items-center'>
+        <div className='px-4 sm:p-0 flex flex-wrap justify-center items-center'>
           {SPONSORS.map((sponsor) => (
             <BenefactorCard imageSrc={sponsor.imageSrc} key={sponsor.id} />
           ))}
@@ -35,7 +37,7 @@ const TrackSection = () => (
         <header className='font-bold text-2xl text-center my-12'>
           Our Collaborators
         </header>
-        <div className='flex flex-wrap justify-center items-center px-40'>
+        <div className='flex flex-wrap justify-center items-center md:px-40'>
           {COLLABORATORS.map((collaborator) => (
             <BenefactorCard
               imageSrc={collaborator.imageSrc}
@@ -45,7 +47,7 @@ const TrackSection = () => (
         </div>
       </div>
     </div>
-    <div className='w-screen h-32' />
+    <div className='hidden sm:block w-screen h-32' />
     <SponsorMan />
     <CaseLady />
     <CollabMan />

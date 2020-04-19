@@ -584,11 +584,6 @@ img {
   margin-right: 5rem;
 }
 
-.mx-24 {
-  margin-left: 6rem;
-  margin-right: 6rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -715,11 +710,6 @@ img {
 .px-35 {
   padding-left: 8.75rem;
   padding-right: 8.75rem;
-}
-
-.px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
 }
 
 .pr-8 {
@@ -924,6 +914,11 @@ img {
     margin-right: 3rem;
   }
 
+  .sm\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   .sm\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -982,6 +977,11 @@ img {
     height: 8rem;
   }
 
+  .md\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
   .md\:mr-0 {
     margin-right: 0;
   }
@@ -1000,6 +1000,11 @@ img {
 
   .md\:p-0 {
     padding: 0;
+  }
+
+  .md\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .md\:pr-35 {
