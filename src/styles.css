@@ -788,6 +788,10 @@ img {
   color: #008DFF;
 }
 
+.text-base {
+  font-size: 1.125rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
 }

@@ -17,7 +17,7 @@ const Preloader = () => {
   return (
     <>
       <div
-        className='w-screen h-screen fixed inset-0 bg-white z-20 flex justify-center items-center'
+        className='w-screen h-screen fixed inset-0 bg-white z-20 flex justify-center items-center text-base'
         ref={preLoaderScreen}
       />
       <a

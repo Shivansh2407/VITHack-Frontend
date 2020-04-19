@@ -8,7 +8,7 @@ import { ReactComponent as Jack } from '../vectors/Jack.svg';
 import { FOOTER_LINKS } from '../../DataStore';
 
 const SubscribeSection = () => (
-  <section className='section text-hack-black flex flex-col justify-center items-center relative overflow-hidden cursor-default mx-auto'>
+  <section className='section text-hack-black flex flex-col justify-center items-center relative overflow-hidden cursor-default text-base mx-auto'>
     <div className='hidden sm:block w-screen h-32' />
     <section className='flex justify-center items-center -mt-8'>
       <div className='sm:w-2/3 md:w-1/2 text-2xl font-bold flex items-center text-center mb-16 px-8 sm:px-20'>

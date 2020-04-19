@@ -24,6 +24,7 @@ import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
 
 // Stylesheets
 import './styles.css';
+import './App.css';
 
 const App = () => (
   <>

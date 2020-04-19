@@ -8,7 +8,7 @@ import HeroCaption from './HeroCaption';
 import { ReactComponent as VitHackLogo } from '../vectors/VitHackLogo.svg';
 
 const LandingSection = () => (
-  <section className='section bg-white h-screen flex flex-col overflow-hidden cursor-default'>
+  <section className='section bg-white h-screen flex flex-col overflow-hidden cursor-default text-base'>
     <a
       className='sm:hidden cursor-pointer absolute z-30'
       href='/#home'
