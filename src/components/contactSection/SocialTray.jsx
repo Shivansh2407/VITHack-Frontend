@@ -7,7 +7,7 @@ import { ReactComponent as LinkedinIcon } from '../vectors/LinkedinLogo.svg';
 
 const SocialTray = () => {
   return (
-    <div className='flex justify-start items-center w-full pl-35'>
+    <div className='flex justify-start items-center w-full pl-8 sm:pl-35'>
       <FacebookIcon />
       <InstagramIcon />
       <LinkedinIcon />

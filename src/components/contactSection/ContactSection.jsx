@@ -14,13 +14,13 @@ const ContactSection = () => (
     className='section text-hack-black flex flex-col justify-center items-centerrelative overflow-hidden relative cursor-default mx-auto'
     id='contact-us'
   >
-    <section className='px-35'>
+    <section className='px-8 sm:px-35'>
       <Heading>Contact Us</Heading>
-      <div className='flex justify-start'>
+      <div className='flex flex-col md:flex-row justify-center md:justify-start'>
         {CONTACT_TEXTS.map((text, index) => (
           <React.Fragment key={text.id}>
             {index === 1 && (
-              <div className='w-1/2 mx-20'>
+              <div className='sm:w-1/2 mx-auto md:mx-20'>
                 <ContactGuys />
               </div>
             )}
@@ -34,6 +34,7 @@ const ContactSection = () => (
       </div>
     </section>
     <SocialTray />
+    <div className='block md:hidden w-screen h-20' />
   </section>
 );
 
