@@ -13,9 +13,9 @@ import {
   HelpUsOutSection,
   ContactSection,
   LandingSection,
-  TrackSection,
+  // TrackSection,
   AboutSection,
-  TeamSection,
+  // TeamSection,
   Preloader,
 } from './sections';
 
@@ -38,10 +38,10 @@ const App = () => (
           <>
             <LandingSection />
             <AboutSection />
-            <TrackSection />
+            {/* <TrackSection /> */}
             <HelpUsOutSection />
             <BenefactorSection />
-            <TeamSection />
+            {/* <TeamSection /> */}
             <ContactSection />
             <SubscribeSection />
           </>

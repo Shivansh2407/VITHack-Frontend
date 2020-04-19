@@ -18,7 +18,7 @@ const HelpUsOutSection = () => {
           <SubSection heading={HELP_TEXT.heading} text={HELP_TEXT.text} />
           <div className='flex justify-center sm:justify-start'>
             <button
-              className='bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize py-2 px-8'
+              className='bg-hack-blue cursor-not-allowed opacity-50 text-white rounded font-bold capitalize py-2 px-8'
               type='button'
             >
               Learn More

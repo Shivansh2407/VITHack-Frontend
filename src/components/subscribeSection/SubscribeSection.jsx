@@ -24,7 +24,7 @@ const SubscribeSection = () => (
         name='email'
       />
       <button
-        className='bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize  py-2 px-8'
+        className='bg-hack-blue cursor-not-allowed opacity-50 text-white rounded font-bold capitalize  py-2 px-8'
         type='button'
       >
         Subscribe
@@ -34,7 +34,7 @@ const SubscribeSection = () => (
     <footer className='flex flex-row flex-wrap justify-center absolute bottom-0 w-screen mb-4 px-8 sm:p-0'>
       {FOOTER_LINKS.map((link) => (
         <a
-          className='text-hack-blue hover:underline text-center mx-4'
+          className='text-hack-blue cursor-not-allowed opacity-50 text-center mx-4'
           href={link.link}
           key={link.id}
         >

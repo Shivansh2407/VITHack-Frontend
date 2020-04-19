@@ -10,17 +10,22 @@ const LICENSE_KEY = 'OPEN-SOURCE-GPLV3-LICENSE';
 const SECTION_ANCHORS = [
   'home',
   'about',
-  'tracks',
+  // 'tracks',
   'help',
   'benefactors',
-  'team',
+  // 'team',
   'contact',
   'subscribe',
 ];
 
 // Nav Links:
 const NAV_LINKS = [
-  { id: uuid(), text: 'Blog', url: '/#home', anchor: 'home' },
+  {
+    id: uuid(),
+    text: 'Blog',
+    url: 'https://medium.com/@VIT_Hack',
+    anchor: 'home',
+  },
   { id: uuid(), text: 'Help us Out', url: '/#help', anchor: 'help' },
   { id: uuid(), text: 'Tracks', url: '/#tracks', anchor: 'tracks' },
   { id: uuid(), text: 'Contact Us', url: '/#contact', anchor: 'contact' },

@@ -461,6 +461,10 @@ img {
   cursor: pointer;
 }
 
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
 .block {
   display: block;
 }
@@ -666,6 +670,10 @@ img {
 
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .focus\:outline-none:focus {
