@@ -577,6 +577,11 @@ img {
   margin-bottom: 2rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -885,6 +890,10 @@ img {
     justify-content: flex-start;
   }
 
+  .sm\:h-40 {
+    height: 10rem;
+  }
+
   .sm\:m-0 {
     margin: 0;
   }
@@ -941,6 +950,10 @@ img {
 
   .sm\:text-5xl {
     font-size: 3rem;
+  }
+
+  .sm\:w-40 {
+    width: 10rem;
   }
 
   .sm\:w-1\/2 {
