@@ -11,12 +11,12 @@ import { HELP_TEXT } from '../../DataStore';
 const HelpUsOutSection = () => {
   return (
     <section className='section text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden cursor-default'>
-      <div className='w-screen h-20' />
+      <div className='hidden sm:block w-screen h-20' />
       <div className='flex justify-start items-center'>
-        <section className='pl-35'>
+        <section className='px-8 sm:px-35 md:pl-35'>
           <Heading>Help Us Out</Heading>
           <SubSection heading={HELP_TEXT.heading} text={HELP_TEXT.text} />
-          <div>
+          <div className='flex justify-center sm:justify-start'>
             <button
               className='bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize py-2 px-8'
               type='button'
@@ -26,7 +26,7 @@ const HelpUsOutSection = () => {
           </div>
         </section>
       </div>
-      <div className='w-screen h-32' />
+      <div className='w-screen h-20 md:h-32' />
       <SneekPeek />
     </section>
   );

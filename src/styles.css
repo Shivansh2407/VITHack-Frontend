@@ -638,14 +638,6 @@ img {
   margin-left: 5rem;
 }
 
-.mb-32 {
-  margin-bottom: 8rem;
-}
-
-.mr-35 {
-  margin-right: 8.75rem;
-}
-
 .mt-40 {
   margin-top: 10rem;
 }
@@ -919,6 +911,10 @@ img {
     flex-direction: row;
   }
 
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
   .sm\:m-0 {
     margin: 0;
   }
@@ -982,12 +978,24 @@ img {
     justify-content: space-between;
   }
 
+  .md\:h-32 {
+    height: 8rem;
+  }
+
   .md\:mr-0 {
     margin-right: 0;
   }
 
   .md\:ml-0 {
     margin-left: 0;
+  }
+
+  .md\:mb-32 {
+    margin-bottom: 8rem;
+  }
+
+  .md\:mr-35 {
+    margin-right: 8.75rem;
   }
 
   .md\:p-0 {
@@ -1000,6 +1008,10 @@ img {
 
   .md\:pl-35 {
     padding-left: 8.75rem;
+  }
+
+  .md\:absolute {
+    position: absolute;
   }
 
   .md\:w-7\/12 {
