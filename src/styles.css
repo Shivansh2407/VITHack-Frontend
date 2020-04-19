@@ -702,11 +702,6 @@ img {
   padding-right: 5rem;
 }
 
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
 .px-35 {
   padding-left: 8.75rem;
   padding-right: 8.75rem;
@@ -939,6 +934,11 @@ img {
   .sm\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .sm\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .sm\:px-35 {
