@@ -8,7 +8,7 @@ const PreviousFigures = () => (
     <h4 className='text-sm-sub-heading sm:text-sub-heading font-bold capitalize mt-8 px-4 sm:p-0'>
       Previous Edition Statistics
     </h4>
-    <div className='flex flex-wrap md:flex-no-wrap justify-center md:justify-between items-stretch my-8 sm:px-20 md:p-0'>
+    <div className='flex flex-wrap md:flex-no-wrap justify-between items-stretch my-8 sm:px-20 md:p-0'>
       {PREVIOUS_FIGURES.map((info, index) => (
         <div
           key={info.id}

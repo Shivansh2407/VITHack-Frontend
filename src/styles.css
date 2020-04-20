@@ -637,10 +637,6 @@ img {
   margin-right: 5rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
 .ml-20 {
   margin-left: 5rem;
 }
@@ -906,6 +902,11 @@ img {
     margin: 0;
   }
 
+  .sm\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .sm\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -1017,10 +1018,6 @@ img {
 
   .md\:justify-start {
     justify-content: flex-start;
-  }
-
-  .md\:justify-between {
-    justify-content: space-between;
   }
 
   .md\:h-32 {

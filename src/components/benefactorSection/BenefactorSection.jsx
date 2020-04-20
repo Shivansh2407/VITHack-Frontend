@@ -18,15 +18,15 @@ const TrackSection = () => (
         <Heading>Previous Benefactors</Heading>
       </div>
       <div>
-        <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-12'>
+        <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-8 sm:my-12'>
           Our Sponsors
         </header>
-        <div className='px-4 sm:p-0 flex flex-wrap justify-center items-center'>
+        <div className='flex flex-col sm:flex-row flex-wrap justify-center items-center'>
           {SPONSORS.map((sponsor) => (
             <BenefactorCard imageSrc={sponsor.imageSrc} key={sponsor.id} />
           ))}
         </div>
-        <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-12'>
+        <header className='px-4 sm:p-0 font-bold text-sm-sub-heading sm:text-sub-heading text-center my-8 sm:my-12'>
           Our Case Partners
         </header>
         <div className='flex flex-wrap justify-center items-center'>
@@ -34,7 +34,7 @@ const TrackSection = () => (
             <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
           ))}
         </div>
-        <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-12'>
+        <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-8 sm:my-12'>
           Our Collaborators
         </header>
         <div className='flex flex-wrap justify-center items-center md:px-40'>
