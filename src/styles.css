@@ -788,20 +788,16 @@ img {
   font-size: 1.125rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-}
-
 .text-sm-title {
   font-size: 2.5rem;
 }
 
 .text-sm-heading {
   font-size: 2rem;
+}
+
+.text-sub-heading {
+  font-size: 1.5rem;
 }
 
 .text-sm-sub-heading {

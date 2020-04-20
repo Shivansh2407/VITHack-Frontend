@@ -16,7 +16,9 @@ const PreviousFigures = () => (
         >
           <div
             className={`text-center mt-4 sm:m-0 ${
-              index === 3 ? 'text-3xl leading-8' : 'text-4xl sm:text-5xl'
+              index === 3
+                ? 'text-sm-title sm:text-title leading-8'
+                : 'text-sub-heading sm:text-sub-heading sm:text-5xl'
             } ${info.color}`}
           >
             {info.stat}
