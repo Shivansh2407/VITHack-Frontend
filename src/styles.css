@@ -792,14 +792,6 @@ img {
   font-size: 1.125rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
 }
@@ -808,8 +800,16 @@ img {
   font-size: 2.25rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
+.text-sm-title {
+  font-size: 2.5rem;
+}
+
+.text-sm-heading {
+  font-size: 2rem;
+}
+
+.text-sm-sub-heading {
+  font-size: 1.25rem;
 }
 
 .uppercase {
@@ -956,8 +956,24 @@ img {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
+  .sm\:text-base {
+    font-size: 1.125rem;
+  }
+
   .sm\:text-5xl {
     font-size: 3rem;
+  }
+
+  .sm\:text-title {
+    font-size: 3rem;
+  }
+
+  .sm\:text-heading {
+    font-size: 2.5rem;
+  }
+
+  .sm\:text-sub-heading {
+    font-size: 1.5rem;
   }
 
   .sm\:w-40 {

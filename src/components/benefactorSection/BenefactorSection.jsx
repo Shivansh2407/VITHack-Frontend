@@ -11,14 +11,14 @@ import Heading from '../layout/Heading';
 import { CASE_PARTNERS, COLLABORATORS, SPONSORS } from '../../DataStore';
 
 const TrackSection = () => (
-  <section className='section text-hack-black flex flex-col justify-center items-center h-screen relative overflow-hidden cursor-default text-base'>
+  <section className='section text-hack-black flex flex-col justify-center items-center h-screen relative overflow-hidden cursor-default sm:text-base'>
     <div className='hidden sm:block w-screen h-20' />
     <div className='sm:px-35'>
       <div className='px-8 sm:p-0'>
         <Heading>Previous Benefactors</Heading>
       </div>
       <div>
-        <header className='font-bold text-2xl text-center my-12'>
+        <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-12'>
           Our Sponsors
         </header>
         <div className='px-4 sm:p-0 flex flex-wrap justify-center items-center'>
@@ -26,7 +26,7 @@ const TrackSection = () => (
             <BenefactorCard imageSrc={sponsor.imageSrc} key={sponsor.id} />
           ))}
         </div>
-        <header className='font-bold text-2xl text-center my-12'>
+        <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-12'>
           Our Case Partners
         </header>
         <div className='flex flex-wrap justify-center items-center'>
@@ -34,7 +34,7 @@ const TrackSection = () => (
             <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
           ))}
         </div>
-        <header className='font-bold text-2xl text-center my-12'>
+        <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-12'>
           Our Collaborators
         </header>
         <div className='flex flex-wrap justify-center items-center md:px-40'>

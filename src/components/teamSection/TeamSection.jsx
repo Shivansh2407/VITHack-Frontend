@@ -9,7 +9,7 @@ import TeamCard from './TeamCard';
 import { TEAM } from '../../DataStore';
 
 const TrackSection = () => (
-  <section className='section text-hack-black flex flex-col justify-center items-center h-screen relative overflow-hidden cursor-default text-base'>
+  <section className='section text-hack-black flex flex-col justify-center items-center h-screen relative overflow-hidden cursor-default sm:text-base'>
     <div className='sm:px-35'>
       <div className='px-8 sm:p-0'>
         <Heading>The Team</Heading>

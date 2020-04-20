@@ -6,7 +6,7 @@ import { ReactComponent as VitLogoBlue } from '../vectors/VitLogoBlue.svg';
 
 const LandingFooter = () => (
   <footer className='w-full h-32 flex flex-col sm:flex-row justify-center items-center absolute bottom-0 text-hack-black z-0 mb-20 sm:mb-4'>
-    <div className='text-lg sm:mr-6 lowercase'>in collaboration with</div>
+    <div className='sm:mr-6 lowercase'>in collaboration with</div>
     <div className='flex justify-center items-center'>
       <a href='http://vit.ac.in' target='_blank' rel='noopener noreferrer'>
         <VitLogoBlue />

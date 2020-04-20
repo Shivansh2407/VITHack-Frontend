@@ -8,7 +8,7 @@ const SubSection = ({ text, heading, showLess }) => {
 
   return (
     <div className='w-full md:w-7/12 my-12'>
-      <h4 className='text-2xl font-bold mt-8'>{heading}</h4>
+      <h4 className='text-sm-sub-heading sm:text-sub-heading font-bold mt-8'>{heading}</h4>
       <p className='my-4'>
         {showText ? text : text.replace(/^(.{330}[^\s]*).*/, '$1')}
       </p>

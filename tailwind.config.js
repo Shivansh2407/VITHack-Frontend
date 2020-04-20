@@ -30,6 +30,14 @@ module.exports = {
       borderColor: {
         'hack-blue': '#008DFF',
       },
+      fontSize: {
+        title: '3rem',
+        'sm-title': '2.5rem',
+        heading: '2.5rem',
+        'sm-heading': '2rem',
+        'sub-heading': '1.5rem',
+        'sm-sub-heading': '1.25rem',
+      },
       textColor: {
         'hack-blue': '#008DFF',
         'hack-yellow': '#FFBD3B',
