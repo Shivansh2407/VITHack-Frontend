@@ -553,8 +553,8 @@ img {
   height: 100vh;
 }
 
-.leading-8 {
-  line-height: 2rem;
+.leading-6 {
+  line-height: 1.5rem;
 }
 
 .m-4 {
@@ -796,10 +796,6 @@ img {
   font-size: 2rem;
 }
 
-.text-sub-heading {
-  font-size: 1.5rem;
-}
-
 .text-sm-sub-heading {
   font-size: 1.25rem;
 }
@@ -866,6 +862,13 @@ img {
 
 .z-30 {
   z-index: 30;
+}
+
+@media (min-width: 324px) {
+
+  .xsm\:justify-between {
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 870px) {
@@ -955,10 +958,6 @@ img {
 
   .sm\:text-base {
     font-size: 1.125rem;
-  }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
   }
 
   .sm\:text-title {

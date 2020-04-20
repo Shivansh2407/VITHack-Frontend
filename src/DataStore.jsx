@@ -53,7 +53,7 @@ const PREVIOUS_FIGURES = [
   {
     id: uuid(),
     stat: '₹6.15L',
-    text: 'Worth Prices',
+    text: 'Worth Prizes',
     color: 'text-hack-yellow',
   },
   { id: uuid(), stat: '2942', text: 'Registrations', color: 'text-hack-pink' },
