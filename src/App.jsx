@@ -14,6 +14,7 @@ import {
   ContactSection,
   LandingSection,
   // TrackSection,
+  HamburgerMenu,
   AboutSection,
   // TeamSection,
   Preloader,
@@ -26,30 +27,35 @@ import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
 import './styles.css';
 import './App.css';
 
-const App = () => (
-  <>
-    <Navbar />
-    <Preloader />
-    <ReactFullpage
-      scrollOverflow
-      anchors={SECTION_ANCHORS}
-      licenseKey={LICENSE_KEY}
-      render={() => {
-        return (
-          <>
-            <LandingSection />
-            <AboutSection />
-            {/* <TrackSection /> */}
-            <HelpUsOutSection />
-            <BenefactorSection />
-            {/* <TeamSection /> */}
-            <ContactSection />
-            <SubscribeSection />
-          </>
-        );
-      }}
-    />
-  </>
-);
+// Data
+
+const App = () => {
+  return (
+    <>
+      <HamburgerMenu />
+      <Navbar />
+      <Preloader />
+      <ReactFullpage
+        scrollOverflow
+        anchors={SECTION_ANCHORS}
+        licenseKey={LICENSE_KEY}
+        render={() => {
+          return (
+            <>
+              <LandingSection />
+              <AboutSection />
+              {/* <TrackSection /> */}
+              <HelpUsOutSection />
+              <BenefactorSection />
+              {/* <TeamSection /> */}
+              <ContactSection />
+              <SubscribeSection />
+            </>
+          );
+        }}
+      />
+    </>
+  );
+};
 
 export default App;

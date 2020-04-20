@@ -5,6 +5,7 @@ import SubscribeSection from './components/subscribeSection/SubscribeSection';
 import HelpUsOutSection from './components/helpUsOutSection/HelpUsOutSection';
 import ContactSection from './components/contactSection/ContactSection';
 import LandingSection from './components/landingSection/LandingSection';
+import HamburgerMenu from './components/layout/navbar/HamburgerMenu';
 import TrackSection from './components/trackSection/TrackSection';
 import AboutSection from './components/aboutSection/AboutSection';
 import TeamSection from './components/teamSection/TeamSection';
@@ -16,6 +17,7 @@ export {
   HelpUsOutSection,
   ContactSection,
   LandingSection,
+  HamburgerMenu,
   TrackSection,
   AboutSection,
   TeamSection,
