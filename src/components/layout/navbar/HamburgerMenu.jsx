@@ -11,7 +11,7 @@ const HamburgerMenu = () => {
     <nav className='block sm:hidden fixed top-0 left-0 z-20 focus:outline-none'>
       <div
         className={`fixed inset-0 h-screen w-screen bg-white flex flex-col justify-center items-center ${
-          isActive ? 'block my-4' : 'hidden'
+          isActive ? 'block' : 'hidden'
         }`}
       >
         {NAV_LINKS.map((navLink) => {
