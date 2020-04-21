@@ -2,6 +2,10 @@
   "name": "vithack-frontend",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "13.12.0",
+    "npm": "6.14.4"
+  },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
     "@fullpage/react-fullpage": "^0.1.17",
