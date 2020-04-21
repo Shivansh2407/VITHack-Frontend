@@ -992,8 +992,8 @@ img {
     width: 66.666667%;
   }
 
-  .sm\:w-1\/4 {
-    width: 25%;
+  .sm\:w-full {
+    width: 100%;
   }
 }
 

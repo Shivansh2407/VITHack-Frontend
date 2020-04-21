@@ -35,25 +35,25 @@ const App = () => {
       <HamburgerMenu />
       <Navbar />
       <Preloader />
-      <ReactFullpage
+      {/* <ReactFullpage
         scrollOverflow
         anchors={SECTION_ANCHORS}
         licenseKey={LICENSE_KEY}
         render={() => {
           return (
-            <>
-              <LandingSection />
-              <AboutSection />
-              {/* <TrackSection /> */}
-              <HelpUsOutSection />
-              <BenefactorSection />
-              {/* <TeamSection /> */}
-              <ContactSection />
-              <SubscribeSection />
-            </>
+            <> */}
+      <LandingSection />
+      <AboutSection />
+      {/* <TrackSection /> */}
+      <HelpUsOutSection />
+      <BenefactorSection />
+      {/* <TeamSection /> */}
+      <ContactSection />
+      <SubscribeSection />
+      {/* </>
           );
         }}
-      />
+      /> */}
     </>
   );
 };

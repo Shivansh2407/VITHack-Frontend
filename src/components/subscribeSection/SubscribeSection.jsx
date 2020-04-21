@@ -19,7 +19,7 @@ const SubscribeSection = () => (
     <div className='flex flex-col justify-center items-center -mt-8'>
       <input
         type='email'
-        className='rounded py-2 px-6 border border-hack-blue sm:w-1/4 border-2 border-hack-blue mb-8'
+        className='rounded py-2 px-6 border border-hack-blue sm:w-full border-2 border-hack-blue mb-8'
         placeholder='Email Here'
         name='email'
       />
@@ -30,7 +30,7 @@ const SubscribeSection = () => (
         Subscribe
       </button>
     </div>
-    <br />
+    <div className='h-20 w-screen' />
     <footer className='flex flex-row flex-wrap justify-center absolute bottom-0 w-screen mb-4 px-8 sm:p-0'>
       {FOOTER_LINKS.map((link) => (
         <a

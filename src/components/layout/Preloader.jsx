@@ -22,7 +22,7 @@ const Preloader = () => {
       />
       <a
         style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }}
-        className='cursor-pointer absolute z-30'
+        className='cursor-pointer fixed z-30'
         href='/#home'
         ref={logo}
       >
