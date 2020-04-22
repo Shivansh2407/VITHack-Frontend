@@ -8,7 +8,7 @@ const sendMail = (email) => {
   return axios({
     method: 'post',
     url: `${baseURL}/subscription/add`,
-    data: qs.stringify({ email, token: localStorage.token }),
+    data: qs.stringify({ email, token: sessionStorage.token }),
     headers: {
       'content-type': 'application/x-www-form-urlencoded;charset=utf-8',
     },

@@ -38,7 +38,7 @@ const SubscribeSection = () => {
 
   useEffect(() => {
     return () => {
-      localStorage.removeItem('token');
+      sessionStorage.removeItem('token');
     };
   }, []);
 
