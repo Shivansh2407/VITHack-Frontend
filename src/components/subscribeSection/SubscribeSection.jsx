@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useAlert } from 'react-alert';
 
 // Components
 import { ReactComponent as PaperMa } from '../vectors/PaperMa.svg';
@@ -11,6 +12,7 @@ import subscribe from '../../utils/subscribe';
 import { FOOTER_LINKS } from '../../DataStore';
 
 const SubscribeSection = () => {
+  const alert = useAlert();
   const [email, setEmail] = useState('');
 
   const handleChange = (e) => {
@@ -21,8 +23,17 @@ const SubscribeSection = () => {
     e.preventDefault();
 
     subscribe(email)
-      .then(() => setEmail(''))
-      .catch((err) => console.error(err));
+      .then(() => {
+        setEmail('');
+        alert.show('Success', {
+          type: 'success',
+        });
+      })
+      .catch(() =>
+        alert.show('Failure', {
+          type: 'error',
+        })
+      );
   };
 
   return (

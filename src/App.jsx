@@ -1,5 +1,8 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import { transitions, positions, Provider as AlertProvider } from 'react-alert';
+import AlertTemplate from 'react-alert-template-basic';
 
 // Fullpage.js
 // import ReactFullpage from '@fullpage/react-fullpage';
@@ -27,33 +30,43 @@ import {
 import './styles.css';
 import './App.css';
 
-// Data
+// Alert Options
+const options = {
+  // you can also just use 'bottom center'
+  position: positions.BOTTOM_CENTER,
+  timeout: 5000,
+  offset: '30px',
+  // you can also just use 'scale'
+  transition: transitions.SCALE,
+};
 
 const App = () => {
   return (
     <>
-      <HamburgerMenu />
-      <Navbar />
-      <Preloader />
-      {/* <ReactFullpage
+      <AlertProvider template={AlertTemplate} {...options}>
+        <HamburgerMenu />
+        <Navbar />
+        <Preloader />
+        {/* <ReactFullpage
         scrollOverflow
         anchors={SECTION_ANCHORS}
         licenseKey={LICENSE_KEY}
         render={() => {
           return (
             <> */}
-      <LandingSection />
-      <AboutSection />
-      {/* <TrackSection /> */}
-      <HelpUsOutSection />
-      <BenefactorSection />
-      {/* <TeamSection /> */}
-      <ContactSection />
-      <SubscribeSection />
-      {/* </>
+        <LandingSection />
+        <AboutSection />
+        {/* <TrackSection /> */}
+        <HelpUsOutSection />
+        <BenefactorSection />
+        {/* <TeamSection /> */}
+        <ContactSection />
+        <SubscribeSection />
+        {/* </>
           );
         }}
       /> */}
+      </AlertProvider>
     </>
   );
 };
