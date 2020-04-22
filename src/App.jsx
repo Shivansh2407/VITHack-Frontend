@@ -54,6 +54,9 @@ const App = () => {
           );
         }}
       /> */}
+      <script
+        src={`https://www.google.com/recaptcha/api.js?render=${process.env.REACT_APP_SITE_KEY}`}
+      />
     </>
   );
 };
