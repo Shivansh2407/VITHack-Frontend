@@ -879,6 +879,10 @@ img {
   z-index: 30;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 @media (min-width: 324px) {
 
   .xsm\:justify-between {
