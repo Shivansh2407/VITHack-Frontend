@@ -529,6 +529,10 @@ img {
   font-weight: 700;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-18 {
   height: 4.5rem;
 }

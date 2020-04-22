@@ -24,6 +24,7 @@ const HamburgerMenu = () => {
                 target='_blank'
                 rel='noopener noreferrer'
                 onClick={() => setActive(!isActive)}
+                key={navLink.id}
               >
                 {navLink.text}
               </a>
@@ -40,6 +41,7 @@ const HamburgerMenu = () => {
               data-menuanchor={navLink.anchor}
               href={navLink.url}
               onClick={() => setActive(!isActive)}
+              key={navLink.id}
             >
               {navLink.text}
             </a>
