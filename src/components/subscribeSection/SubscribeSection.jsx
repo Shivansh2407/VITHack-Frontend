@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 import { ReactComponent as PaperMa } from '../vectors/PaperMa.svg';
 import { ReactComponent as Jack } from '../vectors/Jack.svg';
 
+// Utility Functions
+import subscribe from '../../utils/subscribe';
+
 // Data
 import { FOOTER_LINKS } from '../../DataStore';
 
@@ -16,7 +19,10 @@ const SubscribeSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setEmail('');
+
+    subscribe(email)
+      .then(() => setEmail(''))
+      .catch((err) => console.error(err));
   };
 
   return (
