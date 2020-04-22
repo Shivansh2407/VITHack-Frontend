@@ -12,7 +12,7 @@ const sendMail = (email) => {
     headers: {
       'content-type': 'application/x-www-form-urlencoded;charset=utf-8',
     },
-  });
+  }).then((res) => res.data);
 };
 
 export default sendMail;
