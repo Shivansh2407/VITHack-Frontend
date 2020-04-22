@@ -222,6 +222,10 @@ button:-moz-focusring,
  * Add the correct display in IE 10+.
  */
 
+template {
+  display: none;
+}
+
 /**
  * Add the correct display in IE 10.
  */
@@ -873,6 +877,10 @@ img {
 
 .z-30 {
   z-index: 30;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 @media (min-width: 324px) {

@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
+import { useAlert } from 'react-alert';
 
 // Components
 import { ReactComponent as PaperMa } from '../vectors/PaperMa.svg';
 import { ReactComponent as Jack } from '../vectors/Jack.svg';
 
+// Utility Functions
+import subscribe from '../../utils/subscribe';
+
 // Data
 import { FOOTER_LINKS } from '../../DataStore';
 
 const SubscribeSection = () => {
+  const alert = useAlert();
   const [email, setEmail] = useState('');
 
   const handleChange = (e) => {
@@ -16,7 +21,19 @@ const SubscribeSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setEmail('');
+
+    subscribe(email)
+      .then(() => {
+        setEmail('');
+        alert.show('Successfully subscribed to mail list', {
+          type: 'success',
+        });
+      })
+      .catch((err) =>
+        alert.show(err.message, {
+          type: 'error',
+        })
+      );
   };
 
   return (
