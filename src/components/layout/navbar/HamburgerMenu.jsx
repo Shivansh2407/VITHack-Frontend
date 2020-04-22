@@ -56,7 +56,8 @@ const HamburgerMenu = () => {
   return (
     <nav className='block sm:hidden fixed top-0 left-0 z-30 focus:outline-none'>
       <button
-        className='block sm:hidden z-40 fixed top-0 left-0'
+        className='block sm:hidden z-40 fixed'
+        style={{ top: '17px', left: '17px', opacity: '0.7' }}
         onClick={() => {
           if (tl.reversed()) tl.play();
           else {
@@ -70,8 +71,8 @@ const HamburgerMenu = () => {
           id='burger'
           data-name='Layer 1'
           xmlns='http://www.w3.org/2000/svg'
-          width='50px'
-          height='50px'
+          width='48px'
+          height='48px'
           viewBox='0 0 50 50'
           className='block relative'
         >
