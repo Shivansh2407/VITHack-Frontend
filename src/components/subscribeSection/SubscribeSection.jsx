@@ -29,8 +29,8 @@ const SubscribeSection = () => {
           type: 'success',
         });
       })
-      .catch(() =>
-        alert.show('Failure', {
+      .catch((err) =>
+        alert.show(err.message, {
           type: 'error',
         })
       );
