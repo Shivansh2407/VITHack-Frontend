@@ -20,9 +20,7 @@ const SubscribeSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    subscribe(email)
-      .then(() => setEmail(''))
-      .catch((err) => console.error(err));
+    subscribe(email);
   };
 
   return (
