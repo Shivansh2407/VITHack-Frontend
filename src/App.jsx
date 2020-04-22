@@ -2,8 +2,8 @@
 import React from 'react';
 
 // Fullpage.js
-import ReactFullpage from '@fullpage/react-fullpage';
-import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
+// import ReactFullpage from '@fullpage/react-fullpage';
+// import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
 
 // Sections
 import Navbar from './components/layout/navbar/Navbar';
@@ -21,7 +21,7 @@ import {
 } from './sections';
 
 // Data
-import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
+// import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
 
 // Stylesheets
 import './styles.css';
