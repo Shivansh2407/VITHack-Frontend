@@ -28,7 +28,6 @@ const AboutSection = () => {
       </div>
       <BulbOMan />
       <PreviousFigures />
-      <div className='hidden sm:block w-screen h-32' />
     </section>
   );
 };

@@ -2,8 +2,8 @@
 import React from 'react';
 
 // Fullpage.js
-import ReactFullpage from '@fullpage/react-fullpage';
-import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
+// import ReactFullpage from '@fullpage/react-fullpage';
+// import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
 
 // Sections
 import Navbar from './components/layout/navbar/Navbar';
@@ -21,7 +21,7 @@ import {
 } from './sections';
 
 // Data
-import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
+// import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
 
 // Stylesheets
 import './styles.css';
@@ -35,24 +35,27 @@ const App = () => {
       <HamburgerMenu />
       <Navbar />
       <Preloader />
-      <ReactFullpage
+      {/* <ReactFullpage
         scrollOverflow
         anchors={SECTION_ANCHORS}
         licenseKey={LICENSE_KEY}
         render={() => {
           return (
-            <>
-              <LandingSection />
-              <AboutSection />
-              {/* <TrackSection /> */}
-              <HelpUsOutSection />
-              <BenefactorSection />
-              {/* <TeamSection /> */}
-              <ContactSection />
-              <SubscribeSection />
-            </>
+            <> */}
+      <LandingSection />
+      <AboutSection />
+      {/* <TrackSection /> */}
+      <HelpUsOutSection />
+      <BenefactorSection />
+      {/* <TeamSection /> */}
+      <ContactSection />
+      <SubscribeSection />
+      {/* </>
           );
         }}
+      /> */}
+      <script
+        src={`https://www.google.com/recaptcha/api.js?render=${process.env.REACT_APP_SITE_KEY}`}
       />
     </>
   );
