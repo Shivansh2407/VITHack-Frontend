@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAlert } from 'react-alert';
 
 // Components
@@ -35,6 +35,12 @@ const SubscribeSection = () => {
         })
       );
   };
+
+  useEffect(() => {
+    return () => {
+      localStorage.removeItem('token');
+    };
+  }, []);
 
   return (
     <section className='section text-hack-black flex flex-col justify-center items-center relative overflow-hidden cursor-default sm:text-base mx-auto'>
