@@ -56,10 +56,12 @@ const HamburgerMenu = () => {
   return (
     <nav className='block sm:hidden fixed top-0 left-0 z-30 focus:outline-none'>
       <button
-        className='z-40'
+        className='block sm:hidden z-40 fixed top-0 left-0'
         onClick={() => {
           if (tl.reversed()) tl.play();
-          else tl.reverse();
+          else {
+            tl.reverse();
+          }
           setActive(!isActive);
         }}
         type='button'
@@ -107,53 +109,6 @@ const HamburgerMenu = () => {
           isActive ? 'block' : 'hidden'
         }`}
       >
-        <button
-          className='z-40 top-0 left-0 fixed'
-          onClick={() => {
-            if (tl.reversed()) tl.play();
-            else tl.reverse();
-            setActive(!isActive);
-          }}
-          type='button'
-        >
-          <svg
-            id='burger'
-            data-name='Layer 1'
-            xmlns='http://www.w3.org/2000/svg'
-            width='50px'
-            height='50px'
-            viewBox='0 0 50 50'
-            className='block relative'
-          >
-            <path
-              ref={layer1}
-              d='M15,15 C15,15,20,15,25,15 S35,15,35,15'
-              fill='none'
-              stroke='#474747'
-              strokeLinecap='round'
-              strokeMiterlimit='10'
-              strokeWidth='2px'
-            />
-            <path
-              ref={layer3}
-              d='M10,25 L40,25'
-              fill='none'
-              stroke='#474747'
-              strokeLinecap='round'
-              strokeMiterlimit='10'
-              strokeWidth='2px'
-            />
-            <path
-              ref={layer2}
-              d='M15,35 C15,35,20,35,25,35 S35,35,35,35'
-              fill='none'
-              stroke='#474747'
-              strokeLinecap='round'
-              strokeMiterlimit='10'
-              strokeWidth='2px'
-            />
-          </svg>
-        </button>
         {NAV_LINKS.map((navLink) => {
           if (navLink.text === 'Blog') {
             return (

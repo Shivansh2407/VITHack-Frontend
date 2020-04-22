@@ -25,7 +25,7 @@ const SubscribeSection = () => {
     subscribe(email)
       .then(() => {
         setEmail('');
-        alert.show('Success', {
+        alert.show('Successfully subscribed to mail list', {
           type: 'success',
         });
       })
