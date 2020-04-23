@@ -687,12 +687,12 @@ img {
   margin-left: -2rem;
 }
 
-.-ml-12 {
-  margin-left: -3rem;
-}
-
 .-mb-24 {
   margin-bottom: -6rem;
+}
+
+.-ml-35 {
+  margin-left: -8.75rem;
 }
 
 .opacity-0 {
@@ -900,6 +900,22 @@ img {
 
 .z-40 {
   z-index: 40;
+}
+
+.transform {
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+}
+
+.scale-50 {
+  --transform-scale-x: .5;
+  --transform-scale-y: .5;
 }
 
 .transition {

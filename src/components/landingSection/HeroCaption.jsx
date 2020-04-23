@@ -8,7 +8,7 @@ const HeroCaption = () => (
     <img
       src={Bubbles}
       alt='Bubbles'
-      className='absolute -ml-12 bottom-0 -mb-24 md:hidden'
+      className='absolute bottom-0 left-0 -mb-24 md:hidden transform scale-50 -ml-35'
     />
     <h1 className='text-sm-title sm:text-title text-hack-blue uppercase'>
       VIT Hack
