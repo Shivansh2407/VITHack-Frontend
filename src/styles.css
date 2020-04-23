@@ -691,6 +691,10 @@ img {
   margin-bottom: -6rem;
 }
 
+.-mr-35 {
+  margin-right: -8.75rem;
+}
+
 .-ml-35 {
   margin-left: -8.75rem;
 }
@@ -916,6 +920,10 @@ img {
 .scale-50 {
   --transform-scale-x: .5;
   --transform-scale-y: .5;
+}
+
+.-scale-x-50 {
+  --transform-scale-x: -0.5;
 }
 
 .transition {

@@ -59,6 +59,9 @@ module.exports = {
       height: {
         18: '4.5rem',
       },
+      scale: {
+        '-50': '-0.5',
+      },
     },
   },
   variants: { display: ['responsive', 'hover', 'focus'] },
