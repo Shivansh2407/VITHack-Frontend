@@ -496,6 +496,10 @@ img {
   flex-wrap: wrap;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1039,10 +1043,6 @@ img {
 
   .md\:flex-no-wrap {
     flex-wrap: nowrap;
-  }
-
-  .md\:items-start {
-    align-items: flex-start;
   }
 
   .md\:justify-start {
