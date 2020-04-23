@@ -9,7 +9,7 @@ import { ReactComponent as Jack } from '../vectors/Jack.svg';
 import subscribe from '../../utils/subscribe';
 
 // Data
-import { FOOTER_LINKS } from '../../DataStore';
+// import { FOOTER_LINKS } from '../../DataStore';
 
 const SubscribeSection = () => {
   const alert = useAlert();
@@ -72,17 +72,25 @@ const SubscribeSection = () => {
         </button>
       </form>
       <div className='h-32 w-screen' />
-      <footer className='flex flex-row flex-wrap justify-center absolute bottom-0 w-screen mb-4 px-8 sm:p-0'>
-        {FOOTER_LINKS.map((link) => (
+      <div className='flex flex-col sm:flex-row justify-center items-center opacity-50 leading-2 sm:leading-5 text-sm-footer sm:text-footer mb-2'>
+        <div>This site is protected by reCAPTCHA and the Google </div>
+        <div>
           <a
-            className='text-hack-blue cursor-not-allowed opacity-50 text-center mx-4'
-            href={link.link}
-            key={link.id}
+            href='https://policies.google.com/privacy'
+            className='text-hack-blue cursor-pointer hover:underline'
           >
-            {link.text}
-          </a>
-        ))}
-      </footer>
+            Privacy Policy
+          </a>{' '}
+          and{' '}
+          <a
+            href='https://policies.google.com/terms'
+            className='text-hack-blue cursor-pointer hover:underline'
+          >
+            Terms of Service
+          </a>{' '}
+          apply.
+        </div>
+      </div>
       <Jack />
       <PaperMa />
     </section>

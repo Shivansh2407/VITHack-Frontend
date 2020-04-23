@@ -38,6 +38,8 @@ module.exports = {
         'sm-heading': '2rem',
         'sub-heading': '1.5rem',
         'sm-sub-heading': '1.25rem',
+        footer: '0.875rem',
+        'sm-footer': '0.5rem',
       },
       textColor: {
         'hack-blue': '#008DFF',
