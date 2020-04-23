@@ -16,6 +16,7 @@ import Navbar from './components/layout/navbar/Navbar';
 // Pages
 import MainPage from './pages/MainPage';
 import FaqPage from './pages/FaqPage';
+import Preloader from './components/layout/Preloader';
 
 // Data
 // import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
@@ -38,6 +39,7 @@ const App = () => {
       <AlertProvider template={AlertTemplate} {...options}>
         <HamburgerMenu />
         <Navbar />
+        <Preloader />
         <Switch>
           <Route exact path='/' component={() => <MainPage />} />
           <Route exact path='/faqs' component={() => <FaqPage />} />

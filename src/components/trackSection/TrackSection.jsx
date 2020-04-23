@@ -16,7 +16,7 @@ const TrackSection = () => (
       <div className='px-8 sm:p-0'>
         <Heading>Tracks</Heading>
       </div>
-      <div className='text-center flex justify-center items-center flex-wrap my-12 sm:px-4'>
+      <div className='text-center grid grid-cols-2 sm:grid-cols-4 justify-between items-center my-12 sm:px-4'>
         {TRACKS.map((track) => (
           <TrackCard name={track.name} icon={track.icon} key={track.id} />
         ))}

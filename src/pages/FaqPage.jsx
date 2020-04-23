@@ -20,7 +20,7 @@ const FaqPage = () => {
             <SubSection
               heading={subSection.heading}
               text={subSection.text}
-              pink={true}
+              pink
               key={subSection.id}
             />
           ))}
