@@ -266,8 +266,7 @@ const CONTACT_TEXTS = [
 // Footer
 const FOOTER_LINKS = [
   { id: uuid(), text: 'Brochure', link: `${process.env.PUBLIC_URL}/#home` },
-
-  { id: uuid(), text: 'FAQs', link: `${process.env.PUBLIC_URL}/#home` },
+  { id: uuid(), text: 'FAQs', link: `${process.env.PUBLIC_URL}/faqs` },
   {
     id: uuid(),
     text: 'Privacy Policy',
@@ -285,11 +284,77 @@ const FOOTER_LINKS = [
   },
 ];
 
+const FAQ_SUB_SECTIONS = [
+  {
+    id: uuid(),
+    heading: 'What is a Hackathon?',
+    text:
+      'A hackathon is a comprehensive event where each team is given a platform to develop an idea to produce a solution for a real world problem statement.',
+  },
+  {
+    id: uuid(),
+    heading: 'Does this have any registration fee?',
+    text: 'There is no registration fee for VIT Hack.',
+  },
+  {
+    id: uuid(),
+    heading: 'I am not from VIT Vellore. Can I still participate?',
+    text:
+      'Yes, As long as you are a student at any college and are 18 or older, you are invited to apply to VIT Hack.',
+  },
+  {
+    id: uuid(),
+    heading:
+      'Do I need to have any specific qualifications to be a participant for VIT Hack?',
+    text:
+      'If you love to code, you are more than welcome to participate in the hackathon.',
+  },
+  {
+    id: uuid(),
+    heading: 'What should I carry to the hack?',
+    text:
+      'We recommend to get your own laptop with all the necessary softwares installed, chargers, student ID.',
+  },
+  {
+    id: uuid(),
+    heading: 'What can one expect to take away from this hackathon?',
+    text:
+      "You will have a mini project at the end of the hackathon and develop a new skill set. All in all it'll be a hackathon filled with fun, excitement, learning and cool shwags.",
+  },
+  {
+    id: uuid(),
+    heading: 'How do teams work?',
+    text:
+      'Teams are at most 6 people. You can select teammates when you register, or you can register individually without specified teammates. In the latter case, we will group you with other teams looking for members.',
+  },
+  {
+    id: uuid(),
+    heading: 'How many members are required in a team?',
+    text:
+      'An ideal team would consist of at most 6 members and at least 3 members to be qualified as a team.',
+  },
+  {
+    id: uuid(),
+    heading:
+      'Will participants get to interact with industrial experts during the hack?',
+    text:
+      'Yes. Continuous mentoring would be provided by industrial experts to help you improvise on your project and pitch the idea better. After all, VIT Hack is not just a hackathon, rather a hub where innovative minds think alike.',
+  },
+  {
+    id: uuid(),
+    heading:
+      'Are there any restrictions regarding the submission for the hack?',
+    text:
+      'If your project can be implemented by either a technical application or a hardware prototype, it is considered as a legitimate submission.',
+  },
+];
+
 export {
   ABOUT_SUB_SECTIONS,
   PREVIOUS_FIGURES,
   SECTION_ANCHORS,
   CONTACT_TEXTS,
+  FAQ_SUB_SECTIONS,
   COLLABORATORS,
   CASE_PARTNERS,
   FOOTER_LINKS,

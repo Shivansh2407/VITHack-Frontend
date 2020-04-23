@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { transitions, positions, Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
 
@@ -8,21 +9,13 @@ import AlertTemplate from 'react-alert-template-basic';
 // import ReactFullpage from '@fullpage/react-fullpage';
 // import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
 
-// Sections
+// Components
+import HamburgerMenu from './components/layout/navbar/HamburgerMenu';
 import Navbar from './components/layout/navbar/Navbar';
-import {
-  BenefactorSection,
-  SubscribeSection,
-  HelpUsOutSection,
-  ContactSection,
-  LandingSection,
-  TrackSection,
-  HamburgerMenu,
-  AboutSection,
-  // TeamSection,
-  Preloader,
-} from './sections';
-import EssentialsSection from './components/essentialsSection/EssentialsSection';
+
+// Pages
+import MainPage from './pages/MainPage';
+import FaqPage from './pages/FaqPage';
 
 // Data
 // import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
@@ -41,33 +34,16 @@ const options = {
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <AlertProvider template={AlertTemplate} {...options}>
         <HamburgerMenu />
         <Navbar />
-        <Preloader />
-        {/* <ReactFullpage
-        scrollOverflow
-        anchors={SECTION_ANCHORS}
-        licenseKey={LICENSE_KEY}
-        render={() => {
-          return (
-            <> */}
-        <LandingSection />
-        <AboutSection />
-        <TrackSection />
-        <HelpUsOutSection />
-        <BenefactorSection />
-        {/* <TeamSection /> */}
-        <ContactSection />
-        <EssentialsSection />
-        <SubscribeSection />
-        {/* </>
-          );
-        }}
-      /> */}
+        <Switch>
+          <Route exact path='/' component={() => <MainPage />} />
+          <Route exact path='/faqs' component={() => <FaqPage />} />
+        </Switch>
       </AlertProvider>
-    </>
+    </BrowserRouter>
   );
 };
 
