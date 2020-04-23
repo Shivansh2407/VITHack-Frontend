@@ -34,7 +34,7 @@ const ContactSection = () => (
       </div>
     </section>
     <SocialTray />
-    <div className='block md:hidden w-screen h-20' />
+    <div className='block md:hidden w-screen h-8 md:h-20' />
   </section>
 );
 

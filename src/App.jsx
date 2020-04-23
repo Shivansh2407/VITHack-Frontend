@@ -22,6 +22,7 @@ import {
   // TeamSection,
   Preloader,
 } from './sections';
+import EssentialsSection from './components/essentialsSection/EssentialsSection';
 
 // Data
 // import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
@@ -32,11 +33,9 @@ import './App.css';
 
 // Alert Options
 const options = {
-  // you can also just use 'bottom center'
   position: positions.BOTTOM_CENTER,
   timeout: 5000,
   offset: '30px',
-  // you can also just use 'scale'
   transition: transitions.SCALE,
 };
 
@@ -61,6 +60,7 @@ const App = () => {
         <BenefactorSection />
         {/* <TeamSection /> */}
         <ContactSection />
+        <EssentialsSection />
         <SubscribeSection />
         {/* </>
           );

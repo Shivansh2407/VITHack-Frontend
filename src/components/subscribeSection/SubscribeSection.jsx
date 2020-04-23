@@ -73,8 +73,9 @@ const SubscribeSection = () => {
       </form>
       <div className='h-32 w-screen' />
       <div className='flex flex-col sm:flex-row justify-center items-center opacity-50 leading-2 sm:leading-5 text-sm-footer sm:text-footer mb-2'>
-        <div>This site is protected by reCAPTCHA and the Google </div>
+        <div>This site is protected by reCAPTCHA and the Google</div>
         <div>
+          {' '}
           <a
             href='https://policies.google.com/privacy'
             className='text-hack-blue cursor-pointer hover:underline'

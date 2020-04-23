@@ -233,8 +233,14 @@ const CONTACT_TEXTS = [
 
 // Footer
 const FOOTER_LINKS = [
-  { id: uuid(), text: 'FAQs', link: `${process.env.PUBLIC_URL}/#home` },
   { id: uuid(), text: 'Brochure', link: `${process.env.PUBLIC_URL}/#home` },
+
+  { id: uuid(), text: 'FAQs', link: `${process.env.PUBLIC_URL}/#home` },
+  {
+    id: uuid(),
+    text: 'Privacy Policy',
+    link: `${process.env.PUBLIC_URL}/#home`,
+  },
   {
     id: uuid(),
     text: 'Terms and Conditions',
@@ -242,7 +248,7 @@ const FOOTER_LINKS = [
   },
   {
     id: uuid(),
-    text: 'Privacy Policy',
+    text: 'The Team',
     link: `${process.env.PUBLIC_URL}/#home`,
   },
 ];
