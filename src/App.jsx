@@ -16,7 +16,7 @@ import {
   HelpUsOutSection,
   ContactSection,
   LandingSection,
-  // TrackSection,
+  TrackSection,
   HamburgerMenu,
   AboutSection,
   // TeamSection,
@@ -55,7 +55,7 @@ const App = () => {
             <> */}
         <LandingSection />
         <AboutSection />
-        {/* <TrackSection /> */}
+        <TrackSection />
         <HelpUsOutSection />
         <BenefactorSection />
         {/* <TeamSection /> */}

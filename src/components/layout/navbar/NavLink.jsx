@@ -18,11 +18,7 @@ const NavLink = ({ anchor, text, url }) => {
 
   return (
     <a
-      className={`capitalise ${
-        text === 'Tracks'
-          ? 'cursor-not-allowed opacity-50'
-          : 'cursor-pointer hover:text-hack-blue'
-      }`}
+      className='capitalise cursor-pointer hover:text-hack-blue'
       data-menuanchor={anchor}
       href={url}
     >

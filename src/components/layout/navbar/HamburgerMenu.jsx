@@ -133,11 +133,7 @@ const HamburgerMenu = () => {
 
           return (
             <a
-              className={`capitalise my-4 ${
-                navLink.text === 'Tracks'
-                  ? 'cursor-not-allowed opacity-50'
-                  : 'cursor-pointer hover:text-hack-blue'
-              }`}
+              className='capitalise my-4 cursor-pointer hover:text-hack-blue'
               data-menuanchor={navLink.anchor}
               href={navLink.url}
               onClick={() => {

@@ -80,14 +80,46 @@ const PREVIOUS_FIGURES = [
 
 // Track Section
 const TRACKS = [
-  { id: uuid(), icon: '', name: 'Healthcare' },
-  { id: uuid(), icon: '', name: 'Fintech' },
-  { id: uuid(), icon: '', name: 'Agriculture' },
-  { id: uuid(), icon: '', name: 'Education' },
-  { id: uuid(), icon: '', name: 'Crisis Response' },
-  { id: uuid(), icon: '', name: 'Cyber Security' },
-  { id: uuid(), icon: '', name: 'Mobility' },
-  { id: uuid(), icon: '', name: 'Open Innovation' },
+  {
+    id: uuid(),
+    icon: `${process.env.PUBLIC_URL}/assets/images/Healthcare.png`,
+    name: 'Healthcare',
+  },
+  {
+    id: uuid(),
+    icon: `${process.env.PUBLIC_URL}/assets/images/Fintech.png`,
+    name: 'Fintech',
+  },
+  {
+    id: uuid(),
+    icon: `${process.env.PUBLIC_URL}/assets/images/Agriculture.png`,
+    name: 'Agriculture',
+  },
+  {
+    id: uuid(),
+    icon: `${process.env.PUBLIC_URL}/assets/images/Education.png`,
+    name: 'Education',
+  },
+  {
+    id: uuid(),
+    icon: `${process.env.PUBLIC_URL}/assets/images/CrisisResponse.png`,
+    name: 'Crisis Response',
+  },
+  {
+    id: uuid(),
+    icon: `${process.env.PUBLIC_URL}/assets/images/CyberSec.png`,
+    name: 'Cyber Security',
+  },
+  {
+    id: uuid(),
+    icon: `${process.env.PUBLIC_URL}/assets/images/Mobility.png`,
+    name: 'Mobility',
+  },
+  {
+    id: uuid(),
+    icon: `${process.env.PUBLIC_URL}/assets/images/OpenInnov.png`,
+    name: 'Open Innovation',
+  },
 ];
 
 // Help Us Out

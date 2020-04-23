@@ -62,11 +62,12 @@ const SubscribeSection = () => {
           className='rounded py-2 px-6 border border-hack-blue sm:w-full border-2 border-hack-blue mb-8'
           placeholder='Email Here'
           name='email'
+          required='required'
           onChange={(e) => handleChange(e)}
           value={email}
         />
         <button
-          className='bg-hack-blue text-white rounded font-bold capitalize  py-2 px-8'
+          className='bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize  py-2 px-8'
           type='submit'
         >
           Subscribe
