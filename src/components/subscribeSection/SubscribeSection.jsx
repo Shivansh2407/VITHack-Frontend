@@ -4,6 +4,7 @@ import { useAlert } from 'react-alert';
 // Components
 import { ReactComponent as PaperMa } from '../vectors/PaperMa.svg';
 import { ReactComponent as Jack } from '../vectors/Jack.svg';
+import { ReactComponent as Grass } from '../vectors/Grass.svg';
 
 // Utility Functions
 import subscribe from '../../utils/subscribe';
@@ -71,7 +72,7 @@ const SubscribeSection = () => {
           Subscribe
         </button>
       </form>
-      <div className='h-32 w-screen' />
+      <div className='h-8 sm:h-32 w-screen' />
       <div className='flex flex-col sm:flex-row justify-center items-center opacity-50 leading-2 sm:leading-5 text-sm-footer sm:text-footer mb-2'>
         <div>This site is protected by reCAPTCHA and the Google</div>
         <div>
@@ -92,6 +93,7 @@ const SubscribeSection = () => {
           apply.
         </div>
       </div>
+      <Grass />
       <Jack />
       <PaperMa />
     </section>
