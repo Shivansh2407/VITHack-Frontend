@@ -197,6 +197,11 @@ button:-moz-focusring,
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
@@ -653,6 +658,10 @@ img {
   margin-bottom: 2rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -864,6 +873,10 @@ img {
   font-size: 0.625rem;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -985,6 +998,10 @@ img {
     display: flex;
   }
 
+  .sm\:grid {
+    display: grid;
+  }
+
   .sm\:hidden {
     display: none;
   }
@@ -1046,11 +1063,6 @@ img {
     padding-right: 5rem;
   }
 
-  .sm\:px-32 {
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-
   .sm\:px-35 {
     padding-left: 8.75rem;
     padding-right: 8.75rem;
@@ -1102,6 +1114,18 @@ img {
 
   .sm\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .sm\:col-start-2 {
+    grid-column-start: 2;
   }
 }
 
@@ -1163,6 +1187,21 @@ img {
 
   .md\:p-0 {
     padding: 0;
+  }
+
+  .md\:px-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .md\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .md\:px-35 {
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
   }
 
   .md\:px-40 {
