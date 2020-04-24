@@ -14,13 +14,23 @@ const EssentialsSection = () => {
       <div className='px-8 sm:px-35'>
         <Heading>Essentials</Heading>
         <div className='flex flex-col justify-center items-start mt-8'>
-          {FOOTER_LINKS.map((link) => (
-            <Link to={link.link} key={link.id}>
-              <div className='font-bold text-hack-blue hover:underline my-4'>
-                {link.text}
-              </div>
-            </Link>
-          ))}
+          {FOOTER_LINKS.map((link, index) => {
+            if (index === 1 || index === 4)
+              return (
+                <Link to={link.link} key={link.id}>
+                  <div className='font-bold text-hack-blue hover:underline my-4'>
+                    {link.text}
+                  </div>
+                </Link>
+              );
+            return (
+              <Link to={link.link} key={link.id}>
+                <div className='font-bold text-hack-blue cursor-not-allowed opacity-50 my-4'>
+                  {link.text}
+                </div>
+              </Link>
+            );
+          })}
         </div>
         <DownloadBoy />
       </div>
