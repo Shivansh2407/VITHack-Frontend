@@ -1118,12 +1118,12 @@ img {
     justify-content: flex-start;
   }
 
-  .md\:h-32 {
-    height: 8rem;
+  .md\:h-20 {
+    height: 5rem;
   }
 
-  .md\:h-35 {
-    height: 8.75rem;
+  .md\:h-32 {
+    height: 8rem;
   }
 
   .md\:mx-20 {

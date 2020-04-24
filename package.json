@@ -21,6 +21,7 @@
     "react": "^16.13.1",
     "react-alert": "^7.0.0",
     "react-alert-template-basic": "^1.0.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-animated-burgers": "^1.2.7",
     "react-dom": "^16.13.1",
     "react-google-recaptcha-v3": "^1.4.1",

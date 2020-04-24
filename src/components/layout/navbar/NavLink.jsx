@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const NavLink = ({ text, url }) => {
   if (text === 'Blog') {
@@ -16,9 +17,9 @@ const NavLink = ({ text, url }) => {
   }
 
   return (
-    <a className='hover:text-hack-blue cursor-pointer capitalise' href={url}>
-      {text}
-    </a>
+    <div className='hover:text-hack-blue cursor-pointer capitalise'>
+      <AnchorLink href={url}>{text}</AnchorLink>
+    </div>
   );
 };
 

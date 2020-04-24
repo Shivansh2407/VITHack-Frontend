@@ -25,9 +25,9 @@ const NAV_LINKS = [
     text: 'Blog',
     url: 'https://medium.com/@VIT_Hack',
   },
-  { id: uuid(), text: 'Help us Out', url: '/#help' },
-  { id: uuid(), text: 'Tracks', url: '/#tracks' },
-  { id: uuid(), text: 'Contact Us', url: '/#contact' },
+  { id: uuid(), text: 'Help us Out', url: '#help' },
+  { id: uuid(), text: 'Tracks', url: '#tracks' },
+  { id: uuid(), text: 'Contact Us', url: '#contact' },
 ];
 
 // About Section
