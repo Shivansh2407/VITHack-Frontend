@@ -17,7 +17,7 @@ const FaqPage = () => {
       <section className='section text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden cursor-default sm:text-base'>
         <div className='hidden sm:block w-screen h-20' />
         <div>
-          <section className='px-8 sm:px-35 md:pl-35'>
+          <section className='px-8 sm:px-35'>
             <div className='text-hack-pink'>
               <Heading>FAQs</Heading>
             </div>
