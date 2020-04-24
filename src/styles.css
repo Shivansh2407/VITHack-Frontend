@@ -1014,6 +1014,10 @@ img {
     justify-content: flex-start;
   }
 
+  .sm\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
   .sm\:h-32 {
     height: 8rem;
   }
@@ -1149,6 +1153,10 @@ img {
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:h-20 {

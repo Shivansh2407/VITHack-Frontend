@@ -14,7 +14,7 @@ const TrackSection = () => (
       <div className='px-8 sm:px-35 md:px-0 text-hack-orange'>
         <Heading>The Team</Heading>
       </div>
-      <div className='hidden sm:flex text-center justify-center items-center flex-wrap mt-16 md:px-32'>
+      <div className='hidden sm:flex text-center sm:justify-evenly md:justify-center items-center flex-wrap mt-16 md:px-32'>
         {HEADS.map((member) => (
           <TeamCard
             position={member.position}
