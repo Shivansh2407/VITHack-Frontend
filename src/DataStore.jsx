@@ -204,20 +204,90 @@ const COLLABORATORS = [
 
 // Team
 const TEAM = [
-  { id: uuid(), image: '', name: 'Shaanvi Mehta', position: 'Co-Director' },
-  { id: uuid(), image: '', name: 'Pranav Sharma', position: 'Director' },
-  { id: uuid(), image: '', name: 'Naynika Wason', position: 'Co-Director' },
-  { id: uuid(), image: '', name: 'Tony Jacob', position: 'Collaboration' },
-  { id: uuid(), image: '', name: 'Madhav Rajesh', position: 'Collaboration' },
-  { id: uuid(), image: '', name: 'Priya Thupalli', position: 'Logistics' },
-  { id: uuid(), image: '', name: 'Shreyansh Ojha', position: 'Logistics' },
-  { id: uuid(), image: '', name: 'Sparsh Srivastava', position: 'Technical' },
-  { id: uuid(), image: '', name: 'Lakshay Almadi', position: 'Participants' },
-  { id: uuid(), image: '', name: 'Tanya Warrier', position: 'Participants' },
-  { id: uuid(), image: '', name: 'Aman Lalchandani', position: 'Design' },
-  { id: uuid(), image: '', name: 'Subham Srivastava', position: 'Sponsors' },
-  { id: uuid(), image: '', name: 'Kritika Sharma', position: 'Marketing' },
-  { id: uuid(), image: '', name: 'Chavi Agarwal', position: 'Content' },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Shaanvi.jpg`,
+    name: 'Shaanvi Mehta',
+    position: 'Co-Director',
+  },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Pranav.jpg`,
+    name: 'Pranav Sharma',
+    position: 'Director',
+  },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Naynika.jpg`,
+    name: 'Naynika Wason',
+    position: 'Co-Director',
+  },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Tony.jpg`,
+    name: 'Tony Jacob',
+    position: 'Collaboration',
+  },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Madhav.jpg`,
+    name: 'Madhav Rajesh',
+    position: 'Collaboration',
+  },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Priya.jpg`,
+    name: 'Priya Thupalli',
+    position: 'Logistics',
+  },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Shreyansh.jpg`,
+    name: 'Shreyansh Ojha',
+    position: 'Logistics',
+  },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Sparsh.jpg`,
+    name: 'Sparsh Srivastava',
+    position: 'Technical',
+  },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Lakshay.jpg`,
+    name: 'Lakshay Almadi',
+    position: 'Participants',
+  },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Tanya.jpg`,
+    name: 'Tanya Warrier',
+    position: 'Participants',
+  },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Aman.jpg`,
+    name: 'Aman Lalchandani',
+    position: 'Design',
+  },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Shubham.jpg`,
+    name: 'Shubham Srivastava',
+    position: 'Sponsors',
+  },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Kritika.jpg`,
+    name: 'Kritika Sharma',
+    position: 'Marketing',
+  },
+  {
+    id: uuid(),
+    image: `${process.env.PUBLIC_URL}/assets/images/Chavi.jpg`,
+    name: 'Chavi Agarwal',
+    position: 'Content',
+  },
 ];
 
 // Contact Section

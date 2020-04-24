@@ -20,6 +20,7 @@ const TrackSection = () => (
             position={member.position}
             name={member.name}
             key={member.id}
+            image={member.image}
           />
         ))}
       </div>
