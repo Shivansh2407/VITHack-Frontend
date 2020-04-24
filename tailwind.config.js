@@ -47,6 +47,7 @@ module.exports = {
         'hack-pink': '#EA3883',
         'hack-green': '#BDE321',
         'hack-black': '#131313',
+        'hack-orange': '#FA7F58',
       },
       spacing: {
         14: '3.5rem',

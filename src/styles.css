@@ -545,6 +545,10 @@ img {
   justify-content: space-evenly;
 }
 
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -831,6 +835,10 @@ img {
   color: #131313;
 }
 
+.text-hack-orange {
+  color: #FA7F58;
+}
+
 .hover\:text-hack-blue:hover {
   color: #008DFF;
 }
@@ -875,8 +883,8 @@ img {
   width: 5rem;
 }
 
-.w-32 {
-  width: 8rem;
+.w-24 {
+  width: 6rem;
 }
 
 .w-40 {

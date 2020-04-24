@@ -17,6 +17,7 @@ import HamburgerMenu from './components/layout/navbar/HamburgerMenu';
 import MainPage from './pages/MainPage';
 import FaqPage from './pages/FaqPage';
 import Preloader from './components/layout/Preloader';
+import TeamPage from './pages/TeamPage';
 
 // Data
 // import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
@@ -44,8 +45,9 @@ const App = () => {
           <HamburgerMenu />
           <Preloader />
           <Switch>
-            <Route exact path='/' component={() => <MainPage />} />
             <Route exact path='/faqs' component={() => <FaqPage />} />
+            <Route exact path='/team' component={() => <TeamPage />} />
+            <Route path='/' component={() => <MainPage />} />
           </Switch>
         </ScrollToTop>
       </AlertProvider>

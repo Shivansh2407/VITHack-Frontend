@@ -204,16 +204,18 @@ const COLLABORATORS = [
 
 // Team
 const TEAM = [
-  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
-  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
-  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
-  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
-  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
-  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
-  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
-  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
-  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
-  { id: uuid(), image: '', name: 'John Doe', position: 'Position' },
+  { id: uuid(), image: '', name: 'Aman Lalchandani', position: 'Design' },
+  { id: uuid(), image: '', name: 'Chavi Agarwal', position: 'Content' },
+  { id: uuid(), image: '', name: 'Kritika Sharma', position: 'Marketing' },
+  { id: uuid(), image: '', name: 'Lakshay Almadi', position: 'Participants' },
+  { id: uuid(), image: '', name: 'Madhav', position: 'HIEC' },
+  { id: uuid(), image: '', name: 'Naynika Wason', position: 'Co-Director' },
+  { id: uuid(), image: '', name: 'Pranav Sharma', position: 'Director' },
+  { id: uuid(), image: '', name: 'Priya Thupalli', position: 'Logistics' },
+  { id: uuid(), image: '', name: 'Shaanvi Mehta', position: 'Co-Director' },
+  { id: uuid(), image: '', name: 'Shreyansh Ojha', position: 'Logistics' },
+  { id: uuid(), image: '', name: 'Subham Srivastava', position: 'Sponsors' },
+  { id: uuid(), image: '', name: 'Sparsh Srivastava', position: 'Technical' },
 ];
 
 // Contact Section
@@ -279,7 +281,7 @@ const FOOTER_LINKS = [
   {
     id: uuid(),
     text: 'The Team',
-    link: `${process.env.PUBLIC_URL}/#home`,
+    link: `${process.env.PUBLIC_URL}/team`,
   },
 ];
 

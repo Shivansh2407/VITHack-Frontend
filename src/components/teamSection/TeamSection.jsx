@@ -11,7 +11,7 @@ import { TEAM } from '../../DataStore';
 const TrackSection = () => (
   <section className='section text-hack-black flex flex-col justify-center items-center relative overflow-hidden cursor-default sm:text-base'>
     <div className='sm:px-35'>
-      <div className='px-8 sm:p-0'>
+      <div className='px-8 sm:p-0 text-hack-orange'>
         <Heading>The Team</Heading>
       </div>
       <div className='text-center flex justify-evenly items-center flex-wrap my-16 sm:px-32'>
