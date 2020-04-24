@@ -361,7 +361,8 @@ input::placeholder {
   color: #a0aec0;
 }
 
-button {
+button,
+[role="button"] {
   cursor: pointer;
 }
 
@@ -837,6 +838,10 @@ img {
 
 .text-hack-orange {
   color: #FA7F58;
+}
+
+.text-hack-purple {
+  color: #AC7FE0;
 }
 
 .hover\:text-hack-blue:hover {

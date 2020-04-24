@@ -18,6 +18,7 @@ import MainPage from './pages/MainPage';
 import FaqPage from './pages/FaqPage';
 import Preloader from './components/layout/Preloader';
 import TeamPage from './pages/TeamPage';
+import AmbassadorPage from './pages/AmbassadorPage';
 
 // Data
 // import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
@@ -47,6 +48,11 @@ const App = () => {
           <Switch>
             <Route exact path='/faqs' component={() => <FaqPage />} />
             <Route exact path='/team' component={() => <TeamPage />} />
+            <Route
+              exact
+              path='/ambassador'
+              component={() => <AmbassadorPage />}
+            />
             <Route path='/' component={() => <MainPage />} />
           </Switch>
         </ScrollToTop>

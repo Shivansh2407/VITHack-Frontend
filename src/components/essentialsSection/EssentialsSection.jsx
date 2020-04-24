@@ -15,11 +15,11 @@ const EssentialsSection = () => {
         <Heading>Essentials</Heading>
         <div className='flex flex-col justify-center items-start mt-8'>
           {FOOTER_LINKS.map((link) => (
-            <div className='font-bold text-hack-blue hover:underline my-4'>
-              <Link to={link.link} key={link.id}>
+            <Link to={link.link} key={link.id}>
+              <div className='font-bold text-hack-blue hover:underline my-4'>
                 {link.text}
-              </Link>
-            </div>
+              </div>
+            </Link>
           ))}
         </div>
         <DownloadBoy />
