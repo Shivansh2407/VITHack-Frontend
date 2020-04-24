@@ -9,9 +9,9 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <GoogleReCaptchaProvider reCaptchaKey={`${process.env.REACT_APP_SITE_KEY}`}>
+    <GoogleReCaptchaProvider reCaptchaKey='6LcuSOsUAAAAAJbI_N5O7-ara18XvfuRA0Y5Ybvg'>
       <GoogleReCaptcha
-        onVerify={(token) => localStorage.setItem('token', token)}
+        onVerify={(token) => sessionStorage.setItem('token', token)}
       />
     </GoogleReCaptchaProvider>
     <App />

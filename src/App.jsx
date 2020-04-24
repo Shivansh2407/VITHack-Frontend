@@ -1,27 +1,23 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { transitions, positions, Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
+import ScrollToTop from 'react-router-scroll-top';
 
 // Fullpage.js
 // import ReactFullpage from '@fullpage/react-fullpage';
 // import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
 
-// Sections
-import Navbar from './components/layout/navbar/Navbar';
-import {
-  BenefactorSection,
-  SubscribeSection,
-  HelpUsOutSection,
-  ContactSection,
-  LandingSection,
-  // TrackSection,
-  HamburgerMenu,
-  AboutSection,
-  // TeamSection,
-  Preloader,
-} from './sections';
+// Components
+
+// Pages
+import MainPage from './pages/MainPage';
+import FaqPage from './pages/FaqPage';
+import Preloader from './components/layout/Preloader';
+import TeamPage from './pages/TeamPage';
+// import AmbassadorPage from './pages/AmbassadorPage';
 
 // Data
 // import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
@@ -32,42 +28,34 @@ import './App.css';
 
 // Alert Options
 const options = {
-  // you can also just use 'bottom center'
   position: positions.BOTTOM_CENTER,
   timeout: 5000,
   offset: '30px',
-  // you can also just use 'scale'
   transition: transitions.SCALE,
 };
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter
+      onUpdate={() => window.scrollTo(0, 0)}
+      basename={process.env.PUBLIC_URL}
+    >
       <AlertProvider template={AlertTemplate} {...options}>
-        <HamburgerMenu />
-        <Navbar />
-        <Preloader />
-        {/* <ReactFullpage
-        scrollOverflow
-        anchors={SECTION_ANCHORS}
-        licenseKey={LICENSE_KEY}
-        render={() => {
-          return (
-            <> */}
-        <LandingSection />
-        <AboutSection />
-        {/* <TrackSection /> */}
-        <HelpUsOutSection />
-        <BenefactorSection />
-        {/* <TeamSection /> */}
-        <ContactSection />
-        <SubscribeSection />
-        {/* </>
-          );
-        }}
-      /> */}
+        <ScrollToTop>
+          <Preloader />
+          <Switch>
+            <Route exact path='/faqs' component={() => <FaqPage />} />
+            <Route exact path='/team' component={() => <TeamPage />} />
+            {/* <Route
+              exact
+              path='/ambassador'
+              component={() => <AmbassadorPage />}
+            /> */}
+            <Route path='/' component={() => <MainPage />} />
+          </Switch>
+        </ScrollToTop>
       </AlertProvider>
-    </>
+    </BrowserRouter>
   );
 };
 

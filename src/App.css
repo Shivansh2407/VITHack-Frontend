@@ -7,7 +7,6 @@
 /* Global Styles */
 body,
 html {
-  scroll-behavior: smooth;
   cursor: default;
   height: 100%;
   width: 100%;
@@ -15,7 +14,6 @@ html {
   font-family: 'Lato-Regular', sans-serif;
 }
 
-.section {
-  scroll-behavior: smooth;
-  cursor: default;
+.grecaptcha-badge {
+  visibility: collapse !important;
 }

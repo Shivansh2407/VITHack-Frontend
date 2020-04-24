@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const SubSection = ({ text, heading, showLess }) => {
+const SubSection = ({ text, heading, showLess, pink }) => {
   const [showText, setShowText] = useState(!showLess);
 
   const handleClick = () => setShowText(!showText);
 
   return (
     <div className='w-full md:w-7/12 my-12'>
-      <h4 className='text-sm-sub-heading sm:text-sub-heading font-bold mt-8'>{heading}</h4>
+      <h4
+        className={`text-sm-sub-heading sm:text-sub-heading font-bold mt-8 ${
+          pink && 'text-hack-pink'
+        }`}
+      >
+        {heading}
+      </h4>
       <p className='my-4'>
         {showText ? text : text.replace(/^(.{330}[^\s]*).*/, '$1')}
       </p>
@@ -32,10 +38,12 @@ SubSection.propTypes = {
   ]).isRequired,
   heading: PropTypes.string.isRequired,
   showLess: PropTypes.bool,
+  pink: PropTypes.bool,
 };
 
 SubSection.defaultProps = {
   showLess: false,
+  pink: false,
 };
 
 export default SubSection;

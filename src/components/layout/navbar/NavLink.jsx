@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-const NavLink = ({ anchor, text, url }) => {
+const NavLink = ({ text, url }) => {
   if (text === 'Blog') {
     return (
       <a
         className='hover:text-hack-blue cursor-pointer capitalise'
-        data-menuanchor={anchor}
         href={url}
         target='_blank'
         rel='noopener noreferrer'
@@ -15,24 +15,14 @@ const NavLink = ({ anchor, text, url }) => {
       </a>
     );
   }
-
   return (
-    <a
-      className={`capitalise ${
-        text === 'Tracks'
-          ? 'cursor-not-allowed opacity-50'
-          : 'cursor-pointer hover:text-hack-blue'
-      }`}
-      data-menuanchor={anchor}
-      href={url}
-    >
-      {text}
-    </a>
+    <div className='hover:text-hack-blue cursor-pointer capitalise'>
+      <AnchorLink href={url}>{text}</AnchorLink>
+    </div>
   );
 };
 
 NavLink.propTypes = {
-  anchor: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
 };

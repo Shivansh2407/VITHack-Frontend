@@ -38,6 +38,8 @@ module.exports = {
         'sm-heading': '2rem',
         'sub-heading': '1.5rem',
         'sm-sub-heading': '1.25rem',
+        footer: '0.875rem',
+        'sm-footer': '0.625rem',
       },
       textColor: {
         'hack-blue': '#008DFF',
@@ -45,6 +47,8 @@ module.exports = {
         'hack-pink': '#EA3883',
         'hack-green': '#BDE321',
         'hack-black': '#131313',
+        'hack-orange': '#FA7F58',
+        'hack-purple': '#AC7FE0',
       },
       spacing: {
         14: '3.5rem',
@@ -56,6 +60,9 @@ module.exports = {
       },
       height: {
         18: '4.5rem',
+      },
+      scale: {
+        '-50': '-0.5',
       },
     },
   },

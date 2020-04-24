@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAlert } from 'react-alert';
 
 // Components
 import { ReactComponent as PaperMa } from '../vectors/PaperMa.svg';
 import { ReactComponent as Jack } from '../vectors/Jack.svg';
+import { ReactComponent as Grass } from '../vectors/Grass.svg';
 
 // Utility Functions
 import subscribe from '../../utils/subscribe';
 
 // Data
-import { FOOTER_LINKS } from '../../DataStore';
+// import { FOOTER_LINKS } from '../../DataStore';
 
 const SubscribeSection = () => {
   const alert = useAlert();
@@ -36,6 +37,12 @@ const SubscribeSection = () => {
       );
   };
 
+  useEffect(() => {
+    return () => {
+      sessionStorage.removeItem('token');
+    };
+  }, []);
+
   return (
     <section className='section text-hack-black flex flex-col justify-center items-center relative overflow-hidden cursor-default sm:text-base mx-auto'>
       <div className='w-screen h-8 md:h-32' />
@@ -55,28 +62,39 @@ const SubscribeSection = () => {
           className='rounded py-2 px-6 border border-hack-blue sm:w-full border-2 border-hack-blue mb-8'
           placeholder='Email Here'
           name='email'
+          required='required'
           onChange={(e) => handleChange(e)}
           value={email}
         />
         <button
-          className='bg-hack-blue text-white rounded font-bold capitalize  py-2 px-8'
+          className='bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize  py-2 px-8'
           type='submit'
         >
           Subscribe
         </button>
       </form>
-      <div className='h-32 w-screen' />
-      <footer className='flex flex-row flex-wrap justify-center absolute bottom-0 w-screen mb-4 px-8 sm:p-0'>
-        {FOOTER_LINKS.map((link) => (
+      <div className='h-8 sm:h-32 w-screen' />
+      <div className='flex flex-col sm:flex-row justify-center items-center opacity-50 leading-2 sm:leading-5 text-sm-footer sm:text-footer mb-2'>
+        <div>This site is protected by reCAPTCHA and the Google</div>
+        <div>
+          &nbsp;
           <a
-            className='text-hack-blue cursor-not-allowed opacity-50 text-center mx-4'
-            href={link.link}
-            key={link.id}
+            href='https://policies.google.com/privacy'
+            className='text-hack-blue cursor-pointer hover:underline'
           >
-            {link.text}
-          </a>
-        ))}
-      </footer>
+            Privacy Policy
+          </a>{' '}
+          and{' '}
+          <a
+            href='https://policies.google.com/terms'
+            className='text-hack-blue cursor-pointer hover:underline'
+          >
+            Terms of Service
+          </a>{' '}
+          apply.
+        </div>
+      </div>
+      <Grass />
       <Jack />
       <PaperMa />
     </section>

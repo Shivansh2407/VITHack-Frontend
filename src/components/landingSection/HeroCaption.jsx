@@ -1,7 +1,20 @@
 import React from 'react';
 
+// Components
+import Bubbles from '../vectors/Bubbles.gif';
+
 const HeroCaption = () => (
-  <div className='w-full sm:w-1/3 text-center flex flex-col font-bold -mt-8'>
+  <div className='w-full sm:w-1/3 text-center flex flex-col font-bold relative -mt-8'>
+    <img
+      src={Bubbles}
+      alt='Bubbles'
+      className='absolute bottom-0 left-0 -mb-24 md:hidden transform scale-50 -ml-35'
+    />
+    <img
+      src={Bubbles}
+      alt='Bubbles'
+      className='absolute bottom-0 right-0 -mb-24 md:hidden transform scale-50 -mr-35 transform -scale-x-50'
+    />
     <h1 className='text-sm-title sm:text-title text-hack-blue uppercase'>
       VIT Hack
     </h1>
