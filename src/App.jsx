@@ -11,7 +11,6 @@ import ScrollToTop from 'react-router-scroll-top';
 // import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
 
 // Components
-import HamburgerMenu from './components/layout/navbar/HamburgerMenu';
 
 // Pages
 import MainPage from './pages/MainPage';
@@ -43,7 +42,6 @@ const App = () => {
     >
       <AlertProvider template={AlertTemplate} {...options}>
         <ScrollToTop>
-          <HamburgerMenu />
           <Preloader />
           <Switch>
             <Route exact path='/faqs' component={() => <FaqPage />} />

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { TimelineLite, Back, Elastic } from 'gsap/all';
 // import { HamburgerVortex } from 'react-animated-burgers';
 
@@ -110,15 +111,33 @@ const HamburgerMenu = () => {
           isActive ? 'block' : 'hidden'
         }`}
       >
-        {NAV_LINKS.map((navLink) => {
-          if (navLink.text === 'Blog') {
+        {window.location.pathname === '/' ? (
+          NAV_LINKS.map((navLink) => {
+            if (navLink.text === 'Blog') {
+              return (
+                <a
+                  className='hover:text-hack-blue cursor-pointer capitalise my-4'
+                  data-menuanchor={navLink.anchor}
+                  href={navLink.url}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  onClick={() => {
+                    if (tl.reversed()) tl.play();
+                    else tl.reverse();
+                    setActive(!isActive);
+                  }}
+                  key={navLink.id}
+                >
+                  {navLink.text}
+                </a>
+              );
+            }
+
             return (
               <a
-                className='hover:text-hack-blue cursor-pointer capitalise my-4'
+                className='capitalise my-4 cursor-pointer hover:text-hack-blue'
                 data-menuanchor={navLink.anchor}
                 href={navLink.url}
-                target='_blank'
-                rel='noopener noreferrer'
                 onClick={() => {
                   if (tl.reversed()) tl.play();
                   else tl.reverse();
@@ -129,24 +148,10 @@ const HamburgerMenu = () => {
                 {navLink.text}
               </a>
             );
-          }
-
-          return (
-            <a
-              className='capitalise my-4 cursor-pointer hover:text-hack-blue'
-              data-menuanchor={navLink.anchor}
-              href={navLink.url}
-              onClick={() => {
-                if (tl.reversed()) tl.play();
-                else tl.reverse();
-                setActive(!isActive);
-              }}
-              key={navLink.id}
-            >
-              {navLink.text}
-            </a>
-          );
-        })}
+          })
+        ) : (
+          <Link to='/'>Home</Link>
+        )}
       </div>
     </nav>
   );

@@ -4,6 +4,7 @@ import React from 'react';
 import SubSection from '../components/layout/SubSection';
 import Heading from '../components/layout/Heading';
 import Navbar from '../components/layout/navbar/Navbar';
+import HamburgerMenu from '../components/layout/navbar/HamburgerMenu';
 
 // Data
 import { FAQ_SUB_SECTIONS } from '../DataStore';
@@ -11,6 +12,7 @@ import { FAQ_SUB_SECTIONS } from '../DataStore';
 const FaqPage = () => {
   return (
     <>
+      <HamburgerMenu />
       <Navbar />
       <section className='section text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden cursor-default sm:text-base'>
         <div className='hidden sm:block w-screen h-20' />
