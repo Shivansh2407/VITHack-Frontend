@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Components
 import Heading from '../layout/Heading';
@@ -15,9 +16,9 @@ const EssentialsSection = () => {
         <div className='flex flex-col justify-center items-start mt-8'>
           {FOOTER_LINKS.map((link) => (
             <div className='font-bold text-hack-blue hover:underline my-4'>
-              <a href={link.link} key={link.id}>
+              <Link to={link.link} key={link.id}>
                 {link.text}
-              </a>
+              </Link>
             </div>
           ))}
         </div>

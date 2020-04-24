@@ -4,6 +4,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { transitions, positions, Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
+import ScrollToTop from 'react-router-scroll-top';
 
 // Fullpage.js
 // import ReactFullpage from '@fullpage/react-fullpage';
@@ -11,7 +12,6 @@ import AlertTemplate from 'react-alert-template-basic';
 
 // Components
 import HamburgerMenu from './components/layout/navbar/HamburgerMenu';
-import Navbar from './components/layout/navbar/Navbar';
 
 // Pages
 import MainPage from './pages/MainPage';
@@ -35,15 +35,19 @@ const options = {
 
 const App = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter
+      onUpdate={() => window.scrollTo(0, 0)}
+      basename={process.env.PUBLIC_URL}
+    >
       <AlertProvider template={AlertTemplate} {...options}>
-        <HamburgerMenu />
-        <Navbar />
-        <Preloader />
-        <Switch>
-          <Route exact path='/' component={() => <MainPage />} />
-          <Route exact path='/faqs' component={() => <FaqPage />} />
-        </Switch>
+        <ScrollToTop>
+          <HamburgerMenu />
+          <Preloader />
+          <Switch>
+            <Route exact path='/' component={() => <MainPage />} />
+            <Route exact path='/faqs' component={() => <FaqPage />} />
+          </Switch>
+        </ScrollToTop>
       </AlertProvider>
     </BrowserRouter>
   );

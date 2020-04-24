@@ -12,10 +12,12 @@ import {
   // TeamSection,
 } from '../sections';
 import EssentialsSection from '../components/essentialsSection/EssentialsSection';
+import Navbar from '../components/layout/navbar/Navbar';
 
 const MainPage = () => {
   return (
     <>
+      <Navbar />
       <LandingSection />
       <AboutSection />
       <TrackSection />

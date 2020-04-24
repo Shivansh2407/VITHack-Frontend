@@ -9,7 +9,7 @@ import { TRACKS } from '../../DataStore';
 
 const TrackSection = () => (
   <section
-    className='section text-hack-black flex flex-col justify-center items-center relative overflow-hidden cursor-default sm:text-base'
+    className='section text-hack-black flex flex-col justify-center items-stretch relative overflow-hidden cursor-default sm:text-base w-full'
     id='tracks'
   >
     <div className='sm:px-35'>

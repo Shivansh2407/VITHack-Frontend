@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const NavLink = ({ anchor, text, url }) => {
+const NavLink = ({ text, url }) => {
   if (text === 'Blog') {
     return (
       <a
         className='hover:text-hack-blue cursor-pointer capitalise'
-        data-menuanchor={anchor}
         href={url}
         target='_blank'
         rel='noopener noreferrer'
@@ -17,18 +16,13 @@ const NavLink = ({ anchor, text, url }) => {
   }
 
   return (
-    <a
-      className='capitalise cursor-pointer hover:text-hack-blue'
-      data-menuanchor={anchor}
-      href={url}
-    >
+    <a className='hover:text-hack-blue cursor-pointer capitalise' href={url}>
       {text}
     </a>
   );
 };
 
 NavLink.propTypes = {
-  anchor: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
 };

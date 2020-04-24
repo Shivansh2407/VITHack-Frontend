@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 // Components
 import VitHackLogo from './navbar/VitHackLogo';
@@ -10,6 +11,10 @@ const Preloader = () => {
   const preLoaderScreen = useRef(null);
   const logo = useRef(null);
 
+  const handleClick = () => {
+    if (window.location.pathname === '/') window.scrollTo(0, 0);
+  };
+
   useEffect(() => {
     animatePreloader(preLoaderScreen, logo);
   }, []);
@@ -20,14 +25,15 @@ const Preloader = () => {
         className='w-screen h-screen fixed inset-0 bg-white z-30 flex justify-center items-center text-base'
         ref={preLoaderScreen}
       />
-      <a
+      <Link
         style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }}
         className='cursor-pointer fixed z-30'
-        href='/#home'
+        to='/'
+        onClick={() => handleClick()}
         ref={logo}
       >
         <VitHackLogo />
-      </a>
+      </Link>
     </>
   );
 };
