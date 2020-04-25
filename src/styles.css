@@ -197,11 +197,6 @@ button:-moz-focusring,
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
@@ -511,10 +506,6 @@ img {
   flex-direction: column;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
 .items-start {
   align-items: flex-start;
 }
@@ -656,10 +647,6 @@ img {
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .mb-16 {
@@ -953,6 +940,18 @@ img {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-8 {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
 .transform {
   --transform-translate-x: 0;
   --transform-translate-y: 0;
@@ -1009,10 +1008,6 @@ img {
 
   .sm\:justify-start {
     justify-content: flex-start;
-  }
-
-  .sm\:justify-center {
-    justify-content: center;
   }
 
   .sm\:h-32 {
@@ -1127,14 +1122,6 @@ img {
 
   .sm\:grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr));
-  }
-
-  .sm\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
-  .sm\:col-start-2 {
-    grid-column-start: 2;
   }
 }
 

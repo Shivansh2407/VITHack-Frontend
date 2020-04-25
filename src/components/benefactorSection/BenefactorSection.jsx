@@ -35,9 +35,21 @@ const TrackSection = () => (
           className='grid grid-cols-2 sm:grid-cols-3 px-8 sm:p-0'
           style={{ justifyItems: 'center' }}
         >
-          {CASE_PARTNERS.map((partner) => (
-            <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
-          ))}
+          {CASE_PARTNERS.map((partner, index) => {
+            if (window.innerWidth > 870)
+              return (
+                <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
+              );
+            if (index < 8)
+              return (
+                <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
+              );
+            return (
+              <div className='col-span-2'>
+                <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
+              </div>
+            );
+          })}
         </div>
         <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-8 sm:my-12'>
           Our Collaborators
