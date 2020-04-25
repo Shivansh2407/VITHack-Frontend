@@ -528,10 +528,13 @@ const CA_FAQ_SUB_SECTIONS = [
     text:
       'Its quick and simple but it opens you to a world of opportunities. All you need to do to join us in this amazing journey is fill the Campus Ambassador form at <link> and click on submit!',
   },
-  {
-    id: uuid(),
-    heading: 'FAQs',
-  },
+  // {
+  //   id: uuid(),
+  //   heading: 'FAQs',
+  // },
+];
+
+const CA_FAQ = [
   {
     id: uuid(),
     heading: 'What does a campus ambassador do?',
@@ -586,6 +589,7 @@ export {
   NAV_LINKS,
   HELP_TEXT,
   SPONSORS,
+  CA_FAQ,
   CA_FAQ_SUB_SECTIONS,
   CA_HELP_TEXT,
   TRACKS,

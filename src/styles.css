@@ -641,6 +641,10 @@ img {
   margin-left: 1rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -1206,6 +1210,10 @@ img {
 
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-5\/12 {
+    width: 41.666667%;
   }
 
   .md\:w-7\/12 {
