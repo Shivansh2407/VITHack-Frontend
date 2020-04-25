@@ -1,3 +1,4 @@
+// Code maintained and written by Shreyas [www.github.com/HelixW]. If in case anything needs to be changed, feel free to contact me for support.
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
@@ -6,21 +7,12 @@ import { transitions, positions, Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
 import ScrollToTop from 'react-router-scroll-top';
 
-// Fullpage.js
-// import ReactFullpage from '@fullpage/react-fullpage';
-// import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
-
-// Components
-
 // Pages
 import MainPage from './pages/MainPage';
 import FaqPage from './pages/FaqPage';
 import Preloader from './components/layout/Preloader';
 import TeamPage from './pages/TeamPage';
-// import AmbassadorPage from './pages/AmbassadorPage';
-
-// Data
-// import { SECTION_ANCHORS, LICENSE_KEY } from './DataStore';
+import AmbassadorPage from './pages/AmbassadorPage';
 
 // Stylesheets
 import './styles.css';
@@ -46,11 +38,11 @@ const App = () => {
           <Switch>
             <Route exact path='/faqs' component={() => <FaqPage />} />
             <Route exact path='/team' component={() => <TeamPage />} />
-            {/* <Route
+            <Route
               exact
               path='/ambassador'
               component={() => <AmbassadorPage />}
-            /> */}
+            />
             <Route path='/' component={() => <MainPage />} />
           </Switch>
         </ScrollToTop>

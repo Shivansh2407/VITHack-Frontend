@@ -12,7 +12,7 @@ import { CASE_PARTNERS, COLLABORATORS, SPONSORS } from '../../DataStore';
 
 const TrackSection = () => (
   <section className='section text-hack-black flex flex-col justify-center items-center relative overflow-hidden cursor-default sm:text-base'>
-    <div className='sm:px-35'>
+    <div className='sm:px-35 w-full'>
       <div className='px-8 sm:p-0'>
         <Heading>Previous Benefactors</Heading>
       </div>
@@ -20,7 +20,10 @@ const TrackSection = () => (
         <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-8 sm:my-12'>
           Our Sponsors
         </header>
-        <div className='flex flex-col sm:flex-row flex-wrap justify-center items-center'>
+        <div
+          className='grid grid-cols-1 sm:grid-cols-3 px-8 sm:p-0'
+          style={{ justifyItems: 'center' }}
+        >
           {SPONSORS.map((sponsor) => (
             <BenefactorCard imageSrc={sponsor.imageSrc} key={sponsor.id} />
           ))}
@@ -28,15 +31,33 @@ const TrackSection = () => (
         <header className='px-4 sm:p-0 font-bold text-sm-sub-heading sm:text-sub-heading text-center my-8 sm:my-12'>
           Our Case Partners
         </header>
-        <div className='flex flex-wrap justify-center items-center'>
-          {CASE_PARTNERS.map((partner) => (
-            <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
-          ))}
+        <div
+          className='grid grid-cols-2 sm:grid-cols-3 px-8 sm:p-0'
+          style={{ justifyItems: 'center' }}
+        >
+          {CASE_PARTNERS.map((partner, index) => {
+            if (window.innerWidth > 870)
+              return (
+                <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
+              );
+            if (index < 8)
+              return (
+                <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
+              );
+            return (
+              <div className='col-span-2'>
+                <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
+              </div>
+            );
+          })}
         </div>
         <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-8 sm:my-12'>
           Our Collaborators
         </header>
-        <div className='flex flex-wrap justify-center items-center md:px-40'>
+        <div
+          className='grid grid-cols-2 px-8 sm:p-0'
+          style={{ justifyItems: 'center' }}
+        >
           {COLLABORATORS.map((collaborator) => (
             <BenefactorCard
               imageSrc={collaborator.imageSrc}

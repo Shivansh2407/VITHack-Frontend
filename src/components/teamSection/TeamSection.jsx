@@ -14,14 +14,19 @@ const TrackSection = () => (
       <div className='px-8 sm:px-35 md:px-0 text-hack-orange'>
         <Heading>The Team</Heading>
       </div>
-      <div className='hidden sm:flex text-center sm:justify-center items-center flex-wrap mt-16 sm:px-35 md:px-32'>
-        {HEADS.map((member) => (
-          <TeamCard
-            position={member.position}
-            name={member.name}
-            key={member.id}
-            image={member.image}
-          />
+      <div
+        className='hidden sm:grid grid-cols-8 sm:px-35 md:px-32'
+        style={{ justifyItems: 'center' }}
+      >
+        {HEADS.map((member, index) => (
+          <div className={`col-span-2 ${index === 0 && 'col-start-2'}`}>
+            <TeamCard
+              position={member.position}
+              name={member.name}
+              key={member.id}
+              image={member.image}
+            />
+          </div>
         ))}
       </div>
       <div
@@ -29,13 +34,17 @@ const TrackSection = () => (
         style={{ justifyItems: 'center' }}
       >
         {TEAM.map((member, index) => (
-          <TeamCard
-            position={member.position}
-            name={member.name}
-            key={member.id}
-            image={member.image}
-            index={index}
-          />
+          <div
+            className={`col-span-2 ${index === 8 && 'col-start-2'}`}
+            style={{ justifyItems: 'center' }}
+          >
+            <TeamCard
+              position={member.position}
+              name={member.name}
+              key={member.id}
+              image={member.image}
+            />
+          </div>
         ))}
       </div>
       <div

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const SubSection = ({ text, heading, showLess, pink }) => {
+const SubSection = ({ text, heading, showLess, pink, purple }) => {
   const [showText, setShowText] = useState(!showLess);
 
   const handleClick = () => setShowText(!showText);
@@ -11,7 +11,7 @@ const SubSection = ({ text, heading, showLess, pink }) => {
       <h4
         className={`text-sm-sub-heading sm:text-sub-heading font-bold mt-8 ${
           pink && 'text-hack-pink'
-        }`}
+        } ${purple && 'text-hack-purple'}`}
       >
         {heading}
       </h4>
@@ -39,11 +39,13 @@ SubSection.propTypes = {
   heading: PropTypes.string.isRequired,
   showLess: PropTypes.bool,
   pink: PropTypes.bool,
+  purple: PropTypes.bool,
 };
 
 SubSection.defaultProps = {
   showLess: false,
   pink: false,
+  purple: false,
 };
 
 export default SubSection;
