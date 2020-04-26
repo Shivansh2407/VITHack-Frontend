@@ -520,13 +520,13 @@ const CA_FAQ_SUB_SECTIONS = [
     id: uuid(),
     heading: 'What is Campus Ambassador?',
     text:
-      'An imaginative mind, a zest to communicate and tons of energy! That’s all it takes to be a Campus Ambassador title at VITHack. As a Campus Ambassador title you’ll have first-hand access to all the happenings at VITHack, you’ll get to set trends and be the talk of your college, you’ll get to organize campus-specific events catered to the liking of your college. Share ideas from your college community with ours, in exchange for exciting avenues.',
+      'An imaginative mind, a zest to communicate and tons of energy! That’s all it takes to be a Campus Ambassador at VITHack. As a Campus Ambassador title you’ll have first-hand access to all the happenings at VITHack, you’ll get to set trends and be the talk of your college, you’ll get to organize campus-specific events catered to the liking of your college. Share ideas from your college community with ours, in exchange for exciting avenues.',
   },
   {
     id: uuid(),
     heading: 'How to Apply?',
     text:
-      'Its quick and simple but it opens you to a world of opportunities. All you need to do to join us in this amazing journey is fill the Campus Ambassador form at <link> and click on submit!',
+      "It's quick and simple but it opens you to a world of opportunities. All you need to do to join us in this amazing journey is fill the Campus Ambassador form at <link> and click on submit!",
   },
   // {
   //   id: uuid(),
@@ -538,34 +538,62 @@ const CA_FAQ = [
   {
     id: uuid(),
     heading: 'What does a campus ambassador do?',
-    text:
-      'The primary role of a campus ambassador is to represent our event in your college. It would be your responsibility to spread the word and get more participation from your college for VITHack.',
+    text: (
+      <>
+        The primary role of a campus ambassador is to represent our event in
+        your college. It would be your responsibility to spread the word and get
+        more participation from your college for VITHack.
+      </>
+    ),
   },
   {
     id: uuid(),
     heading: 'How can I promote VIT Hack in my college?',
-    text:
-      'You can do so by keeping an active profile across all social media platforms and spreading the word among your friends to become a part of one of the largest hackathons in the country.',
+    text: (
+      <>
+        You can do so by keeping an active profile across all social media
+        platforms and spreading the word among your friends to become a part of
+        one of the largest hackathons in the country.
+      </>
+    ),
   },
   {
     id: uuid(),
     heading: 'What is the application process after my submission?',
-    text:
-      'Every application will be thoroughly reviewed and if selected, we will contact and let you know through email.',
+    text: (
+      <>
+        Every application will be thoroughly reviewed and if selected, we will
+        contact and let you know through email.
+      </>
+    ),
   },
   {
     id: uuid(),
     heading:
       'Whom should I contact if I have more doubts regarding this program?',
-    text:
-      'You can reach out to us through <email link> and we’ll try to get back to you as soon as possible.',
+    text: (
+      <>
+        You can reach out to us through{' '}
+        <a
+          href='mailto:collaborations@vithack.in'
+          className='text-hack-blue hover:underline'
+        >
+          participants@vithack.in{' '}
+        </a>
+        and we’ll try to get back to you as soon as possible.
+      </>
+    ),
   },
   {
     id: uuid(),
     heading:
       'What is the eligibility criteria required to become a campus ambassador?',
-    text:
-      'As long as you’re a student of that college, you’re eligible to become its campus ambassador.',
+    text: (
+      <>
+        As long as you’re a student of that college, you’re eligible to become
+        its campus ambassador.
+      </>
+    ),
   },
 ];
 
