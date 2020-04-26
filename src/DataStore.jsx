@@ -575,7 +575,7 @@ const CA_FAQ = [
       <>
         You can reach out to us through{' '}
         <a
-          href='mailto:collaborations@vithack.in'
+          href='mailto:participants@vithack.in'
           className='text-hack-blue hover:underline'
         >
           participants@vithack.in{' '}
