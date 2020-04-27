@@ -431,17 +431,17 @@ const CONTACT_TEXTS = [
 
 // Footer
 const FOOTER_LINKS = [
-  { id: uuid(), text: 'Brochure', link: `${process.env.PUBLIC_URL}/#home` },
+  { id: uuid(), text: 'Brochure', link: '' },
   { id: uuid(), text: 'FAQs', link: `${process.env.PUBLIC_URL}/faqs` },
   {
     id: uuid(),
     text: 'Privacy Policy',
-    link: `${process.env.PUBLIC_URL}/#home`,
+    link: `${process.env.PUBLIC_URL}/assets/pdfs/PrivacyPolicy.pdf`,
   },
   {
     id: uuid(),
     text: 'Terms and Conditions',
-    link: `${process.env.PUBLIC_URL}/#home`,
+    link: `${process.env.PUBLIC_URL}/assets/pdfs/TermsAndConditions.pdf`,
   },
   {
     id: uuid(),

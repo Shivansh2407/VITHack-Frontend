@@ -15,6 +15,15 @@ const EssentialsSection = () => {
         <Heading>Essentials</Heading>
         <div className='flex flex-col justify-center items-start mt-8'>
           {FOOTER_LINKS.map((link, index) => {
+            if (index === 0)
+              return (
+                <div
+                  className='font-bold text-hack-blue opacity-50 cursor-not-allowed my-4'
+                  key={link.id}
+                >
+                  {link.text}
+                </div>
+              );
             if (index === 1 || index === 4)
               return (
                 <Link to={link.link} key={link.id}>
@@ -24,11 +33,15 @@ const EssentialsSection = () => {
                 </Link>
               );
             return (
-              <Link to={link.link} key={link.id}>
-                <div className='font-bold text-hack-blue cursor-not-allowed opacity-50 my-4'>
-                  {link.text}
-                </div>
-              </Link>
+              <a
+                className='font-bold text-hack-blue hover:underline my-4'
+                key={link.id}
+                href={link.link}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {link.text}
+              </a>
             );
           })}
         </div>
