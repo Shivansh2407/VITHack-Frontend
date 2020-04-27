@@ -26,6 +26,7 @@
     "react-dom": "^16.13.1",
     "react-google-recaptcha-v3": "^1.4.1",
     "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^1.2.2",
     "react-router-scroll-top": "^0.2.1",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.0",
