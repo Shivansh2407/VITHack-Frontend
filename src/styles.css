@@ -717,6 +717,10 @@ img {
   margin-left: -8.75rem;
 }
 
+.-mb-48 {
+  margin-bottom: -12rem;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -974,6 +978,10 @@ img {
 
 .-scale-x-50 {
   --transform-scale-x: -0.5;
+}
+
+.-scale-y-50 {
+  --transform-scale-y: -0.5;
 }
 
 .transition {
