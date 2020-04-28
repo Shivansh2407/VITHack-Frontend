@@ -58,8 +58,8 @@ const PREVIOUS_FIGURES = [
   { id: uuid(), stat: '2942', text: 'Registrations', color: 'text-hack-pink' },
   {
     id: uuid(),
-    stat: '20+',
-    text: 'Involved States',
+    stat: '123',
+    text: 'Winners',
     color: 'text-hack-green',
   },
   {
