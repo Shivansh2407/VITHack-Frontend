@@ -60,7 +60,9 @@ module.exports = {
       },
       height: {
         18: '4.5rem',
+        30: '7.5rem',
       },
+      width: { 30: '7.5rem' },
       scale: {
         '-50': '-0.5',
       },

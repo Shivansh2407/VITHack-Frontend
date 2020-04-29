@@ -24,14 +24,14 @@ const TrackSection = () => (
           <TrackCard name={track.name} icon={track.icon} key={track.id} />
         ))}
       </div>
-      <div className='text-center'>
+      {/* <div className='text-center'>
         <button
           className='bg-hack-blue opacity-50 cursor-not-allowed text-white py-2 px-8 rounded font-bold'
           type='button'
         >
           View Details
         </button>
-      </div>
+      </div> */}
     </div>
     <div className='block sm:hidden w-screen h-20' />
   </section>

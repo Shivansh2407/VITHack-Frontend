@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`w-full text-center bg-white text-black h-18 hidden sm:flex justify-center items-center fixed top-0 z-10 transition duration-500 ease-in-out ${
+        className={`w-full text-center bg-white text-black h-12 sm:h-18 flex justify-center items-center fixed top-0 z-10 transition duration-500 ease-in-out ${
           scrolled && 'shadow-md'
         }`}
       >
