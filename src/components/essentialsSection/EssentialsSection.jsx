@@ -15,15 +15,6 @@ const EssentialsSection = () => {
         <Heading>Essentials</Heading>
         <div className='flex flex-col justify-center items-start mt-8'>
           {FOOTER_LINKS.map((link, index) => {
-            if (index === 0)
-              return (
-                <div
-                  className='font-bold text-hack-blue opacity-50 cursor-not-allowed my-4'
-                  key={link.id}
-                >
-                  {link.text}
-                </div>
-              );
             if (index === 1 || index === 4)
               return (
                 <Link to={link.link} key={link.id}>
