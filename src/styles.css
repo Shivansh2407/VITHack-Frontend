@@ -657,6 +657,10 @@ img {
   margin-bottom: 4rem;
 }
 
+.ml-16 {
+  margin-left: 4rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -707,6 +711,10 @@ img {
 
 .-ml-8 {
   margin-left: -2rem;
+}
+
+.-mr-16 {
+  margin-right: -4rem;
 }
 
 .-mb-24 {
