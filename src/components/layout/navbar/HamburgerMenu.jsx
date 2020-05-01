@@ -58,7 +58,7 @@ const HamburgerMenu = () => {
     <nav className='block sm:hidden fixed top-0 left-0 z-30 focus:outline-none'>
       <button
         className='block sm:hidden z-40 fixed'
-        style={{ top: '22px', left: '22px', opacity: '0.7' }}
+        style={{ top: '10px', left: '10px', opacity: '0.7' }}
         onClick={() => {
           if (tl.reversed()) tl.play();
           else {

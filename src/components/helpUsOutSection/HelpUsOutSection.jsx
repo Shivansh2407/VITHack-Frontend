@@ -15,7 +15,7 @@ const HelpUsOutSection = () => {
       className='section text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden cursor-default sm:text-base'
       id='help'
     >
-      <div className='hidden sm:block w-screen h-20' />
+      {/* <div className='hidden sm:block w-screen h-20' /> */}
       <div className='flex justify-start items-center'>
         <section className='px-8 sm:px-35 md:pl-35'>
           <Heading>Help Us Out</Heading>

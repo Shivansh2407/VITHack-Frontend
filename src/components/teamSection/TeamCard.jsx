@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const TrackCard = ({ image, name, position }) => (
   <div className='w-40 h-40 flex-shrink-0 flex flex-col justify-evenly items-center m-4'>
     <img
-      className='rounded-full w-24 h-24 flex-grow-0 flex-shrink-0'
+      className='rounded-full w-24 sm:w-30 h-24 sm:h-30 flex-grow-0 flex-shrink-0'
       src={image}
       alt='Team'
     />

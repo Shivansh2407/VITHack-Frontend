@@ -59,8 +59,11 @@ module.exports = {
         96: '24rem',
       },
       height: {
+        15: '3.75rem',
         18: '4.5rem',
+        30: '7.5rem',
       },
+      width: { 30: '7.5rem' },
       scale: {
         '-50': '-0.5',
       },
