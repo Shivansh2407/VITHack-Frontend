@@ -14,7 +14,7 @@ const TrackSection = () => (
       <div className='px-8 sm:px-35 md:px-0 text-hack-orange'>
         <Heading>The Team</Heading>
       </div>
-      <div className='ml-16 -mr-16'>
+      <div className='md:ml-16 md:-mr-16'>
         <div
           className='hidden sm:grid grid-cols-8 sm:px-35 md:px-32'
           style={{ justifyItems: 'center' }}
