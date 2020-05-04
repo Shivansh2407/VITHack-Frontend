@@ -55,7 +55,7 @@ const HamburgerMenu = () => {
         duration: 0.8,
         delay: -0.2,
       })
-      .to(menu.current, { opacity: 0, duration: 0.1, delay: -0.2 })
+      .to(menu.current, { opacity: 0, duration: 0.1, delay: -0.5 })
       .to(bg.current, {
         width: '0px',
         height: '0px',
