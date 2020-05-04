@@ -12,8 +12,16 @@ html {
   width: 100%;
   margin: 0;
   font-family: 'Lato-Regular', sans-serif;
+  character-spacing: '0.22px';
 }
 
 .grecaptcha-badge {
   visibility: collapse !important;
+}
+
+@media only screen and (max-width 600px) {
+  body,
+  html {
+    character-spacing: '0.19px';
+  }
 }

@@ -33,7 +33,7 @@ const TrackSection = () => (
         </button>
       </div> */}
     </div>
-    <div className='block sm:hidden w-screen h-20' />
+    {/* <div className='block sm:hidden w-screen h-20' /> */}
   </section>
 );
 

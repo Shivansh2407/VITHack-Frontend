@@ -64,8 +64,8 @@ const PREVIOUS_FIGURES = [
   },
   {
     id: uuid(),
-    stat: 'INCUB ATION',
-    text: 'Support',
+    stat: '20+',
+    text: 'Involved States',
     color: 'text-hack-yellow',
   },
   {
