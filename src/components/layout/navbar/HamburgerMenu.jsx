@@ -37,7 +37,7 @@ const HamburgerMenu = () => {
       .to(bg.current, {
         width: '200%',
         height: '200%',
-        duration: 1,
+        duration: 0.6,
         delay: -0.5,
       })
       .to(menu.current, {
@@ -46,6 +46,41 @@ const HamburgerMenu = () => {
         delay: -0.8,
       })
       .to(close.current, { width: 60, duration: 0.5, delay: -0.3 });
+  };
+
+  const closeAnimation = () => {
+    tl.to(close.current, { width: 0, duration: 0.5 })
+      .to(menu.current, {
+        transform: 'translateY(10px)',
+        duration: 0.8,
+        delay: -0.2,
+      })
+      .to(bg.current, {
+        width: '0px',
+        height: '0px',
+        duration: 0.6,
+        delay: -0.5,
+      })
+      .to(menu.current, {
+        display: 'none',
+        opacity: 0,
+        duration: 0.5,
+        delay: -0.3,
+      })
+      .to(text.current, { opacity: 0, duration: 0.1 })
+      .to(line1.current, {
+        height: 30,
+        duration: 0.1,
+      })
+      .to(ham.current, {
+        transform: 'translateY(0px)',
+        duration: 0.1,
+      })
+      .to(ham.current, {
+        transform: 'translateX(0px)',
+        duration: 0.5,
+        delay: 0.3,
+      });
   };
 
   return (
@@ -58,7 +93,9 @@ const HamburgerMenu = () => {
           right: '0px',
         }}
         onClick={() => {
-          openAnimation();
+          if (!isActive) openAnimation();
+          else closeAnimation();
+          setActive(!isActive);
         }}
         type='button'
       >
