@@ -50,12 +50,12 @@ const HamburgerMenu = () => {
 
   const closeAnimation = () => {
     tl.to(close.current, { width: 0, duration: 0.5 })
+      .to(menu.current, { opacity: 0, duration: 0.8, delay: -0.2 })
       .to(menu.current, {
         transform: 'translateY(10px)',
         duration: 0.8,
-        delay: -0.2,
+        delay: -0.8,
       })
-      .to(menu.current, { opacity: 0, duration: 0.1, delay: -0.5 })
       .to(bg.current, {
         width: '0px',
         height: '0px',
