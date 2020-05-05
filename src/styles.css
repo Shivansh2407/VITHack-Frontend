@@ -913,6 +913,10 @@ img {
   width: 10rem;
 }
 
+.w-72 {
+  width: 18rem;
+}
+
 .w-auto {
   width: auto;
 }
