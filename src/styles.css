@@ -670,8 +670,16 @@ img {
   margin-right: 5rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .ml-20 {
   margin-left: 5rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .mt-35 {
@@ -706,28 +714,16 @@ img {
   margin-right: -1rem;
 }
 
+.-ml-4 {
+  margin-left: -1rem;
+}
+
 .-mt-8 {
   margin-top: -2rem;
 }
 
 .-ml-8 {
   margin-left: -2rem;
-}
-
-.-mb-24 {
-  margin-bottom: -6rem;
-}
-
-.-mr-35 {
-  margin-right: -8.75rem;
-}
-
-.-ml-35 {
-  margin-left: -8.75rem;
-}
-
-.-mb-48 {
-  margin-bottom: -12rem;
 }
 
 .opacity-0 {
@@ -941,10 +937,6 @@ img {
   z-index: 10;
 }
 
-.z-20 {
-  z-index: 20;
-}
-
 .z-30 {
   z-index: 30;
 }
@@ -982,19 +974,6 @@ img {
   --transform-scale-x: 1;
   --transform-scale-y: 1;
   transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
-}
-
-.scale-50 {
-  --transform-scale-x: .5;
-  --transform-scale-y: .5;
-}
-
-.-scale-x-50 {
-  --transform-scale-x: -0.5;
-}
-
-.-scale-y-50 {
-  --transform-scale-y: -0.5;
 }
 
 .transition {
@@ -1170,10 +1149,6 @@ img {
 
   .md\:block {
     display: block;
-  }
-
-  .md\:hidden {
-    display: none;
   }
 
   .md\:flex-row {
