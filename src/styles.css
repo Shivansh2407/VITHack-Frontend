@@ -666,10 +666,6 @@ img {
   margin-right: 1rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .ml-4 {
   margin-left: 1rem;
 }
@@ -716,6 +712,10 @@ img {
 
 .mr-35 {
   margin-right: 8.75rem;
+}
+
+.mb-35 {
+  margin-bottom: 8.75rem;
 }
 
 .mt-40 {
