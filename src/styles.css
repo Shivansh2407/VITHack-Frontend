@@ -586,6 +586,11 @@ img {
   margin: 1rem;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -916,10 +921,6 @@ img {
   width: 33.333333%;
 }
 
-.w-7\/12 {
-  width: 58.333333%;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1138,6 +1139,10 @@ img {
 
   .sm\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .sm\:w-7\/12 {
+    width: 58.333333%;
   }
 
   .sm\:w-full {

@@ -11,7 +11,10 @@ import { ABOUT_SUB_SECTIONS } from '../../DataStore';
 
 const AboutSection = () => {
   return (
-    <section className='section text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden cursor-default sm:text-base'>
+    <section
+      className='section text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden cursor-default sm:text-base'
+      id='about'
+    >
       <div className='hidden sm:block w-screen h-20' />
       <div className='flex justify-start items-center'>
         <section className='px-8 sm:px-35 md:pl-35'>

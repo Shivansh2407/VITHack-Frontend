@@ -3,7 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import gsap from 'gsap';
 
 // DATA
-import { NAV_LINKS } from '../../../DataStore';
+import { HAM_LINKS } from '../../../DataStore';
 
 const HamburgerMenu = () => {
   const [isActive, setActive] = useState(false);
@@ -119,21 +119,40 @@ const HamburgerMenu = () => {
           </g>
         </svg>
       </button>
-      <div
+      <button
         className='fixed inset-0 h-screen w-screen flex flex-col justify-center items-start text-white font-bold text-sm-heading px-8 hidden opacity-0'
         ref={menu}
         style={{ transform: 'translateY(10px)' }}
+        type='button'
+        onClick={() => {
+          if (!isActive) openAnimation();
+          else closeAnimation();
+          setActive(!isActive);
+        }}
       >
         <div
           className='absolute bg-hack-blue rounded-full'
           style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }}
           ref={bg}
         />
-        {NAV_LINKS.map((navLink) => {
+        {HAM_LINKS.map((navLink) => {
+          if (navLink.text === 'Home')
+            return (
+              <Link
+                className='cursor-pointer capitalise z-10 my-1'
+                to={navLink.url}
+                onClick={() => {
+                  setActive(!isActive);
+                }}
+                key={navLink.id}
+              >
+                {navLink.text}
+              </Link>
+            );
           if (navLink.text === 'Blog') {
             return (
               <a
-                className='hover:text-hack-blue cursor-pointer capitalise my-4 z-10'
+                className='cursor-pointer capitalise z-10 my-1'
                 data-menuanchor={navLink.anchor}
                 href={navLink.url}
                 target='_blank'
@@ -151,7 +170,7 @@ const HamburgerMenu = () => {
           if (window.location.pathname !== '/')
             return (
               <Link
-                className='capitalise my-4 cursor-pointer hover:text-hack-blue z-10'
+                className='capitalise cursor-pointer z-10 my-1'
                 to={`/${navLink.url}`}
                 onClick={() => {
                   setActive(!isActive);
@@ -164,7 +183,7 @@ const HamburgerMenu = () => {
 
           return (
             <a
-              className='capitalise my-4 cursor-pointer hover:text-hack-blue z-10'
+              className='capitalise cursor-pointer z-10 my-1'
               data-menuanchor={navLink.anchor}
               href={navLink.url}
               onClick={() => {
@@ -176,7 +195,7 @@ const HamburgerMenu = () => {
             </a>
           );
         })}
-      </div>
+      </button>
     </nav>
   );
 };
