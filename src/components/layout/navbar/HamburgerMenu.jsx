@@ -33,49 +33,42 @@ const HamburgerMenu = () => {
         duration: 0.5,
         delay: 0.3,
       })
-      .to(menu.current, { display: 'flex', opacity: 1, duration: 0.5 })
+      .to(menu.current, {
+        display: 'flex',
+        opacity: 1,
+        transform: 'translateY(-10px)',
+        duration: 0.5,
+      })
       .to(bg.current, {
         width: '200%',
         height: '200%',
         duration: 0.6,
         delay: -0.5,
       })
-      .to(menu.current, {
-        transform: 'translateY(-10px)',
-        duration: 0.8,
-        delay: -0.8,
-      })
-      .to(close.current, { width: 60, duration: 0.5, delay: -0.3 });
+      .to(close.current, { width: 60, duration: 0.5, delay: -0.3 })
+      .to(text.current, { opacity: 0, duration: 0.01 })
+      .to(ham.current, { transform: 'translate(40px,0px)', duration: 0.01 })
+      .to(line1.current, {
+        height: 30,
+        duration: 0.01,
+      });
   };
 
   const closeAnimation = () => {
     tl.to(close.current, { width: 0, duration: 0.5 })
-      .to(menu.current, { opacity: 0, duration: 0.8, delay: -0.2 })
       .to(menu.current, {
+        opacity: 0,
         transform: 'translateY(10px)',
-        duration: 0.8,
-        delay: -0.8,
+        duration: 0.5,
       })
       .to(bg.current, {
         width: '0px',
         height: '0px',
-        duration: 0.6,
+        duration: 0.5,
         delay: -0.5,
       })
-      .to(menu.current, {
-        display: 'none',
-        duration: 0.3,
-        delay: -0.3,
-      })
-      .to(text.current, { opacity: 0, duration: 0.1 })
-      .to(line1.current, {
-        height: 30,
-        duration: 0.1,
-      })
-      .to(ham.current, {
-        transform: 'translateY(0px)',
-        duration: 0.1,
-      });
+      .to(menu.current, { display: 'none', duration: 0.01 })
+      .to(ham.current, { transform: 'translate(0px,0px)', duration: 0.5 });
   };
 
   return (
