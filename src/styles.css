@@ -1108,6 +1108,10 @@ img {
     width: 10rem;
   }
 
+  .sm\:w-96 {
+    width: 24rem;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
