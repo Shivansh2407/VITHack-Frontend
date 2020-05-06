@@ -45,8 +45,8 @@ const TrackSection = () => (
                 <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
               );
             return (
-              <div className='col-span-2'>
-                <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
+              <div className='col-span-2' key={partner.id}>
+                <BenefactorCard imageSrc={partner.imageSrc} />
               </div>
             );
           })}

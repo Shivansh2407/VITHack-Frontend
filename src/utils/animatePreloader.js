@@ -14,14 +14,17 @@ const animatePreloader = (preLoaderScreen, logo) => {
       }
     );
   else
-    tl.to(logo.current, { scale: 0.5, top: '30px', duration: 1, delay: 4 }).to(
-      preLoaderScreen.current,
-      {
-        opacity: 0,
-        display: 'none',
-        duration: 1,
-      }
-    );
+    tl.to(logo.current, {
+      scale: 0.4,
+      position: 'absolute',
+      top: '30px',
+      duration: 1,
+      delay: 4,
+    }).to(preLoaderScreen.current, {
+      opacity: 0,
+      display: 'none',
+      duration: 1,
+    });
 };
 
 export default animatePreloader;
