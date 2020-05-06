@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import gsap from 'gsap';
 
@@ -7,6 +7,7 @@ import { HAM_LINKS } from '../../../DataStore';
 
 const HamburgerMenu = () => {
   const [isActive, setActive] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const ham = useRef(null);
   const line1 = useRef(null);
@@ -16,6 +17,13 @@ const HamburgerMenu = () => {
   const menu = useRef(null);
   const bg = useRef(null);
   const tl = gsap.timeline();
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 5000);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
 
   const openAnimation = () => {
     tl.to(line1.current, {
@@ -72,9 +80,11 @@ const HamburgerMenu = () => {
   };
 
   return (
-    <nav className='block sm:hidden fixed top-0 left-0 z-20 focus:outline-none'>
+    <nav className='block sm:hidden fixed top-0 z-30 left-0 focus:outline-none'>
       <button
-        className='block sm:hidden fixed focus:outline-none'
+        className={`block sm:hidden z-20 fixed focus:outline-none ${
+          loading && 'opacity-0'
+        }`}
         style={{
           top: '50%',
           transform: 'translateY(-70%)',
@@ -131,7 +141,7 @@ const HamburgerMenu = () => {
         }}
       >
         <div
-          className='absolute bg-hack-blue rounded-full'
+          className='absolute bg-hack-blue rounded-full z-50'
           style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }}
           ref={bg}
         />
@@ -139,7 +149,7 @@ const HamburgerMenu = () => {
           if (navLink.text === 'Home')
             return (
               <Link
-                className='cursor-pointer capitalise z-10 my-1'
+                className='cursor-pointer capitalise z-50 my-1'
                 to={navLink.url}
                 onClick={() => {
                   setActive(!isActive);
@@ -152,7 +162,7 @@ const HamburgerMenu = () => {
           if (navLink.text === 'Blog') {
             return (
               <a
-                className='cursor-pointer capitalise z-10 my-1'
+                className='cursor-pointer capitalise z-50 my-1'
                 data-menuanchor={navLink.anchor}
                 href={navLink.url}
                 target='_blank'
@@ -170,7 +180,7 @@ const HamburgerMenu = () => {
           if (window.location.pathname !== '/')
             return (
               <Link
-                className='capitalise cursor-pointer z-10 my-1'
+                className='capitalise cursor-pointer z-50 my-1'
                 to={`/${navLink.url}`}
                 onClick={() => {
                   setActive(!isActive);
@@ -183,7 +193,7 @@ const HamburgerMenu = () => {
 
           return (
             <a
-              className='capitalise cursor-pointer z-10 my-1'
+              className='capitalise cursor-pointer z-50 my-1'
               data-menuanchor={navLink.anchor}
               href={navLink.url}
               onClick={() => {

@@ -973,6 +973,10 @@ img {
   z-index: 30;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }

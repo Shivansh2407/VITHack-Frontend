@@ -20,6 +20,7 @@ const VitHackLogo = () => {
       viewBox='0 0 110 56'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      className='z-30'
     >
       <g fill='white' ref={batch1}>
         <path
