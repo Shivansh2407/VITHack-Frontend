@@ -72,9 +72,9 @@ const HamburgerMenu = () => {
   };
 
   return (
-    <nav className='block sm:hidden fixed top-0 left-0 z-30 focus:outline-none'>
+    <nav className='block sm:hidden fixed top-0 left-0 z-20 focus:outline-none'>
       <button
-        className='block sm:hidden z-40 fixed focus:outline-none'
+        className='block sm:hidden fixed focus:outline-none'
         style={{
           top: '50%',
           transform: 'translateY(-70%)',
