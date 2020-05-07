@@ -14,6 +14,7 @@ const HelpUsOutSection = () => {
     <section
       className='section text-hack-black flex flex-col justify-center items-center mx-auto relative overflow-hidden cursor-default sm:text-base'
       id='help'
+      data-aos='fade'
     >
       {/* <div className='hidden sm:block w-screen h-20' /> */}
       <div className='flex justify-start items-center'>

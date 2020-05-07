@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Heading = ({ children }) => (
-  <header className='font-bold text-sm-heading sm:text-heading mt-20 sm:w-7/12'>
+  <header
+    className='font-bold text-sm-heading sm:text-heading mt-20 sm:w-7/12'
+    data-sal='fade'
+  >
     {children}
   </header>
 );

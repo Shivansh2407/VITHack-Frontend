@@ -1,3 +1,5 @@
+@import '~aos/dist/aos.css';
+
 /* Fonts */
 @font-face {
   font-family: 'Lato-Regular';
@@ -13,6 +15,7 @@ html {
   margin: 0;
   font-family: 'Lato-Regular', sans-serif;
   letter-spacing: 0.22px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .grecaptcha-badge {
