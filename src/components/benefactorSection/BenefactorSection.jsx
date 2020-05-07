@@ -13,7 +13,7 @@ import { CASE_PARTNERS, COLLABORATORS, SPONSORS } from '../../DataStore';
 const TrackSection = () => (
   <section
     className='section text-hack-black flex flex-col justify-center items-center relative overflow-hidden cursor-default sm:text-base'
-    data-aos='fade'
+    data-aos='fade-up'
   >
     <div className='sm:px-35 w-full'>
       <div className='px-8 sm:p-0'>

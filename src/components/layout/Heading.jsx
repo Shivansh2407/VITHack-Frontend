@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Heading = ({ children }) => (
   <header
     className='font-bold text-sm-heading sm:text-heading mt-20 sm:w-7/12'
-    data-sal='fade'
+    data-sal='fade-up'
   >
     {children}
   </header>

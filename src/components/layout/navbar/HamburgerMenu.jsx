@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import gsap from 'gsap';
 
 // DATA
@@ -192,17 +193,17 @@ const HamburgerMenu = () => {
             );
 
           return (
-            <a
+            <AnchorLink
               className='capitalise cursor-pointer z-50 my-1'
-              data-menuanchor={navLink.anchor}
               href={navLink.url}
               onClick={() => {
                 setActive(!isActive);
               }}
               key={navLink.id}
+              offset='40'
             >
               {navLink.text}
-            </a>
+            </AnchorLink>
           );
         })}
       </button>
