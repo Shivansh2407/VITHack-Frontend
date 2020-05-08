@@ -44,10 +44,7 @@ const SubscribeSection = () => {
   }, []);
 
   return (
-    <section
-      className='section text-hack-black flex flex-col justify-center items-center relative overflow-hidden cursor-default sm:text-base mx-auto'
-      data-aos='fade-up'
-    >
+    <section className='section text-hack-black flex flex-col justify-center items-center relative overflow-hidden cursor-default sm:text-base mx-auto'>
       <div className='w-screen h-8 md:h-32' />
       <section className='flex justify-center items-center -mt-8'>
         <div className='sm:w-2/3 md:w-1/2 text-sm-sub-heading sm:text-sub-heading font-bold flex items-center text-center mb-16 px-8 sm:px-20'>
