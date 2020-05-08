@@ -10,7 +10,10 @@ import { FOOTER_LINKS } from '../../DataStore';
 
 const EssentialsSection = () => {
   return (
-    <section className='section text-hack-black overflow-hidden relative cursor-default sm:text-base'>
+    <section
+      className='section text-hack-black overflow-hidden relative cursor-default sm:text-base'
+      data-aos='fade-up'
+    >
       <div className='px-8 sm:px-35'>
         <Heading>Essentials</Heading>
         <div className='flex flex-col justify-center items-start mt-8'>

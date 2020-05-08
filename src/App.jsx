@@ -1,11 +1,12 @@
 // Code maintained and written by Shreyas [www.github.com/HelixW]. If in case anything needs to be changed, feel free to contact me for support.
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable import/no-extraneous-dependencies */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { transitions, positions, Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
 import ScrollToTop from 'react-router-scroll-top';
+import AOS from 'aos';
 
 // Pages
 import MainPage from './pages/MainPage';
@@ -27,6 +28,14 @@ const options = {
 };
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 400,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   return (
     <BrowserRouter
       onUpdate={() => window.scrollTo(0, 0)}

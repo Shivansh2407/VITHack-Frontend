@@ -24,7 +24,9 @@ const NavLink = ({ text, url }) => {
     );
   return (
     <div className='hover:text-hack-blue cursor-pointer capitalise'>
-      <AnchorLink href={url}>{text}</AnchorLink>
+      <AnchorLink offset='100' href={url}>
+        {text}
+      </AnchorLink>
     </div>
   );
 };

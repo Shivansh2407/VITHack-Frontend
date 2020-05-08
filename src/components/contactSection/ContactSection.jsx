@@ -13,6 +13,7 @@ const ContactSection = () => (
   <section
     className='section text-hack-black flex flex-col justify-center items-centerrelative overflow-hidden relative cursor-default sm:text-base mx-auto'
     id='contact'
+    data-aos='fade-up'
   >
     <section className='px-8 sm:px-35'>
       <Heading>Contact Us</Heading>

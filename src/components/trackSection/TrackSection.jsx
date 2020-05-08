@@ -11,6 +11,7 @@ const TrackSection = () => (
   <section
     className='section text-hack-black flex flex-col justify-center items-stretch relative overflow-hidden cursor-default sm:text-base w-full'
     id='tracks'
+    data-aos='fade-up'
   >
     <div className='sm:px-35'>
       <div className='px-8 sm:p-0'>
