@@ -20,11 +20,13 @@ const TrackSection = () => (
           style={{ justifyItems: 'center' }}
         >
           {HEADS.map((member, index) => (
-            <div className={`col-span-2 ${index === 0 && 'col-start-2'}`}>
+            <div
+              className={`col-span-2 ${index === 0 && 'col-start-2'}`}
+              key={member.id}
+            >
               <TeamCard
                 position={member.position}
                 name={member.name}
-                key={member.id}
                 image={member.image}
               />
             </div>
@@ -38,11 +40,11 @@ const TrackSection = () => (
             <div
               className={`col-span-2 ${index === 8 && 'col-start-2'}`}
               style={{ justifyItems: 'center' }}
+              key={member.id}
             >
               <TeamCard
                 position={member.position}
                 name={member.name}
-                key={member.id}
                 image={member.image}
               />
             </div>

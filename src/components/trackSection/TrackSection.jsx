@@ -13,6 +13,7 @@ const TrackSection = () => (
     id='tracks'
     data-aos='fade-up'
   >
+    <div className='block w-screen h-4 sm:h-20' />
     <div className='sm:px-35'>
       <div className='px-8 sm:p-0'>
         <Heading>Tracks</Heading>
@@ -25,16 +26,7 @@ const TrackSection = () => (
           <TrackCard name={track.name} icon={track.icon} key={track.id} />
         ))}
       </div>
-      {/* <div className='text-center'>
-        <button
-          className='bg-hack-blue opacity-50 cursor-not-allowed text-white py-2 px-8 rounded font-bold'
-          type='button'
-        >
-          View Details
-        </button>
-      </div> */}
     </div>
-    {/* <div className='block sm:hidden w-screen h-20' /> */}
   </section>
 );
 

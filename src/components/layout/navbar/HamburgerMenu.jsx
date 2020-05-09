@@ -20,7 +20,11 @@ const HamburgerMenu = () => {
   const tl = gsap.timeline();
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 5000);
+    let timer;
+    if (window.location.pathname === '/')
+      timer = setTimeout(() => setLoading(false), 5000);
+    else timer = setTimeout(() => setLoading(false), 0);
+
     return () => {
       clearTimeout(timer);
     };
