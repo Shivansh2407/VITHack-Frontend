@@ -16,7 +16,7 @@ const AboutSection = () => {
       id='about'
       data-aos='fade-up'
     >
-      <div className='hidden sm:block w-screen h-20' />
+      <div className='block w-screen h-4 sm:h-20' />
       <div className='flex justify-start items-center'>
         <section className='px-8 sm:px-35 md:pl-35'>
           <Heading>About Us</Heading>

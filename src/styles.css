@@ -558,6 +558,10 @@ img {
   font-weight: 700;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -1051,6 +1055,14 @@ img {
 
   .sm\:h-18 {
     height: 4.5rem;
+  }
+
+  .sm\:h-20 {
+    height: 5rem;
+  }
+
+  .sm\:h-24 {
+    height: 6rem;
   }
 
   .sm\:h-30 {

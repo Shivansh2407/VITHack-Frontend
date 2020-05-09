@@ -13,9 +13,6 @@ const Navbar = () => {
     document.addEventListener('scroll', () =>
       window.scrollY > 100 ? setScrolled(true) : setScrolled(false)
     );
-    return document.removeEventListener('scroll', () =>
-      window.scrollY > 100 ? setScrolled(true) : setScrolled(false)
-    );
   });
 
   return (
@@ -41,7 +38,7 @@ const Navbar = () => {
         <div className='w-1/3 flex justify-between items-center hidden sm:flex -ml-8 md:ml-0  pr-8 md:pr-35'>
           {NAV_LINKS.slice(2, 4).map((navLink) => (
             <div key={navLink.id}>
-              <NavLink text={navLink.text} url={navLink.url} key={NavLink.id} />
+              <NavLink text={navLink.text} url={navLink.url} />
             </div>
           ))}
         </div>
