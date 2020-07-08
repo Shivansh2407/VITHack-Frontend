@@ -516,12 +516,6 @@ const FAQ_SUB_SECTIONS = [
   },
   {
     id: uuid(),
-    heading: 'What should I carry to the hack?',
-    text:
-      'We recommend to get your own laptop with all the necessary softwares installed, chargers, student ID.',
-  },
-  {
-    id: uuid(),
     heading: 'What can one expect to take away from this hackathon?',
     text:
       "You will have a mini project at the end of the hackathon and develop a new skill set. All in all it'll be a hackathon filled with fun, excitement, learning and cool shwags.",
@@ -543,15 +537,9 @@ const FAQ_SUB_SECTIONS = [
     heading:
       'Will participants get to interact with industrial experts during the hack?',
     text:
-      'Yes. Continuous mentoring would be provided by industrial experts to help you improvise on your project and pitch the idea better. After all, VIT Hack is not just a hackathon, rather a hub where innovative minds think alike.',
+      'Yes. Continuous online mentoring would be provided by industrial experts to help execute your idea better. After all, VIT Hack is not just a hackathon, rather a hub where innovative minds think alike.',
   },
-  {
-    id: uuid(),
-    heading:
-      'Are there any restrictions regarding the submission for the hack?',
-    text:
-      'If your project can be implemented by either a technical application or a hardware prototype, it is considered as a legitimate submission.',
-  },
+
 ];
 
 const CA_FAQ_SUB_SECTIONS = [
