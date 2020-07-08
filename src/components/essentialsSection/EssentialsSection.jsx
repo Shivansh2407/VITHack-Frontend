@@ -12,7 +12,7 @@ const EssentialsSection = () => {
   return (
     <section
       className='section text-hack-black overflow-hidden relative cursor-default sm:text-base'
-      data-aos='fade-up'
+      data-aos='fade-up' id='essentials'
     >
       <div className='px-8 sm:px-35'>
         <Heading>Essentials</Heading>

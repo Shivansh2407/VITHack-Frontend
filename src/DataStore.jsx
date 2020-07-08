@@ -25,8 +25,8 @@ const NAV_LINKS = [
     text: 'Blog',
     url: 'https://medium.com/@VIT_Hack',
   },
-  { id: uuid(), text: 'Help us Out', url: '#help' },
   { id: uuid(), text: 'Tracks', url: '#tracks' },
+  { id: uuid(), text: 'Essentials', url: '#essentials' },
   { id: uuid(), text: 'Contact Us', url: '#contact' },
 ];
 
@@ -45,7 +45,7 @@ const HAM_LINKS = [
   { id: uuid(), text: 'About Us', url: '#about' },
   { id: uuid(), text: 'Tracks', url: '#tracks' },
   { id: uuid(), text: 'Contact Us', url: '#contact' },
-  { id: uuid(), text: 'Help Us Out', url: '#help' },
+  { id: uuid(), text: 'Essentials', url: '#essentials' },
 ];
 
 // About Section
