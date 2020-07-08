@@ -1,11 +1,14 @@
-import React from 'react';
+import React from 'react'
 
 // Components
-import SubSection from '../layout/SubSection';
-import Heading from '../layout/Heading';
+import SubSection from '../layout/SubSection'
+import Heading from '../layout/Heading'
+import { ReactComponent as Mobile } from '../vectors/Mobile.svg'
+import { ReactComponent as MobileLg } from '../vectors/MobileLg.svg'
 
 // Data
-import { ABOUT_HACK_SUB_SECTIONS } from '../../DataStore';
+import { ABOUT_HACK_SUB_SECTIONS } from '../../DataStore'
+import { Link } from 'react-router-dom'
 
 const AboutHackSection = () => {
   return (
@@ -26,10 +29,22 @@ const AboutHackSection = () => {
               key={subSection.id}
             />
           ))}
+          <div className='flex justify-center md:justify-start items-center w-full'>
+            <Link to='/community'>
+              <button
+                className='bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize py-2 px-8'
+                type='button'
+              >
+                Learn More
+              </button>
+            </Link>
+          </div>
         </section>
       </div>
+      <Mobile />
+      <MobileLg />
     </section>
-  );
-};
+  )
+}
 
-export default AboutHackSection;
+export default AboutHackSection
