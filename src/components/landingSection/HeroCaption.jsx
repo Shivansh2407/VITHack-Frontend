@@ -8,6 +8,14 @@ const HeroCaption = () => (
     <h3 className='text-sm-sub-heading sm:text-sub-heading text-hack-black capitalize'>
       VIT Vellore, India
     </h3>
+    <br/>
+    <br/>
+    <button
+    className='bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize py-2 px-8'
+    type='button'
+    >
+    Join the Community
+  </button>
   </div>
 );
 
