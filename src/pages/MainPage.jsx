@@ -4,7 +4,7 @@ import React from 'react';
 import {
   BenefactorSection,
   SubscribeSection,
-  HelpUsOutSection,
+//HelpUsOutSection,
   ContactSection,
   LandingSection,
   TrackSection,
@@ -15,6 +15,7 @@ import EssentialsSection from '../components/essentialsSection/EssentialsSection
 import Navbar from '../components/layout/navbar/Navbar';
 import HamburgerMenu from '../components/layout/navbar/HamburgerMenu';
 
+//<HelpUsOutSection /> Removed
 const MainPage = () => {
   return (
     <>
@@ -23,7 +24,6 @@ const MainPage = () => {
       <LandingSection />
       <AboutSection />
       <TrackSection />
-      <HelpUsOutSection />
       <BenefactorSection />
       <ContactSection />
       <EssentialsSection />

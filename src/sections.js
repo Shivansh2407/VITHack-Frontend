@@ -2,7 +2,7 @@
 
 import BenefactorSection from './components/benefactorSection/BenefactorSection';
 import SubscribeSection from './components/subscribeSection/SubscribeSection';
-import HelpUsOutSection from './components/helpUsOutSection/HelpUsOutSection';
+// import HelpUsOutSection from './components/helpUsOutSection/HelpUsOutSection';
 import ContactSection from './components/contactSection/ContactSection';
 import LandingSection from './components/landingSection/LandingSection';
 import HamburgerMenu from './components/layout/navbar/HamburgerMenu';
@@ -14,7 +14,7 @@ import Preloader from './components/layout/Preloader';
 export {
   BenefactorSection,
   SubscribeSection,
-  HelpUsOutSection,
+//HelpUsOutSection,
   ContactSection,
   LandingSection,
   HamburgerMenu,
