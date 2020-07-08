@@ -1,10 +1,10 @@
 // All constant data/text is imported from this file for a scalable workflow
 
-import React from 'react';
-import { v4 as uuid } from 'uuid';
+import React from 'react'
+import { v4 as uuid } from 'uuid'
 
 // Fullpage.js License:
-const LICENSE_KEY = 'OPEN-SOURCE-GPLV3-LICENSE';
+const LICENSE_KEY = 'OPEN-SOURCE-GPLV3-LICENSE'
 
 // Section components:
 const SECTION_ANCHORS = [
@@ -16,7 +16,7 @@ const SECTION_ANCHORS = [
   // 'team',
   'contact',
   'subscribe',
-];
+]
 
 // Nav Links:
 const NAV_LINKS = [
@@ -28,7 +28,7 @@ const NAV_LINKS = [
   { id: uuid(), text: 'Tracks', url: '#tracks' },
   { id: uuid(), text: 'Essentials', url: '#essentials' },
   { id: uuid(), text: 'Contact Us', url: '#contact' },
-];
+]
 
 // Ham Links:
 const HAM_LINKS = [
@@ -46,7 +46,7 @@ const HAM_LINKS = [
   { id: uuid(), text: 'Tracks', url: '#tracks' },
   { id: uuid(), text: 'Contact Us', url: '#contact' },
   { id: uuid(), text: 'Essentials', url: '#essentials' },
-];
+]
 
 // About Section
 const ABOUT_SUB_SECTIONS = [
@@ -64,7 +64,7 @@ const ABOUT_SUB_SECTIONS = [
       'VIT Hack aims to provide an arena for participants to contribute their ideas as solutions to real-world problems. Being a global event, it aims to gain from the unification of various cultures leading to various solutions. Problem statements will be driven towards social causes to help channelize the participants’ thoughts into a revolutionary solution. VIT Hack focuses on bringing leading industry experts to help ignite innovation. All that we wish is you bring your best ideas, your confidence and your willingness to have a great time.',
     showLess: true,
   },
-];
+]
 
 // About Section
 const ABOUT_HACK_SUB_SECTIONS = [
@@ -81,7 +81,7 @@ const ABOUT_HACK_SUB_SECTIONS = [
     text:
       'Teaching, helping and collaborating on different projects have brought the members, even closer. Through VIT Hack, we hope to continue the thread of that same sense of community among all its members.',
   },
-];
+]
 
 const PREVIOUS_FIGURES = [
   {
@@ -110,7 +110,7 @@ const PREVIOUS_FIGURES = [
     color: 'text-hack-pink',
   },
   { id: uuid(), stat: '36', text: 'Hours', color: 'text-hack-green' },
-];
+]
 
 // Track Section
 const TRACKS = [
@@ -154,14 +154,14 @@ const TRACKS = [
     icon: `${process.env.PUBLIC_URL}/assets/images/OpenInnov.png`,
     name: 'Open Innovation',
   },
-];
+]
 
 // Help Us Out
 const HELP_TEXT = {
   heading: 'Campus Ambassadors',
   text:
     'There’s more to college than a degree and grades, be a part of something big. VITHack isn’t just a college hackathon, it’s a phenomenon. Help us get the word out to your college and become a trendsetter!',
-};
+}
 
 // Benefactors
 const SPONSORS = [
@@ -177,7 +177,7 @@ const SPONSORS = [
     id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/GithubLogo.png`,
   },
-];
+]
 
 const CASE_PARTNERS = [
   {
@@ -216,7 +216,7 @@ const CASE_PARTNERS = [
     id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/HPLogo.png`,
   },
-];
+]
 
 const COLLABORATORS = [
   {
@@ -235,7 +235,7 @@ const COLLABORATORS = [
     id: uuid(),
     imageSrc: `${process.env.PUBLIC_URL}/assets/images/ItsaiLogo.png`,
   },
-];
+]
 
 // Team
 const HEADS = [
@@ -257,7 +257,7 @@ const HEADS = [
     name: 'Naynika Wason',
     position: 'Co-Director',
   },
-];
+]
 
 const TEAM = [
   {
@@ -326,7 +326,7 @@ const TEAM = [
     name: 'Chavi Agarwal',
     position: 'Content',
   },
-];
+]
 
 const TEAM_MOBILE = [
   {
@@ -416,7 +416,7 @@ const TEAM_MOBILE = [
     name: 'Chavi Agarwal',
     position: 'Content',
   },
-];
+]
 
 // Contact Section
 const CONTACT_TEXTS = [
@@ -462,7 +462,7 @@ const CONTACT_TEXTS = [
     ),
     showLess: false,
   },
-];
+]
 
 // Footer
 const FOOTER_LINKS = [
@@ -487,7 +487,7 @@ const FOOTER_LINKS = [
     text: 'The Team',
     link: `${process.env.PUBLIC_URL}/team`,
   },
-];
+]
 
 const FAQ_SUB_SECTIONS = [
   {
@@ -539,27 +539,16 @@ const FAQ_SUB_SECTIONS = [
     text:
       'Yes. Continuous online mentoring would be provided by industrial experts to help execute your idea better. After all, VIT Hack is not just a hackathon, rather a hub where innovative minds think alike.',
   },
-
-];
+]
 
 const CA_FAQ_SUB_SECTIONS = [
-  {
-    id: uuid(),
-    heading: 'What is Campus Ambassador?',
-    text:
-      'An imaginative mind, a zest to communicate and tons of energy! That’s all it takes to be a Campus Ambassador at VITHack. As a Campus Ambassador title you’ll have first-hand access to all the happenings at VITHack, you’ll get to set trends and be the talk of your college, you’ll get to organize campus-specific events catered to the liking of your college. Share ideas from your college community with ours, in exchange for exciting avenues.',
-  },
   {
     id: uuid(),
     heading: 'How to Apply?',
     text:
       "It's quick and simple but it opens you to a world of opportunities. All you need to do to join us in this amazing journey is fill the Campus Ambassador form at <link> and click on submit!",
   },
-  // {
-  //   id: uuid(),
-  //   heading: 'FAQs',
-  // },
-];
+]
 
 const CA_FAQ = [
   {
@@ -622,12 +611,12 @@ const CA_FAQ = [
       </>
     ),
   },
-];
+]
 
 const CA_HELP_TEXT = {
   text:
-    'There’s more to college than a degree and a CGPA, be a part of something big. VITHack isn’t just a college hackathon, it’s a phenomenon. Help us get the word out to your college and become a trendsetter!',
-};
+    'An imaginative mind, a zest to communicate and tons of energy! That’s all it takes to be a Campus Ambassador at VITHack. As a Campus Ambassador title you’ll have first-hand access to all the happenings at VITHack, you’ll get to set trends and be the talk of your college, you’ll get to organize campus-specific events catered to the liking of your college. Share ideas from your college community with ours, in exchange for exciting avenues.',
+}
 
 export {
   TEAM_MOBILE,
@@ -651,4 +640,4 @@ export {
   TRACKS,
   TEAM,
   HAM_LINKS,
-};
+}
