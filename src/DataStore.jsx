@@ -66,6 +66,23 @@ const ABOUT_SUB_SECTIONS = [
   },
 ];
 
+// About Section
+const ABOUT_HACK_SUB_SECTIONS = [
+  {
+    id: uuid(),
+    heading: 'VIT Hack is now online!',
+    text:
+      'With the ongoing threat of COVID-19, the whole of the country finds itself in an endless lockdown and everything seems to have come to a halt. Not to worry though, as the ultimate festival celebrating the confluence of technology and innovation, VITHack 2020, shall now be conducted online! The same technical magnificence, ground-breaking ideas and invaluable exposure to several industries, just one click away! VITHack 2020, unhindered by a global pandemic, brings to you the unmissable opportunity of being a part of an innovative juggernaut, within the safety of your homes.',
+    showLess: true,
+  },
+  {
+    id: uuid(),
+    heading: 'About the Community',
+    text:
+      'Teaching, helping and collaborating on different projects have brought the members, even closer. Through VIT Hack, we hope to continue the thread of that same sense of community among all its members.',
+  },
+];
+
 const PREVIOUS_FIGURES = [
   {
     id: uuid(),
@@ -628,6 +645,7 @@ export {
   TEAM_MOBILE,
   HEADS,
   ABOUT_SUB_SECTIONS,
+  ABOUT_HACK_SUB_SECTIONS,
   PREVIOUS_FIGURES,
   SECTION_ANCHORS,
   CONTACT_TEXTS,

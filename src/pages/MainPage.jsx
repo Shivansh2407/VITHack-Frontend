@@ -4,12 +4,13 @@ import React from 'react';
 import {
   BenefactorSection,
   SubscribeSection,
-//HelpUsOutSection,
+  // HelpUsOutSection,
   ContactSection,
   LandingSection,
   TrackSection,
   AboutSection,
   // TeamSection,
+  AboutHackSection,
 } from '../sections';
 import EssentialsSection from '../components/essentialsSection/EssentialsSection';
 import Navbar from '../components/layout/navbar/Navbar';
@@ -22,8 +23,9 @@ const MainPage = () => {
       <HamburgerMenu />
       <Navbar />
       <LandingSection />
-      <AboutSection />
+      <AboutHackSection />
       <TrackSection />
+      <AboutSection />
       <BenefactorSection />
       <ContactSection />
       <EssentialsSection />
