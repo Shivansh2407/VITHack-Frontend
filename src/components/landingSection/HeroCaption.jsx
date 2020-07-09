@@ -13,7 +13,7 @@ const HeroCaption = () => (
     <br />
     <Link to='/community'>
       <button
-        className='hidden sm:block bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize py-2 px-8 w-64'
+        className='bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize py-2 px-4 sm:px-8 w-48 sm:w-64'
         type='button'
       >
         Join the Community

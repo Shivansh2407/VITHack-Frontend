@@ -546,7 +546,7 @@ const CA_FAQ_SUB_SECTIONS = [
     id: uuid(),
     heading: 'How to Apply?',
     text:
-      "It's quick and simple but it opens you to a world of opportunities. All you need to do to join us in this amazing journey is fill the Campus Ambassador form at <link> and click on submit!",
+      "It's quick and simple but it opens you to a world of opportunities. All you need to do to join us in this amazing journey is fill the Campus Ambassador form.",
   },
 ]
 
@@ -608,6 +608,17 @@ const CA_FAQ = [
       <>
         As long as you’re a student of that college, you’re eligible to become
         its campus ambassador.
+      </>
+    ),
+  },
+  {
+    id: uuid(),
+    heading: 'Is it compulsory to be a part of community?',
+    text: (
+      <>
+        Yes, it's necessary to join the community as important announcements
+        will be conveyed there. Additionally you also will have access to
+        exclusive webinars and other activities.
       </>
     ),
   },
