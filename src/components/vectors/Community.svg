@@ -3,7 +3,7 @@
   width="295.221"
   height="181.626"
   viewBox="0 0 295.221 181.626"
-  class="absolute bottom-0"
+  class="absolute bottom-0 md:right-0 md:bottom-auto md:mr-35"
 >
   <defs>
     <style>
