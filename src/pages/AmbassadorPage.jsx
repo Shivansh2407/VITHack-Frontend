@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 
 // Components
 import Heading from '../components/layout/Heading'
-import Navbar from '../components/layout/navbar/Navbar'
 import HamburgerMenu from '../components/layout/navbar/HamburgerMenu'
 import { ReactComponent as Community } from '../components/vectors/Community.svg'
 import { ReactComponent as CommunityLg } from '../components/vectors/CommunityLg.svg'
 import { ReactComponent as SneakPeak } from '../components/vectors/SneakPeek.svg'
 import { ReactComponent as GridMan } from '../components/vectors/GridMan.svg'
+import { ReactComponent as Clouds } from '../components/vectors/Clouds.svg'
+import { ReactComponent as CommunityLogo } from '../components/vectors/CommunityLogo.svg'
+import { ReactComponent as CloudLogo } from '../components/vectors/CloudLogo.svg'
 
 // Data
 import { CA_HELP_TEXT, CA_FAQ_SUB_SECTIONS, CA_FAQ } from '../DataStore'
@@ -18,8 +20,10 @@ const AmbassadorPage = () => {
   return (
     <>
       <HamburgerMenu />
-      <Navbar />
       <div className='relative'>
+        <div className='flex justify-center items-center pt-4 absolute w-full'>
+          <CloudLogo />
+        </div>
         <section className='section flex flex-col justify-center items-center mx-auto relative overflow-hidden cursor-default sm:text-base h-screen'>
           <div className='flex flex-col justify-center items-center md:items-start mb-16 md:w-full md:m-0 md:px-35 relative'>
             <h1 className='text-hack-blue text-sm-title text-title text-center font-bold px-8 sm:p-0'>
@@ -50,8 +54,8 @@ const AmbassadorPage = () => {
         </section>
         <div className='h-32 w-full' />
         <section className='grid grid-rows-5 md:grid-rows-3 grid-cols-1 md:grid-cols-9 grid-flow-col gap-6 px-8 sm:px-35'>
-          <div className='row-span-1 md:row-span-2 col-span-1 md:col-span-5 p-16 bg-hack-green rounded-lg'>
-            <h2 className='text-sm-heading sm:text-heading font-bold flex flex-col justify-center items-start mb-10'>
+          <div className='row-span-1 md:row-span-2 col-span-1 md:col-span-5 p-4 md:p-16 bg-hack-green rounded-lg'>
+            <h2 className='text-sm-heading sm:text-heading font-bold flex flex-col justify-center items-start mb-4 md:mb-10'>
               Talks
             </h2>
             <div className='sm:text-sm-sub-heading'>
@@ -67,8 +71,8 @@ const AmbassadorPage = () => {
               <GridMan />
             </div>
           </div>
-          <div className='row-span-1 col-span-1 md:col-span-4 p-16 bg-hack-peach rounded-lg'>
-            <h2 className='text-sm-heading sm:text-heading font-bold flex flex-col justify-center items-start mb-10 text-white'>
+          <div className='row-span-1 col-span-1 md:col-span-4 p-4 md:p-16 bg-hack-peach rounded-lg'>
+            <h2 className='text-sm-heading sm:text-heading font-bold flex flex-col justify-center items-start mb-4 md:mb-10 text-white'>
               Workshops
             </h2>
             <div className='sm:text-sm-sub-heading text-white'>
@@ -79,8 +83,8 @@ const AmbassadorPage = () => {
               ideas about the possible solution to the problem statements.
             </div>
           </div>
-          <div className='row-span-1 col-span-1 md:col-span-5 p-16 bg-hack-purple rounded-lg '>
-            <h2 className='text-sm-heading sm:text-heading font-bold flex flex-col justify-center items-start mb-10 text-white'>
+          <div className='row-span-1 col-span-1 md:col-span-5 p-4 md:p-16 bg-hack-purple rounded-lg '>
+            <h2 className='text-sm-heading sm:text-heading font-bold flex flex-col justify-center items-start mb-4 md:mb-10 text-white'>
               Forums
             </h2>
             <div className='sm:text-sm-sub-heading text-white'>
@@ -92,8 +96,8 @@ const AmbassadorPage = () => {
               this forum is going to be the hub of innovation.
             </div>
           </div>
-          <div className='row-span-1 col-span-1 md:col-span-4 p-16 bg-hack-pink rounded-lg'>
-            <h2 className='text-sm-heading sm:text-heading font-bold flex flex-col justify-center items-start mb-10 text-white'>
+          <div className='row-span-1 col-span-1 md:col-span-4 p-4 md:p-16 bg-hack-pink rounded-lg'>
+            <h2 className='text-sm-heading sm:text-heading font-bold flex flex-col justify-center items-start mb-4 md:mb-10 text-white'>
               Mentorships
             </h2>
             <div className='sm:text-sm-sub-heading text-white'>
@@ -104,8 +108,8 @@ const AmbassadorPage = () => {
               in the right direction and is important for personal development.
             </div>
           </div>
-          <div className='row-span-1 col-span-1 md:col-span-4 p-16 bg-hack-orange rounded-lg'>
-            <h2 className='text-sm-heading sm:text-heading font-bold flex flex-col justify-center items-start mb-10'>
+          <div className='row-span-1 col-span-1 md:col-span-4 p-4 md:p-16 bg-hack-orange rounded-lg'>
+            <h2 className='text-sm-heading sm:text-heading font-bold flex flex-col justify-center items-start mb-4 md:mb-10'>
               Project Collabs
             </h2>
             <div className='sm:text-sm-sub-heading'>

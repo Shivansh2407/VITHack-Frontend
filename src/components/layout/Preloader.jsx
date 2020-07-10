@@ -22,12 +22,16 @@ const Preloader = () => {
   return (
     <>
       <div
-        className='w-full h-screen fixed inset-0 bg-white z-30 flex justify-center items-center text-base'
+        className={`w-full h-screen fixed inset-0 bg-white z-30 flex justify-center items-center text-base ${
+          window.location.pathname === '/community' && 'hidden'
+        }`}
         ref={preLoaderScreen}
       />
       <Link
         style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }}
-        className='cursor-pointer fixed z-30'
+        className={`cursor-pointer fixed z-30 ${
+          window.location.pathname === '/community' && 'hidden'
+        }`}
         to='/'
         onClick={() => handleClick()}
         ref={logo}

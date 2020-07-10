@@ -1,17 +1,17 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react'
 
 // Utility functions
-import animateVITHackLogo from '../../../utils/animateVITHackLogo';
+import animateVITHackLogo from '../../../utils/animateVITHackLogo'
 
 const VitHackLogo = () => {
-  const batch1 = useRef(null);
-  const batch2 = useRef(null);
-  const batch3 = useRef(null);
-  const batch4 = useRef(null);
+  const batch1 = useRef(null)
+  const batch2 = useRef(null)
+  const batch3 = useRef(null)
+  const batch4 = useRef(null)
 
   useEffect(() => {
-    animateVITHackLogo(batch2, batch3, batch4);
-  }, []);
+    animateVITHackLogo(batch2, batch3, batch4)
+  }, [])
 
   return (
     <svg
@@ -20,7 +20,9 @@ const VitHackLogo = () => {
       viewBox='0 0 110 56'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className='z-30'
+      className={`z-30 ${
+        window.location.pathname === '/community' && 'hidden'
+      }`}
     >
       <g fill='white' ref={batch1}>
         <path
@@ -56,7 +58,7 @@ const VitHackLogo = () => {
         />
       </g>
     </svg>
-  );
-};
+  )
+}
 
-export default VitHackLogo;
+export default VitHackLogo

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 // Components
 import { ReactComponent as SneekPeek } from '../vectors/SneakPeek.svg'
@@ -22,14 +21,14 @@ const HelpUsOutSection = () => {
           <Heading>Help Us Out</Heading>
           <SubSection heading={HELP_TEXT.heading} text={HELP_TEXT.text} />
           <div className='flex justify-center sm:justify-start'>
-            <Link to='/ambassador'>
+            <a href='/ambassador'>
               <button
                 className='bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize py-2 px-8'
                 type='button'
               >
                 Learn More
               </button>
-            </Link>
+            </a>
           </div>
         </section>
       </div>
