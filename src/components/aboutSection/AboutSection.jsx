@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 // Components
-import { ReactComponent as BulbOMan } from '../vectors/BulbOMan.svg';
-import PreviousFigures from './PreviousFigures';
-import SubSection from '../layout/SubSection';
-import Heading from '../layout/Heading';
+import { ReactComponent as BulbOMan } from '../vectors/BulbOMan.svg'
+import PreviousFigures from './PreviousFigures'
+import SubSection from '../layout/SubSection'
+import Heading from '../layout/Heading'
 
 // Data
-import { ABOUT_SUB_SECTIONS } from '../../DataStore';
+import { ABOUT_SUB_SECTIONS } from '../../DataStore'
 
 const AboutSection = () => {
   return (
@@ -16,7 +16,7 @@ const AboutSection = () => {
       id='about'
       data-aos='fade-up'
     >
-      <div className='block w-screen h-4 sm:h-20' />
+      <div className='block w-full h-4 sm:h-20' />
       <div className='flex justify-start items-center'>
         <section className='px-8 sm:px-35 md:pl-35'>
           <Heading>About Us</Heading>
@@ -33,7 +33,7 @@ const AboutSection = () => {
       <BulbOMan />
       <PreviousFigures />
     </section>
-  );
-};
+  )
+}
 
-export default AboutSection;
+export default AboutSection

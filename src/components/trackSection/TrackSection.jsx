@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 // Components
-import Heading from '../layout/Heading';
-import TrackCard from './TrackCard';
+import Heading from '../layout/Heading'
+import TrackCard from './TrackCard'
 
 // Data
-import { TRACKS } from '../../DataStore';
+import { TRACKS } from '../../DataStore'
 
 const TrackSection = () => (
   <section
@@ -13,7 +13,7 @@ const TrackSection = () => (
     id='tracks'
     data-aos='fade-up'
   >
-    <div className='block w-screen h-4 sm:h-20' />
+    <div className='block w-full h-4 sm:h-20' />
     <div className='sm:px-35'>
       <div className='px-8 sm:p-0'>
         <Heading>Tracks</Heading>
@@ -28,6 +28,6 @@ const TrackSection = () => (
       </div>
     </div>
   </section>
-);
+)
 
-export default TrackSection;
+export default TrackSection

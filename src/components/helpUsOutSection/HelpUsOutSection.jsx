@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 // Components
-import { ReactComponent as SneekPeek } from '../vectors/SneakPeek.svg';
-import SubSection from '../layout/SubSection';
-import Heading from '../layout/Heading';
+import { ReactComponent as SneekPeek } from '../vectors/SneakPeek.svg'
+import SubSection from '../layout/SubSection'
+import Heading from '../layout/Heading'
 
 // Data
-import { HELP_TEXT } from '../../DataStore';
+import { HELP_TEXT } from '../../DataStore'
 
 const HelpUsOutSection = () => {
   return (
@@ -16,7 +16,7 @@ const HelpUsOutSection = () => {
       id='help'
       data-aos='fade-up'
     >
-      <div className='block w-screen h-4 sm:h-24' />
+      <div className='block w-full h-4 sm:h-24' />
       <div className='flex justify-start items-center'>
         <section className='px-8 sm:px-35 md:pl-35'>
           <Heading>Help Us Out</Heading>
@@ -33,10 +33,10 @@ const HelpUsOutSection = () => {
           </div>
         </section>
       </div>
-      <div className='w-screen h-20 md:h-32' />
+      <div className='w-full h-20 md:h-32' />
       <SneekPeek />
     </section>
-  );
-};
+  )
+}
 
-export default HelpUsOutSection;
+export default HelpUsOutSection

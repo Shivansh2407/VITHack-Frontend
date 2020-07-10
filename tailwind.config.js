@@ -24,9 +24,12 @@ module.exports = {
       backgroundColor: {
         'hack-blue': '#008DFF',
         'hack-yellow': '#FFBD3B',
-        'hack-pink': '#EA3883',
-        'hack-green': '#BDE321',
+        'hack-pink': '#EE5998',
+        'hack-green': '#C6E647',
         'hack-black': '#131313',
+        'hack-orange': '#FFC85C',
+        'hack-peach': '#FA7F58',
+        'hack-purple': '#AC7FE0',
       },
       borderColor: {
         'hack-blue': '#008DFF',
@@ -63,6 +66,7 @@ module.exports = {
         15: '3.75rem',
         18: '4.5rem',
         30: '7.5rem',
+        134: '34rem',
       },
       width: { 30: '7.5rem' },
       scale: {
@@ -72,4 +76,4 @@ module.exports = {
   },
   variants: { display: ['responsive', 'hover', 'focus'] },
   plugins: [],
-};
+}

@@ -1,34 +1,34 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import gsap from 'gsap';
+import React, { useState, useRef, useEffect } from 'react'
+import { HashLink as Link } from 'react-router-hash-link'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import gsap from 'gsap'
 
 // DATA
-import { HAM_LINKS } from '../../../DataStore';
+import { HAM_LINKS } from '../../../DataStore'
 
 const HamburgerMenu = () => {
-  const [isActive, setActive] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [isActive, setActive] = useState(false)
+  const [loading, setLoading] = useState(true)
 
-  const ham = useRef(null);
-  const line1 = useRef(null);
-  const line2 = useRef(null);
-  const text = useRef(null);
-  const close = useRef(null);
-  const menu = useRef(null);
-  const bg = useRef(null);
-  const tl = gsap.timeline();
+  const ham = useRef(null)
+  const line1 = useRef(null)
+  const line2 = useRef(null)
+  const text = useRef(null)
+  const close = useRef(null)
+  const menu = useRef(null)
+  const bg = useRef(null)
+  const tl = gsap.timeline()
 
   useEffect(() => {
-    let timer;
+    let timer
     if (window.location.pathname === '/')
-      timer = setTimeout(() => setLoading(false), 5000);
-    else timer = setTimeout(() => setLoading(false), 0);
+      timer = setTimeout(() => setLoading(false), 5000)
+    else timer = setTimeout(() => setLoading(false), 0)
 
     return () => {
-      clearTimeout(timer);
-    };
-  }, []);
+      clearTimeout(timer)
+    }
+  }, [])
 
   const openAnimation = () => {
     tl.to(line1.current, {
@@ -64,8 +64,8 @@ const HamburgerMenu = () => {
       .to(line1.current, {
         height: 30,
         duration: 0.01,
-      });
-  };
+      })
+  }
 
   const closeAnimation = () => {
     tl.to(close.current, { width: 0, duration: 0.5 })
@@ -81,8 +81,8 @@ const HamburgerMenu = () => {
         delay: -0.5,
       })
       .to(menu.current, { display: 'none', duration: 0.01 })
-      .to(ham.current, { transform: 'translate(0px,0px)', duration: 0.5 });
-  };
+      .to(ham.current, { transform: 'translate(0px,0px)', duration: 0.5 })
+  }
 
   return (
     <nav className='block sm:hidden fixed top-0 z-30 left-0 focus:outline-none'>
@@ -96,9 +96,9 @@ const HamburgerMenu = () => {
           right: '0px',
         }}
         onClick={() => {
-          if (!isActive) openAnimation();
-          else closeAnimation();
-          setActive(!isActive);
+          if (!isActive) openAnimation()
+          else closeAnimation()
+          setActive(!isActive)
         }}
         type='button'
       >
@@ -135,14 +135,14 @@ const HamburgerMenu = () => {
         </svg>
       </button>
       <button
-        className='fixed inset-0 h-screen w-screen flex flex-col justify-center items-start text-white font-bold text-sm-heading px-8 hidden opacity-0'
+        className='fixed inset-0 h-screen w-full flex flex-col justify-center items-start text-white font-bold text-sm-heading px-8 hidden opacity-0'
         ref={menu}
         style={{ transform: 'translateY(10px)' }}
         type='button'
         onClick={() => {
-          if (!isActive) openAnimation();
-          else closeAnimation();
-          setActive(!isActive);
+          if (!isActive) openAnimation()
+          else closeAnimation()
+          setActive(!isActive)
         }}
       >
         <div
@@ -157,13 +157,13 @@ const HamburgerMenu = () => {
                 className='cursor-pointer capitalise z-50 my-1'
                 to={navLink.url}
                 onClick={() => {
-                  setActive(!isActive);
+                  setActive(!isActive)
                 }}
                 key={navLink.id}
               >
                 {navLink.text}
               </Link>
-            );
+            )
           if (navLink.text === 'Blog') {
             return (
               <a
@@ -173,13 +173,13 @@ const HamburgerMenu = () => {
                 target='_blank'
                 rel='noopener noreferrer'
                 onClick={() => {
-                  setActive(!isActive);
+                  setActive(!isActive)
                 }}
                 key={navLink.id}
               >
                 {navLink.text}
               </a>
-            );
+            )
           }
 
           if (window.location.pathname !== '/')
@@ -188,31 +188,31 @@ const HamburgerMenu = () => {
                 className='capitalise cursor-pointer z-50 my-1'
                 to={`/${navLink.url}`}
                 onClick={() => {
-                  setActive(!isActive);
+                  setActive(!isActive)
                 }}
                 key={navLink.id}
               >
                 {navLink.text}
               </Link>
-            );
+            )
 
           return (
             <AnchorLink
               className='capitalise cursor-pointer z-50 my-1'
               href={navLink.url}
               onClick={() => {
-                setActive(!isActive);
+                setActive(!isActive)
               }}
               key={navLink.id}
               offset='40'
             >
               {navLink.text}
             </AnchorLink>
-          );
+          )
         })}
       </button>
     </nav>
-  );
-};
+  )
+}
 
-export default HamburgerMenu;
+export default HamburgerMenu

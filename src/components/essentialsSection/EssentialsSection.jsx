@@ -1,18 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 // Components
-import Heading from '../layout/Heading';
-import { ReactComponent as DownloadBoy } from '../vectors/DownloadBoy.svg';
+import Heading from '../layout/Heading'
+import { ReactComponent as DownloadBoy } from '../vectors/DownloadBoy.svg'
 
 // Data
-import { FOOTER_LINKS } from '../../DataStore';
+import { FOOTER_LINKS } from '../../DataStore'
 
 const EssentialsSection = () => {
   return (
     <section
       className='section text-hack-black overflow-hidden relative cursor-default sm:text-base'
-      data-aos='fade-up' id='essentials'
+      data-aos='fade-up'
+      id='essentials'
     >
       <div className='px-8 sm:px-35'>
         <Heading>Essentials</Heading>
@@ -25,7 +26,7 @@ const EssentialsSection = () => {
                     {link.text}
                   </div>
                 </Link>
-              );
+              )
             return (
               <a
                 className='font-bold text-hack-blue hover:underline my-4'
@@ -36,14 +37,14 @@ const EssentialsSection = () => {
               >
                 {link.text}
               </a>
-            );
+            )
           })}
         </div>
         <DownloadBoy />
       </div>
-      <div className='w-screen h-20 sm:h-32' />
+      <div className='w-full h-20 sm:h-32' />
     </section>
-  );
-};
+  )
+}
 
-export default EssentialsSection;
+export default EssentialsSection

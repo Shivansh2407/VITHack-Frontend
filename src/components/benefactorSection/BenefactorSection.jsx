@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
 
 // Components
-import { ReactComponent as SponsorMan } from '../vectors/SponsorMan.svg';
-import { ReactComponent as CollabMan } from '../vectors/CollabMan.svg';
-import { ReactComponent as CaseLady } from '../vectors/CaseLady.svg';
-import BenefactorCard from './BenefactorCard';
-import Heading from '../layout/Heading';
+import { ReactComponent as SponsorMan } from '../vectors/SponsorMan.svg'
+import { ReactComponent as CollabMan } from '../vectors/CollabMan.svg'
+import { ReactComponent as CaseLady } from '../vectors/CaseLady.svg'
+import BenefactorCard from './BenefactorCard'
+import Heading from '../layout/Heading'
 
 // Data
-import { CASE_PARTNERS, COLLABORATORS, SPONSORS } from '../../DataStore';
+import { CASE_PARTNERS, COLLABORATORS, SPONSORS } from '../../DataStore'
 
 const TrackSection = () => (
   <section
-    className='section text-hack-black flex flex-col justify-center items-center relative overflow-hidden cursor-default sm:text-base'
+    className='section text-hack-black flex flex-col justify-center items-center relative overflow-hidden cursor-default sm:text-base w-full'
     data-aos='fade-up'
   >
     <div className='sm:px-35 w-full'>
@@ -42,16 +42,16 @@ const TrackSection = () => (
             if (window.innerWidth > 870)
               return (
                 <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
-              );
+              )
             if (index < 8)
               return (
                 <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
-              );
+              )
             return (
               <div className='col-span-2' key={partner.id}>
                 <BenefactorCard imageSrc={partner.imageSrc} />
               </div>
-            );
+            )
           })}
         </div>
         <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-8 sm:my-12'>
@@ -70,11 +70,11 @@ const TrackSection = () => (
         </div>
       </div>
     </div>
-    <div className='hidden sm:block w-screen h-32' />
+    <div className='hidden sm:block w-full h-32' />
     <SponsorMan />
     <CaseLady />
     <CollabMan />
   </section>
-);
+)
 
-export default TrackSection;
+export default TrackSection

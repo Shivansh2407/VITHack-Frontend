@@ -1,28 +1,28 @@
-import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 
 // Components
-import VitHackLogo from './navbar/VitHackLogo';
+import VitHackLogo from './navbar/VitHackLogo'
 
 // Utility functions
-import animatePreloader from '../../utils/animatePreloader';
+import animatePreloader from '../../utils/animatePreloader'
 
 const Preloader = () => {
-  const preLoaderScreen = useRef(null);
-  const logo = useRef(null);
+  const preLoaderScreen = useRef(null)
+  const logo = useRef(null)
 
   const handleClick = () => {
-    if (window.location.pathname === '/') window.scrollTo(0, 0);
-  };
+    if (window.location.pathname === '/') window.scrollTo(0, 0)
+  }
 
   useEffect(() => {
-    animatePreloader(preLoaderScreen, logo);
-  }, []);
+    animatePreloader(preLoaderScreen, logo)
+  }, [])
 
   return (
     <>
       <div
-        className='w-screen h-screen fixed inset-0 bg-white z-30 flex justify-center items-center text-base'
+        className='w-full h-screen fixed inset-0 bg-white z-30 flex justify-center items-center text-base'
         ref={preLoaderScreen}
       />
       <Link
@@ -35,7 +35,7 @@ const Preloader = () => {
         <VitHackLogo />
       </Link>
     </>
-  );
-};
+  )
+}
 
-export default Preloader;
+export default Preloader
