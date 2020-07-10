@@ -2,13 +2,12 @@ import React, { useState } from 'react'
 
 // Components
 import Heading from '../components/layout/Heading'
+import CommunityNav from '../components/layout/navbar/CommunityNav'
 import HamburgerMenu from '../components/layout/navbar/HamburgerMenu'
 import { ReactComponent as Community } from '../components/vectors/Community.svg'
 import { ReactComponent as CommunityLg } from '../components/vectors/CommunityLg.svg'
 import { ReactComponent as SneakPeak } from '../components/vectors/SneakPeek.svg'
 import { ReactComponent as GridMan } from '../components/vectors/GridMan.svg'
-import { ReactComponent as Clouds } from '../components/vectors/Clouds.svg'
-import { ReactComponent as CommunityLogo } from '../components/vectors/CommunityLogo.svg'
 import { ReactComponent as CloudLogo } from '../components/vectors/CloudLogo.svg'
 
 // Data
@@ -21,7 +20,8 @@ const AmbassadorPage = () => {
     <>
       <HamburgerMenu />
       <div className='relative'>
-        <div className='flex justify-center items-center pt-4 absolute w-full'>
+        <CommunityNav />
+        <div className='flex justify-center items-center pt-4 absolute w-full md:hidden'>
           <CloudLogo />
         </div>
         <section className='section flex flex-col justify-center items-center mx-auto relative overflow-hidden cursor-default sm:text-base h-screen'>

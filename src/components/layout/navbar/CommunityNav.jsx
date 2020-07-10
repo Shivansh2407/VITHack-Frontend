@@ -1,0 +1,43 @@
+import React, { useState, useEffect } from 'react'
+
+// Components
+import { ReactComponent as CommunityLogo } from '../../vectors/CommunityLogo.svg'
+import { ReactComponent as Back } from '../../vectors/Back.svg'
+
+const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    document.addEventListener('scroll', () =>
+      window.scrollY > 100 ? setScrolled(true) : setScrolled(false)
+    )
+  })
+
+  return (
+    <>
+      <nav
+        className={`hidden sm:flex w-full text-center bg-white text-black justify-between items-center fixed top-0 z-10 py-4 px-35 transition duration-500 ease-in-out ${
+          scrolled && 'shadow-md'
+        }`}
+      >
+        <CommunityLogo />
+        <div className='flex justify-center items-center'>
+          <button
+            className='block bg-hack-blue hover:bg-blue-600 text-white rounded-lg font-bold capitalize py-2 px-8 opacity-50 cursor-not-allowed'
+            type='button'
+          >
+            Join Now
+          </button>
+          <a href='/'>
+            <div className='flex justify-center items-center ml-8 cursor-pointer'>
+              <Back />
+              <span className='ml-3'>back to home</span>
+            </div>
+          </a>
+        </div>
+      </nav>
+    </>
+  )
+}
+
+export default Navbar
