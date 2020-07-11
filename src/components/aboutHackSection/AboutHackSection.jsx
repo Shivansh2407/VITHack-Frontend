@@ -8,7 +8,6 @@ import { ReactComponent as MobileLg } from '../vectors/MobileLg.svg'
 
 // Data
 import { ABOUT_HACK_SUB_SECTIONS } from '../../DataStore'
-import { Link } from 'react-router-dom'
 
 const AboutHackSection = () => {
   return (
@@ -30,14 +29,14 @@ const AboutHackSection = () => {
             />
           ))}
           <div className='flex justify-center md:justify-start items-center w-full'>
-            <Link to='/community'>
+            <a href='/community'>
               <button
                 className='bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize py-2 px-8'
                 type='button'
               >
                 Learn More
               </button>
-            </Link>
+            </a>
           </div>
         </section>
       </div>
