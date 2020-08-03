@@ -22,12 +22,18 @@ const Navbar = () => {
       >
         <CommunityLogo />
         <div className='flex justify-center items-center'>
-          <button
-            className='block bg-hack-blue hover:bg-blue-600 text-white rounded-lg font-bold capitalize py-2 px-8 opacity-50 cursor-not-allowed'
-            type='button'
+          <a
+            href='https://vithack2020.typeform.com/to/gc8sXEi0'
+            rel='noopener noreferrer'
+            target='_blank'
           >
-            Join Now
-          </button>
+            <button
+              className='block bg-hack-blue hover:bg-blue-600 text-white rounded-lg font-bold capitalize py-2 px-8 cursor-pointer'
+              type='button'
+            >
+              Join Now
+            </button>
+          </a>
           <a href='/'>
             <div className='flex justify-center items-center ml-8 cursor-pointer'>
               <Back />
