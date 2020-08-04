@@ -29,12 +29,18 @@ const AmbassadorPage = () => {
             <h1 className='text-hack-blue text-sm-title text-title text-center font-bold px-8 sm:p-0'>
               VIT Hack Community
             </h1>
-            <button
-              className='block bg-hack-blue hover:bg-blue-600 text-white rounded-lg font-bold capitalize py-2 px-8 opacity-50 cursor-not-allowed mt-4 md:hidden'
-              type='button'
+            <a
+              href='https://vithack2020.typeform.com/to/gc8sXEi0'
+              rel='noopener noreferrer'
+              target='_blank'
             >
-              Join Now
-            </button>
+              <button
+                className='block bg-hack-blue hover:bg-blue-600 text-white rounded-lg font-bold capitalize py-2 px-8 cursor-pointer mt-4 md:hidden'
+                type='button'
+              >
+                Join Now
+              </button>
+            </a>
             <div className='hidden md:block w-6/12 mt-8'>
               As Indians, we all have a very strong sense of community.
               Communities are essential for research and development. They are
