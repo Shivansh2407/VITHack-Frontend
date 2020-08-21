@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Typewriter from 'typewriter-effect'
 
 // Components
 import Heading from '../components/layout/Heading'
@@ -30,6 +31,33 @@ const AmbassadorPage = () => {
             <h1 className='text-hack-blue text-sm-title text-title text-center font-bold px-8 sm:p-0'>
               VIT Hack Community
             </h1>
+            <h3 className='text-sm-sub-heading sm:text-sub-heading text-hack-black capitalize md:hidden'>
+              <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString('Talks')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString('Workshops')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString('Forums')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString('Mentorships')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString('Project Collabs')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .start()
+                }}
+              />
+            </h3>
             <a
               href='https://vithack2020.typeform.com/to/gc8sXEi0'
               rel='noopener noreferrer'
