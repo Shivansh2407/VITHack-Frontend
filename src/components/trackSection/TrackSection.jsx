@@ -19,12 +19,15 @@ const TrackSection = () => (
         <Heading>Tracks</Heading>
       </div>
       <div
-        className='text-center grid grid-cols-2 sm:grid-cols-4 my-12 sm:px-4'
+        className='grid grid-cols-2 sm:grid-cols-4 my-12 sm:px-4'
         style={{ justifyItems: 'center' }}
       >
         {TRACKS.map((track) => (
           <TrackCard name={track.name} icon={track.icon} key={track.id} />
         ))}
+      </div>
+      <div className='w-full flex justify-center items-center'>
+        <span>*Tracks are subject to changes</span>
       </div>
     </div>
   </section>
