@@ -28,7 +28,7 @@ const Navbar = () => {
             target='_blank'
           >
             <button
-              className='block bg-hack-blue hover:bg-blue-600 text-white rounded-lg font-bold capitalize py-2 px-8 cursor-pointer'
+              className='block bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize py-2 px-8 cursor-pointer'
               type='button'
             >
               Join Now

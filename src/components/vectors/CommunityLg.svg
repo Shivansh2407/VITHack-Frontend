@@ -4,7 +4,7 @@
   viewBox="0 0 500 346"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
-  class="md:absolute bottom-0 md:right-0 md:bottom-0 md:mr-35 h-40 sm:h-auto md:w-96"
+  class="md:absolute bottom-0 md:right-0 md:bottom-0 md:mr-35 h-40 sm:h-auto md:w-128 transform translate-y-10"
 >
   <g clip-path="url(#cmlg)">
     <path

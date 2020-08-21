@@ -70,7 +70,7 @@ module.exports = {
         30: '7.5rem',
         134: '34rem',
       },
-      width: { 30: '7.5rem' },
+      width: { 30: '7.5rem', 128: '32rem' },
       scale: {
         '-50': '-0.5',
       },
