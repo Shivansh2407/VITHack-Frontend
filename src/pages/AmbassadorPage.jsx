@@ -4,11 +4,12 @@ import React, { useState } from 'react'
 import Heading from '../components/layout/Heading'
 import CommunityNav from '../components/layout/navbar/CommunityNav'
 import HamburgerMenu from '../components/layout/navbar/HamburgerMenu'
-import { ReactComponent as Community } from '../components/vectors/Community.svg'
 import { ReactComponent as CommunityLg } from '../components/vectors/CommunityLg.svg'
 import { ReactComponent as SneakPeak } from '../components/vectors/SneakPeek.svg'
 import { ReactComponent as GridMan } from '../components/vectors/GridMan.svg'
 import { ReactComponent as CloudLogo } from '../components/vectors/CloudLogo.svg'
+import { ReactComponent as GravitasLogo } from '../components/vectors/graVITas20Logo.svg'
+import { ReactComponent as VitLogoBlue } from '../components/vectors/VitLogoBlue.svg'
 
 // Data
 import { CA_HELP_TEXT, CA_FAQ_SUB_SECTIONS, CA_FAQ } from '../DataStore'
@@ -41,6 +42,7 @@ const AmbassadorPage = () => {
                 Join Now
               </button>
             </a>
+
             <div className='hidden md:block w-6/12 mt-8'>
               Communities are essential for research and development. They are
               the guiding light on the path to success. The tech community has
@@ -53,8 +55,10 @@ const AmbassadorPage = () => {
               <CommunityLg />
             </div>
           </div>
-          <div className='absolute bottom-0 md:hidden'>
-            <Community />
+          <div className='absolute bottom-0 flex justify-center items-center mb-20 md:hidden'>
+            <VitLogoBlue />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <GravitasLogo />
           </div>
         </section>
         <div className='h-32 w-full' />
