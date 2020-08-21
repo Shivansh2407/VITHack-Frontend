@@ -69,6 +69,14 @@ const TrackSection = () => (
           ))}
         </div>
       </div>
+      <div className='flex justify-center items-center'>
+        <button
+          className='bg-hack-blue text-white rounded font-bold py-2 px-4 sm:px-8 mt-8 md:mt-16 cursor-not-allowed opacity-50'
+          type='button'
+        >
+          Become a Sponsor
+        </button>
+      </div>
     </div>
     <div className='hidden sm:block w-full h-32' />
     <SponsorMan />

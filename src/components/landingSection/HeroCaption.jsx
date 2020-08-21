@@ -19,10 +19,10 @@ const HeroCaption = () => (
         onInit={(typewriter) => {
           typewriter
             .typeString('VIT Vellore, India')
-            .pauseFor(2500)
+            .pauseFor(1500)
             .deleteAll()
             .typeString('Now Online')
-            .pauseFor(2500)
+            .pauseFor(1500)
             .deleteAll()
             .start()
         }}
