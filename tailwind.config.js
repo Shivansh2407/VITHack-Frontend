@@ -4,7 +4,7 @@ module.exports = {
     screens: {
       xsm: '324px',
       sm: '870px',
-      md: '1140px',
+      md: '1300px',
       lg: '1600px',
     },
     fontSize: {
@@ -36,6 +36,7 @@ module.exports = {
         'hack-blue': '#008DFF',
       },
       fontSize: {
+        display: '4.5rem',
         title: '3rem',
         'sm-title': '2.5rem',
         heading: '2.5rem',

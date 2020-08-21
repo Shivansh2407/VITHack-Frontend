@@ -15,7 +15,6 @@ const ContactSection = () => (
     id='contact'
     data-aos='fade-up'
   >
-    <div className='block w-full h-4 sm:h-20' />
     <section className='px-8 sm:px-35'>
       <Heading>Contact Us</Heading>
       <div className='flex flex-col md:flex-row justify-center md:justify-start'>

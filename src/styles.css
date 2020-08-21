@@ -593,9 +593,9 @@ video {
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1300px) {
   .container {
-    max-width: 1140px;
+    max-width: 1300px;
   }
 }
 
@@ -6787,6 +6787,10 @@ video {
   font-size: 5rem;
 }
 
+.text-display {
+  font-size: 4.5rem;
+}
+
 .text-title {
   font-size: 3rem;
 }
@@ -8460,7 +8464,7 @@ video {
 }
 
 .max-w-screen-md {
-  max-width: 1140px;
+  max-width: 1300px;
 }
 
 .max-w-screen-lg {
@@ -16106,9 +16110,9 @@ video {
     }
   }
 
-  @media (min-width: 1140px) {
+  @media (min-width: 1300px) {
     .xsm\:container {
-      max-width: 1140px;
+      max-width: 1300px;
     }
   }
 
@@ -22300,6 +22304,10 @@ video {
     font-size: 5rem;
   }
 
+  .xsm\:text-display {
+    font-size: 4.5rem;
+  }
+
   .xsm\:text-title {
     font-size: 3rem;
   }
@@ -23973,7 +23981,7 @@ video {
   }
 
   .xsm\:max-w-screen-md {
-    max-width: 1140px;
+    max-width: 1300px;
   }
 
   .xsm\:max-w-screen-lg {
@@ -31576,9 +31584,9 @@ video {
     }
   }
 
-  @media (min-width: 1140px) {
+  @media (min-width: 1300px) {
     .sm\:container {
-      max-width: 1140px;
+      max-width: 1300px;
     }
   }
 
@@ -37770,6 +37778,10 @@ video {
     font-size: 5rem;
   }
 
+  .sm\:text-display {
+    font-size: 4.5rem;
+  }
+
   .sm\:text-title {
     font-size: 3rem;
   }
@@ -39443,7 +39455,7 @@ video {
   }
 
   .sm\:max-w-screen-md {
-    max-width: 1140px;
+    max-width: 1300px;
   }
 
   .sm\:max-w-screen-lg {
@@ -47029,7 +47041,7 @@ video {
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1300px) {
   .md\:container {
     width: 100%;
   }
@@ -47046,9 +47058,9 @@ video {
     }
   }
 
-  @media (min-width: 1140px) {
+  @media (min-width: 1300px) {
     .md\:container {
-      max-width: 1140px;
+      max-width: 1300px;
     }
   }
 
@@ -53240,6 +53252,10 @@ video {
     font-size: 5rem;
   }
 
+  .md\:text-display {
+    font-size: 4.5rem;
+  }
+
   .md\:text-title {
     font-size: 3rem;
   }
@@ -54913,7 +54929,7 @@ video {
   }
 
   .md\:max-w-screen-md {
-    max-width: 1140px;
+    max-width: 1300px;
   }
 
   .md\:max-w-screen-lg {
@@ -62516,9 +62532,9 @@ video {
     }
   }
 
-  @media (min-width: 1140px) {
+  @media (min-width: 1300px) {
     .lg\:container {
-      max-width: 1140px;
+      max-width: 1300px;
     }
   }
 
@@ -68710,6 +68726,10 @@ video {
     font-size: 5rem;
   }
 
+  .lg\:text-display {
+    font-size: 4.5rem;
+  }
+
   .lg\:text-title {
     font-size: 3rem;
   }
@@ -70383,7 +70403,7 @@ video {
   }
 
   .lg\:max-w-screen-md {
-    max-width: 1140px;
+    max-width: 1300px;
   }
 
   .lg\:max-w-screen-lg {
