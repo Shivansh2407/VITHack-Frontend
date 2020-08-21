@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 
 // Components
 import { ReactComponent as CommunityLogo } from '../../vectors/CommunityLogo.svg'
+import { ReactComponent as GravitasLogo } from '../../vectors/graVITas20Logo.svg'
+import { ReactComponent as VitLogoBlue } from '../../vectors/VitLogoBlue.svg'
 import { ReactComponent as Back } from '../../vectors/Back.svg'
 
 const Navbar = () => {
@@ -20,7 +22,17 @@ const Navbar = () => {
           scrolled && 'shadow-md'
         }`}
       >
-        <CommunityLogo />
+        <div className='flex justify-center items-center w-60'>
+          <span className='mr-8'>
+            <CommunityLogo />
+          </span>
+          <span className='mr-8 hidden md:block'>
+            <VitLogoBlue />
+          </span>
+          <span className='hidden md:block'>
+            <GravitasLogo />
+          </span>
+        </div>
         <div className='flex justify-center items-center'>
           <a
             href='https://vithack2020.typeform.com/to/gc8sXEi0'
