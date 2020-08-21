@@ -35,14 +35,13 @@ const AmbassadorPage = () => {
               target='_blank'
             >
               <button
-                className='block bg-hack-blue hover:bg-blue-600 text-white rounded-lg font-bold capitalize py-2 px-8 cursor-pointer mt-4 md:hidden'
+                className='block bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize py-2 px-8 cursor-pointer mt-4 md:hidden'
                 type='button'
               >
                 Join Now
               </button>
             </a>
             <div className='hidden md:block w-6/12 mt-8'>
-              As Indians, we all have a very strong sense of community.
               Communities are essential for research and development. They are
               the guiding light on the path to success. The tech community has
               always been very supportive towards its members. Teaching, helping
@@ -145,7 +144,7 @@ const AmbassadorPage = () => {
           ))}
           <div className='flex justify-center md:justify-start items-center mb-8'>
             <button
-              className='bg-hack-blue cursor-not-allowed opacity-50 text-white rounded-lg font-bold capitalize py-2 px-8'
+              className='bg-hack-blue cursor-not-allowed opacity-50 text-white rounded font-bold capitalize py-2 px-8'
               type='button'
             >
               Coming Soon

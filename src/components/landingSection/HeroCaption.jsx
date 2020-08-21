@@ -28,7 +28,11 @@ const HeroCaption = () => (
         }}
       />
     </h3>
-    <a href='/community'>
+    <a
+      href='https://vithack2020.typeform.com/to/gc8sXEi0'
+      rel='noopener noreferrer'
+      target='_blank'
+    >
       <button
         className='bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize py-2 px-4 sm:px-8 w-48 sm:w-64 mt-6 md:mt-8'
         type='button'
