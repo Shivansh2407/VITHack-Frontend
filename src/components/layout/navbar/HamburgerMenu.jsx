@@ -164,7 +164,7 @@ const HamburgerMenu = () => {
                 {navLink.text}
               </Link>
             )
-          if (navLink.text === 'Blog') {
+          if (navLink.text === 'Blog' || navLink.text === "GraVITas '20") {
             return (
               <a
                 className='cursor-pointer capitalise z-50 my-1'

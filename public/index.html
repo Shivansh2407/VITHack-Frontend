@@ -38,15 +38,9 @@
   </head>
   <body>
     <div id="app"></div>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
-
     <script>
-      // Your web app's Firebase configuration
       var firebaseConfig = {
         apiKey: 'AIzaSyAnzrJcXwzojRvX5-h0VvRd9IYagvOM6eE',
         authDomain: 'project-vithack.firebaseapp.com',
@@ -56,10 +50,9 @@
         messagingSenderId: '36466225678',
         appId: '1:36466225678:web:cdc28510270fe65a98825f',
         measurementId: 'G-8GLTJK5K6F',
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
+      }
+      firebase.initializeApp(firebaseConfig)
+      firebase.analytics()
     </script>
   </body>
 </html>

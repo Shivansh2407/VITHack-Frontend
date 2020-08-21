@@ -10,10 +10,8 @@ const LICENSE_KEY = 'OPEN-SOURCE-GPLV3-LICENSE'
 const SECTION_ANCHORS = [
   'home',
   'about',
-  // 'tracks',
   'help',
   'benefactors',
-  // 'team',
   'contact',
   'subscribe',
 ]
@@ -46,6 +44,7 @@ const HAM_LINKS = [
   { id: uuid(), text: 'Tracks', url: '#tracks' },
   { id: uuid(), text: 'Contact Us', url: '#contact' },
   { id: uuid(), text: 'Essentials', url: '#essentials' },
+  { id: uuid(), text: "GraVITas '20", url: 'https://gravitas.vit.ac.in' },
 ]
 
 // About Section
