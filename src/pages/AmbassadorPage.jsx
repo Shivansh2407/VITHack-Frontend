@@ -31,7 +31,7 @@ const AmbassadorPage = () => {
             <h1 className='text-hack-blue text-sm-title text-title text-center font-bold px-8 sm:p-0'>
               VIT Hack Community
             </h1>
-            <h3 className='text-sm-sub-heading sm:text-sub-heading text-hack-black capitalize md:hidden'>
+            <h3 className='text-sm-sub-heading sm:text-sub-heading text-hack-black capitalize md:hidden my-4'>
               <Typewriter
                 options={{
                   autoStart: true,
