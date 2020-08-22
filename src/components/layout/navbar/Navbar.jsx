@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 // Components
-import NavLink from './NavLink';
+import NavLink from './NavLink'
 
 // Data
-import { NAV_LINKS } from '../../../DataStore';
+import { NAV_LINKS } from '../../../DataStore'
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
     document.addEventListener('scroll', () =>
       window.scrollY > 100 ? setScrolled(true) : setScrolled(false)
-    );
-  });
+    )
+  })
 
   return (
     <>
@@ -44,7 +44,7 @@ const Navbar = () => {
         </div>
       </nav>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

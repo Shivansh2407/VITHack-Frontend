@@ -75,37 +75,37 @@ const SubscribeSection = () => {
   return (
     <section className='section text-hack-black flex flex-col justify-center items-center relative overflow-hidden cursor-default sm:text-base mx-auto'>
       <div className='w-full md:h-96 mb-8 flex justify-center items-center'>
-        <div className='text-hack-blue text-title sm:text-display capitalize flex justify-center items-center md:mb-24'>
+        <div className='text-hack-blue text-title sp:text-display capitalize flex justify-center items-center md:mb-24'>
           <div className='flex flex-col justify-center items-center'>
             <span>{addLeadingZeros(timer.days)}</span>
-            <span className='text-base sm:text-sub-heading font-bold'>
+            <span className='text-base sp:text-sub-heading font-bold'>
               Days
             </span>
           </div>
-          <span className='inline-block relative transform -translate-y-5 sm:-translate-y-6 mx-1 sm:mx-3'>
+          <span className='inline-block relative transform -translate-y-5 sp:-translate-y-6 mx-1 sp:mx-3'>
             :
           </span>
           <div className='flex flex-col justify-center items-center'>
             <span>{addLeadingZeros(timer.hours)}</span>
-            <span className='text-base sm:text-sub-heading font-bold'>
+            <span className='text-base sp:text-sub-heading font-bold'>
               Hours
             </span>
           </div>
-          <span className='inline-block relative transform -translate-y-5 sm:-translate-y-6 mx-1 sm:mx-3'>
+          <span className='inline-block relative transform -translate-y-5 sp:-translate-y-6 mx-1 sp:mx-3'>
             :
           </span>
           <div className='flex flex-col justify-center items-center'>
             <span>{addLeadingZeros(timer.min)}</span>
-            <span className='text-base sm:text-sub-heading font-bold'>
+            <span className='text-base sp:text-sub-heading font-bold'>
               Minutes
             </span>
           </div>
-          <span className='inline-block relative transform -translate-y-5 sm:-translate-y-6 mx-1 sm:mx-3'>
+          <span className='inline-block relative transform -translate-y-5 sp:-translate-y-6 mx-1 sp:mx-3'>
             :
           </span>
           <div className='flex flex-col justify-center items-center'>
             <span>{addLeadingZeros(timer.sec)}</span>
-            <span className='text-base sm:text-sub-heading font-bold'>
+            <span className='text-base sp:text-sub-heading font-bold'>
               Seconds
             </span>
           </div>
