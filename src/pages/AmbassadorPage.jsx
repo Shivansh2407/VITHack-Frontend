@@ -1,22 +1,22 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Typewriter from 'typewriter-effect'
 
 // Components
-import Heading from '../components/layout/Heading'
+// import Heading from '../components/layout/Heading'
 import CommunityNav from '../components/layout/navbar/CommunityNav'
 import HamburgerMenu from '../components/layout/navbar/HamburgerMenu'
 import { ReactComponent as CommunityLg } from '../components/vectors/CommunityLg.svg'
-import { ReactComponent as SneakPeak } from '../components/vectors/SneakPeek.svg'
+// import { ReactComponent as SneakPeak } from '../components/vectors/SneakPeek.svg'
 import { ReactComponent as GridMan } from '../components/vectors/GridMan.svg'
 import { ReactComponent as CloudLogo } from '../components/vectors/CloudLogo.svg'
 import { ReactComponent as GravitasLogo } from '../components/vectors/graVITas20Logo.svg'
 import { ReactComponent as VitLogoBlue } from '../components/vectors/VitLogoBlue.svg'
 
 // Data
-import { CA_HELP_TEXT, CA_FAQ_SUB_SECTIONS, CA_FAQ } from '../DataStore'
+// import { CA_HELP_TEXT, CA_FAQ_SUB_SECTIONS, CA_FAQ } from '../DataStore'
 
 const AmbassadorPage = () => {
-  const [active, setActive] = useState(-1)
+  // const [active, setActive] = useState(-1)
 
   return (
     <>
@@ -90,7 +90,7 @@ const AmbassadorPage = () => {
           </div>
         </section>
         <div className='h-32 w-full' />
-        <section className='grid grid-rows-5 md:grid-rows-3 grid-cols-1 md:grid-cols-9 grid-flow-col gap-6 px-8 sm:px-35'>
+        <section className='grid grid-rows-5 md:grid-rows-3 grid-cols-1 md:grid-cols-9 grid-flow-col gap-6 px-8 sm:px-35 mb-8'>
           <div className='row-span-1 md:row-span-2 col-span-1 md:col-span-5 p-4 md:p-16 bg-hack-green rounded-lg'>
             <h2 className='text-sm-heading sm:text-heading font-bold flex flex-col justify-center items-start mb-4 md:mb-10'>
               Talks
@@ -159,7 +159,7 @@ const AmbassadorPage = () => {
             </div>
           </div>
         </section>
-        <section className='section flex flex-col justify-center items-center mx-auto relative overflow-hidden cursor-default sm:text-base'>
+        {/* <section className='section flex flex-col justify-center items-center mx-auto relative overflow-hidden cursor-default sm:text-base'>
           <section className='px-8 sm:px-35 md:pl-35 relative'>
             <Heading>Campus Ambassador</Heading>
             <p className='w-full md:w-5/12 mb-6 mt-8'>{CA_HELP_TEXT.text}</p>
@@ -215,7 +215,7 @@ const AmbassadorPage = () => {
               </div>
             ))}
           </section>
-        </section>
+        </section> */}
       </div>
     </>
   )
