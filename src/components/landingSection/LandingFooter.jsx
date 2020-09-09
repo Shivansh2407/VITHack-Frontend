@@ -10,13 +10,21 @@ const LandingFooter = () => (
       <span className='sm:hidden'>
         <VitLogoBlue />
       </span>
-      <div
-        className='hidden sm:block'
-      >
-        <div className='text-center'><a href='http://gravitas.vit.ac.in'
-        target='_blank'
-        rel='noopener noreferrer' className='text-hack-blue text-sub-heading font-bold hover:underline'>GraVITas '20 Website</a></div>
-        <div className='italic'>*It is mandatory for all participants to register on the graVITas platform as well</div>
+      <div className='hidden sm:block'>
+        <div className='text-center'>
+          <a
+            href='https://gravitas.vit.ac.in/events.html'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-hack-blue text-sub-heading font-bold hover:underline'
+          >
+            GraVITas '20 Website
+          </a>
+        </div>
+        <div className='italic'>
+          *It is mandatory for all participants to register on the graVITas
+          platform as well
+        </div>
       </div>
       <span className='sm:hidden'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
       <span className='sm:hidden'>

@@ -44,7 +44,11 @@ const HAM_LINKS = [
   { id: uuid(), text: 'Tracks', url: '#tracks' },
   { id: uuid(), text: 'Contact Us', url: '#contact' },
   { id: uuid(), text: 'Essentials', url: '#essentials' },
-  { id: uuid(), text: "GraVITas '20", url: 'https://gravitas.vit.ac.in' },
+  {
+    id: uuid(),
+    text: "GraVITas '20",
+    url: 'https://gravitas.vit.ac.in/events.html',
+  },
 ]
 
 // About Section
