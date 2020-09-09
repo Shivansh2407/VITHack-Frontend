@@ -29,7 +29,7 @@ const HeroCaption = () => (
       />
     </h3>
     <a
-      href='https://vithack2020.typeform.com/to/gc8sXEi0'
+      href='https://vithack2020.hackerearth.com'
       rel='noopener noreferrer'
       target='_blank'
     >
@@ -37,9 +37,10 @@ const HeroCaption = () => (
         className='bg-hack-blue hover:bg-blue-600 text-white rounded font-bold capitalize py-2 px-4 sm:px-8 w-48 sm:w-64 mt-6 md:mt-8'
         type='button'
       >
-        Join the Community
+        Register Now
       </button>
     </a>
+    <div className='w-2/3 font-normal sm:hidden mt-2 italic'>*It is mandatory for all participants to register on the graVITas platform as well</div>
   </div>
 )
 

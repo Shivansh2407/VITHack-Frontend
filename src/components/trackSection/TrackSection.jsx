@@ -27,7 +27,7 @@ const TrackSection = () => (
         ))}
       </div>
       <div className='w-full flex justify-center items-center'>
-        <span>*Tracks are subject to changes</span>
+        <span className='italic'>*Tracks are subject to changes</span>
       </div>
     </div>
   </section>
