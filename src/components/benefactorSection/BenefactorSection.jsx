@@ -17,7 +17,7 @@ const TrackSection = () => (
   >
     <div className='sm:px-35 w-full'>
       <div className='px-8 sm:p-0'>
-        <Heading>Previous Benefactors</Heading>
+        <Heading>Benefactors</Heading>
       </div>
       <div>
         <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-8 sm:my-12'>

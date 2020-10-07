@@ -120,7 +120,17 @@ const TRACKS = [
   {
     id: uuid(),
     icon: `${process.env.PUBLIC_URL}/assets/images/Healthcare.png`,
-    name: 'Healthcare',
+    name: 'Healthcare\n(crisis response)',
+  },
+  {
+    id: uuid(),
+    icon: `${process.env.PUBLIC_URL}/assets/images/CyberSec.png`,
+    name: 'Cyber Security\nand Blockchain',
+  },
+  {
+    id: uuid(),
+    icon: `${process.env.PUBLIC_URL}/assets/images/Automation.png`,
+    name: 'Mobility and\nAutomation',
   },
   {
     id: uuid(),
@@ -129,28 +139,8 @@ const TRACKS = [
   },
   {
     id: uuid(),
-    icon: `${process.env.PUBLIC_URL}/assets/images/Agriculture.png`,
-    name: 'Agriculture',
-  },
-  {
-    id: uuid(),
     icon: `${process.env.PUBLIC_URL}/assets/images/Education.png`,
     name: 'Education',
-  },
-  {
-    id: uuid(),
-    icon: `${process.env.PUBLIC_URL}/assets/images/CrisisResponse.png`,
-    name: 'Crisis Response',
-  },
-  {
-    id: uuid(),
-    icon: `${process.env.PUBLIC_URL}/assets/images/CyberSec.png`,
-    name: 'Cyber Security',
-  },
-  {
-    id: uuid(),
-    icon: `${process.env.PUBLIC_URL}/assets/images/Mobility.png`,
-    name: 'Mobility',
   },
   {
     id: uuid(),

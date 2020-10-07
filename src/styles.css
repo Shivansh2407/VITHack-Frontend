@@ -686,6 +686,11 @@ img {
   margin-right: auto;
 }
 
+.-my-4 {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1339,10 +1344,6 @@ img {
 
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .sm\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .sm\:grid-cols-8 {
