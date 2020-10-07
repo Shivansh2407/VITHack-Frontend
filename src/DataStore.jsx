@@ -160,73 +160,77 @@ const HELP_TEXT = {
 const SPONSORS = [
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/ChallengeRocketLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/GlobalCert.png`,
   },
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/ZeitLogo.png`,
-  },
-  {
-    id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/GithubLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/CareerLabs.png`,
   },
 ]
 
 const CASE_PARTNERS = [
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/VicaraLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/Avian.png`,
   },
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/InversionLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/GravitasAI.png`,
   },
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/ServifyLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/Humourbaba.png`,
   },
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/DeeviaLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/Aws.png`,
   },
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/IncubationLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/Flipr.jpg`,
   },
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/AsylumsLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/LumosLab.png`,
   },
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/CrowderaLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/MovelAI.png`,
   },
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/HoneywellLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/Paycrunch.png`,
   },
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/HPLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/Vicara.png`,
+  },
+  {
+    id: uuid(),
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/Winuall.jpg`,
   },
 ]
 
 const COLLABORATORS = [
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/EDLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/Bugsee.png`,
   },
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/TeknoLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/Voiceflow.png`,
   },
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/YourStoryLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/Wolfram.png`,
   },
   {
     id: uuid(),
-    imageSrc: `${process.env.PUBLIC_URL}/assets/images/ItsaiLogo.png`,
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/Dorklabs.png`,
+  },
+  {
+    id: uuid(),
+    imageSrc: `${process.env.PUBLIC_URL}/assets/images/Verzeo.png`,
   },
 ]
 

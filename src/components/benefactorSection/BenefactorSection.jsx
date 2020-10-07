@@ -24,7 +24,7 @@ const TrackSection = () => (
           Our Sponsors
         </header>
         <div
-          className='grid grid-cols-1 sm:grid-cols-3 px-8 sm:p-0'
+          className='grid grid-cols-1 sm:grid-cols-2 px-8 sm:p-0'
           style={{ justifyItems: 'center' }}
         >
           {SPONSORS.map((sponsor) => (
@@ -35,53 +35,112 @@ const TrackSection = () => (
           Our Case Partners
         </header>
         <div
-          className='grid grid-cols-2 sm:grid-cols-3 px-8 sm:p-0'
+          className='hidden sm:grid grid-cols-2 sm:grid-cols-3 px-8 sm:p-0'
           style={{ justifyItems: 'center' }}
         >
           {CASE_PARTNERS.map((partner, index) => {
-            if (window.innerWidth > 870)
+            if (index < 3)
               return (
                 <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
               )
-            if (index < 8)
-              return (
-                <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
-              )
-            return (
-              <div className='col-span-2' key={partner.id}>
-                <BenefactorCard imageSrc={partner.imageSrc} />
-              </div>
-            )
+            else return null
           })}
+        </div>
+        <div
+          className='hidden sm:grid grid-cols-2 sm:grid-cols-4 px-8 sm:p-0'
+          style={{ justifyItems: 'center' }}
+        >
+          {CASE_PARTNERS.map((partner, index) => {
+            if (index > 2 && index < 7)
+              return (
+                <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
+              )
+            else return null
+          })}
+        </div>
+        <div
+          className='hidden sm:grid grid-cols-2 sm:grid-cols-3 px-8 sm:p-0'
+          style={{ justifyItems: 'center' }}
+        >
+          {CASE_PARTNERS.map((partner, index) => {
+            if (index > 6)
+              return (
+                <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
+              )
+            else return null
+          })}
+        </div>
+        <div
+          className='grid grid-cols-2 sm:grid-cols-3 px-8 sm:p-0 sm:hidden'
+          style={{ justifyItems: 'center' }}
+        >
+          {CASE_PARTNERS.map((partner) => (
+            <BenefactorCard imageSrc={partner.imageSrc} key={partner.id} />
+          ))}
         </div>
         <header className='font-bold text-sm-sub-heading sm:text-sub-heading text-center my-8 sm:my-12'>
           Our Collaborators
         </header>
         <div
-          className='grid grid-cols-2 px-8 sm:p-0'
+          className='hidden sm:grid grid-cols-3 px-8 sm:p-0'
           style={{ justifyItems: 'center' }}
         >
-          {COLLABORATORS.map((collaborator) => (
-            <BenefactorCard
-              imageSrc={collaborator.imageSrc}
-              key={collaborator.id}
-            />
-          ))}
+          {COLLABORATORS.map((collaborator, i) => {
+            if (i < 3)
+              return (
+                <BenefactorCard
+                  imageSrc={collaborator.imageSrc}
+                  key={collaborator.id}
+                />
+              )
+            else return null
+          })}
         </div>
-      </div>
-      <div className='flex justify-center items-center'>
-        <a
-          href='https://vithack2020.typeform.com/to/gJr2GEEf'
-          target='_blank'
-          rel='noopener noreferrer'
+        <div
+          className='hidden sm:grid grid-cols-2 px-16 sm:p-0 md:px-40'
+          style={{ justifyItems: 'center' }}
         >
-          <button
-            className='bg-hack-blue text-white rounded font-bold py-2 px-4 sm:px-8 mt-8 md:mt-16'
-            type='button'
-          >
-            Become a Sponsor
-          </button>
-        </a>
+          {COLLABORATORS.map((collaborator, i) => {
+            if (i > 2)
+              return (
+                <BenefactorCard
+                  imageSrc={collaborator.imageSrc}
+                  key={collaborator.id}
+                />
+              )
+            else return null
+          })}
+        </div>
+        <div
+          className='grid sm:hidden grid-cols-2 px-16 sm:p-0 md:px-40'
+          style={{ justifyItems: 'center' }}
+        >
+          {COLLABORATORS.map((collaborator, i) => {
+            if (i < 4)
+              return (
+                <BenefactorCard
+                  imageSrc={collaborator.imageSrc}
+                  key={collaborator.id}
+                />
+              )
+            else return null
+          })}
+        </div>
+        <div
+          className='grid sm:hidden grid-cols-1 px-16 sm:p-0 md:px-40'
+          style={{ justifyItems: 'center' }}
+        >
+          {COLLABORATORS.map((collaborator, i) => {
+            if (i === 4)
+              return (
+                <BenefactorCard
+                  imageSrc={collaborator.imageSrc}
+                  key={collaborator.id}
+                />
+              )
+            else return null
+          })}
+        </div>
       </div>
     </div>
     <div className='hidden sm:block w-full h-32' />
